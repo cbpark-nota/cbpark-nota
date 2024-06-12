@@ -1,4 +1,4 @@
-### Hi there 👋
+### 뜌뜌 따따
 
 <!--
 **cbpark-nota/cbpark-nota** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
