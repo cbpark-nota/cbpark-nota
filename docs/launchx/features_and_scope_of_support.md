@@ -14,7 +14,7 @@ We provide optimized models through NetsPresso. You can immediately utilize thes
 
 Simplify the process of framework conversion.
 
-![launchX_convert.png](assets/images/launchx_convert.png)
+![launchX_convert.png](https://github.com/cbpark-nota/cbpark-nota/blob/gh-pages/docs/assets/images/launchx_convert.png)
 
 - Easy and efficient model conversion.
 - Eliminate trial and error with automated conversion.
@@ -27,7 +27,7 @@ TODO: link change
 
 Easily find the right device for your AI model.
 
-![launchx_benchmark.png](assets/images/launchx_benchmark.png)
+![launchx_benchmark.png](https://github.com/cbpark-nota/cbpark-nota/blob/gh-pages/docs/assets/images/launchx_benchmark.png)
 
 - Identify the best-fit device through benchmarking.
 - Check model compatibility with target devices.
