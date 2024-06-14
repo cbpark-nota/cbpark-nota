@@ -3,9 +3,11 @@ site_url: https://cbpark-nota.github.io/cbpark-nota/
 theme:
   name: material
   favicon: assets/images/favicon.png
+  features:
+    - navigation.sections
 
 nav:
   - Home: index.md
   - LaunchX:
     - LaunchX: launchx/launchx.md
-      - Compatibility range of conversion: launchx/compatibility_range_of_conversion.md
+    - Compatibility range of conversion: launchx/compatibility_range_of_conversion.md
