@@ -1,0 +1,13 @@
+site_name: Netspresso Documents
+site_url: https://cbpark-nota.github.io/cbpark-nota/
+theme:
+  name: material
+  favicon: assets/images/favicon.png
+  features:
+    - navigation.sections
+
+nav:
+  - Home: index.md
+  - LaunchX: launchx/launchx.md
+  - Compatibility range of conversion: launchx/compatibility_range_of_conversion.md
+    - Supported JetPack-ONNX version: launchx/supported_jetpack_onnx_version.md
