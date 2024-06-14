@@ -5,7 +5,7 @@ theme:
   favicon: assets/images/favicon.png
 
 nav:
-- Home: index.md
-- LaunchX:
-  - LaunchX: launchx/launchx.md
-    - Compatibility range of conversion: launchx/compatibility_range_of_conversion
+  - Home: index.md
+  - LaunchX:
+    - LaunchX: launchx/launchx.md
+      - Compatibility range of conversion: launchx/compatibility_range_of_conversion
