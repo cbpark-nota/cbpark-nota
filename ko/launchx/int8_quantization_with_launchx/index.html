@@ -1,0 +1,871 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cbpark-nota.github.io/cbpark-nota/ko/launchx/int8_quantization_with_launchx/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+    
+    
+      
+        <title>INT8 quantization with LaunchX - Netspresso Documents</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#int8-quantization-with-launchx" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Netspresso Documents" class="md-header__button md-logo" aria-label="Netspresso Documents" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Netspresso Documents
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              INT8 quantization with LaunchX
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Netspresso Documents" class="md-nav__button md-logo" aria-label="Netspresso Documents" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Netspresso Documents
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaunchX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Compatibility range of conversion
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Compatibility range of conversion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/compatibility_range_of_conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatibility range of conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/supported_jetpack_onnx_version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supported JetPack-ONNX version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/compatibility_range_of_benchmark/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatibility range of benchmark
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/int8_quantization_with_launchx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    INT8 quantization with LaunchX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaunchX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    변환 호환성 범위
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            변환 호환성 범위
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/compatibility_range_of_conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatibility range of conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/supported_jetpack_onnx_version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supported JetPack-ONNX version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/compatibility_range_of_benchmark/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatibility range of benchmark
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/launchx/int8_quantization_with_launchx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    INT8 quantization with LaunchX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="int8-quantization-with-launchx">INT8 quantization with LaunchX</h1>
+<h1 id="what-is-quantization">What is Quantization?</h1>
+<p>Quantization is a technique that reduces the number of bits used to represent weights and activations in a deep learning model. This makes the model lighter, reducing memory usage and improving inference speed.</p>
+<p>LaunchX facilitates the easy application of post-training INT8 quantization to the model. It represents the model's weights and activations as 8-bit integers, saving memory and accelerating computations.</p>
+<p>This document provides information as follows:</p>
+<ul>
+<li>INT8 quantization with LaunchX</li>
+<li>Preparing the calibration dataset</li>
+<li>Inference code for TFlite INT8 model</li>
+</ul>
+<h1 id="int8-quantization-with-launchx_1">INT8 quantization with LaunchX</h1>
+<ol>
+<li>To quantize, upload your target model or select from the free models in Models.</li>
+<li>On the Convert Setting page, choose Tensorflow Lite, select the target device, and then choose the INT8 option.</li>
+<li>Upload the calibration dataset(&lt;= 500MB) to minimize quantization error.</li>
+<li>Click the convert button.</li>
+</ol>
+<p><img alt="INT8_setting" src="https://raw.githubusercontent.com/cbpark-nota/cbpark-nota/gh-pages/assets/images/INT8_setting.png" /></p>
+<h1 id="preparing-the-calibration-dataset">Preparing the calibration dataset</h1>
+<p>Calibration is the process of aligning a quantized model with a specific data distribution, adjusting quantization parameters such as scaling and zero points.</p>
+<p>Generally, the calibration dataset is a subset of the original training data, used to fine-tune quantization parameters. Its purpose is to ensure the quantized model's optimal performance on real-world data while maintaining acceptable accuracy. During calibration, the model runs on this dataset, and activation statistics are collected. These statistics determine quantization parameters for each neural network layer, minimizing the impact of quantization on accuracy by adapting parameters based on observed value distributions.</p>
+<h3 id="convert-the-dataset-to-numpy-for-calibration">Convert the dataset to NumPy for calibration.</h3>
+<ul>
+<li>img_file_dir_path : Path where the dataset for calibration is stored.</li>
+<li>padding : Value for padding preprocessing.</li>
+<li>color_mode : Value to change the color mode of an image for preprocessing. Select ‘bgr’ or ‘rgb’.</li>
+<li>normalize : Value for normalization preprocessing.</li>
+<li>input_shape : Value for width and height of model input shape.</li>
+<li>save_file_path : Path to save the npy file.</li>
+</ul>
+<pre><code class="language-python">from glob import glob
+import os
+import pathlib
+import random
+from typing import Literal, List, Tuple
+
+import cv2
+import numpy as np
+
+img_file_types = [
+    &quot;*.jpeg&quot;,
+    &quot;*.JPEG&quot;,
+    &quot;*.jpg&quot;,
+    &quot;*.JPG&quot;,
+    &quot;*.png&quot;,
+    &quot;*.PNG&quot;,
+    &quot;*.BMP&quot;,
+    &quot;*.bmp&quot;,
+    &quot;*.TIF&quot;,
+    &quot;*.tif&quot;,
+    &quot;*.TIFF&quot;,
+    &quot;*.tiff&quot;,
+    &quot;*.DNG&quot;,
+    &quot;*.dng&quot;,
+    &quot;*.WEBP&quot;,
+    &quot;*.webp&quot;,
+    &quot;*.mpo&quot;,
+    &quot;*.MPO&quot;,
+]
+
+def save_npy_file(array, save_file_name: str):
+    np.save(save_file_name, array)
+
+def print_saved_npy_file_shape(save_file_name: str):
+    array = np.load(save_file_name)
+    print(f&quot;Saved npy array shape is {array.shape}&quot;)
+
+def save_txt_file(lines: List[str], file_name: str):
+    with open(file_name, &quot;w&quot;) as file:
+        for line in lines:
+            file.write(line + &quot;\n&quot;)
+        file.close()
+
+def print_error_files(error_files: List[str], file_name: str):
+    print(f&quot;Please check files in {file_name}.&quot;)
+    print(&quot;Error files:&quot;, error_files)
+
+def save_error_files(
+        error_files: List[str],
+        file_name: str = &quot;error_files.txt&quot;):
+    if len(error_files) != 0:
+        save_txt_file(error_files, file_name)
+    print_error_files(error_files, file_name)
+
+class DataPreprocessor():
+    def __init__(
+        self,
+        root_dir: str,
+        input_shape: Tuple[int, int],
+        color_mode: Literal[&quot;bgr&quot;, &quot;rgb&quot;],
+        padding: bool,
+        normalize: bool
+    ):
+        self.root_dir = root_dir
+        self.input_shape = input_shape
+        self.color_mode = color_mode
+        self.padding = padding
+        self.normalize = normalize
+        self.img_list = []
+
+    def _get_img_list(self,):
+        self.img_list = []
+
+        for root, dirs, files in os.walk(self.root_dir):
+            for img_type in img_file_types:
+                img_files = glob(os.path.join(root, img_type))
+                self.img_list += img_files
+
+        self.img_list = list(set(self.img_list))
+        if len(self.img_list) == 0:
+            raise Exception(f&quot;No image in {self.root_dir}&quot;)
+
+        random.shuffle(self.img_list)
+
+    def _img_padding(self, im):
+        shape = im.shape[:2]  # current shape [height, width]
+        new_shape = self.input_shape
+        if isinstance(new_shape, int):
+            new_shape = (new_shape, new_shape)
+
+        # Scale ratio (new / old)
+        r = min(new_shape[0] / shape[0], new_shape[1] / shape[1])
+
+        # Compute padding
+        new_unpad = int(round(shape[1] * r)), int(round(shape[0] * r))
+        if shape[::-1] != new_unpad:  # resize
+            im = cv2.resize(im, new_unpad, interpolation=cv2.INTER_LINEAR)
+        left, right = int(round((new_shape[1] - new_unpad[0])/2 - 0.1)), int(round((new_shape[1] - new_unpad[0])/2 + 0.1))
+        top, bottom = int(round((new_shape[0] - new_unpad[1])/2 - 0.1)), int(round((new_shape[0] - new_unpad[1])/2 + 0.1))
+        im = cv2.copyMakeBorder(im, top, bottom, left, right, cv2.BORDER_CONSTANT, value=(114,114,114))  # add border
+        return im
+
+    def _preprocess(self, img):
+        x = []
+        if self.color_mode == &quot;rgb&quot;:
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        if self.padding:
+            img = self._img_padding(img)
+        else:
+            img = cv2.resize(img, self.input_shape)
+        x.append(np.asarray(img))
+        x = np.array(x)
+        x = np.float32(x)
+        if self.normalize:
+            x = x / 255.0
+        return x
+
+    def _load_dataset(self,):
+        error_files = []
+        valid_images = []
+
+        def is_valid_image(image):
+            return image is not None
+
+        for f in self.img_list:
+            try:
+                img = self._preprocess(cv2.imread(f))
+                if is_valid_image(img):
+                    valid_images.append(img)
+                else:
+                    error_files.append(f)
+            except Exception as e:
+                error_files.append(f)
+        try:
+            result_array = np.concatenate(valid_images, axis=0)
+        except:
+            import pdb; pdb.set_trace()
+        return result_array, error_files
+
+    def _get_save_file_name(self,):
+        self._get_img_list()
+        count = len(self.img_list)
+        w = self.input_shape[0]
+        h = self.input_shape[1]
+        return f&quot;{count}x{w}x{h}.npy&quot;
+
+    def save_dataset_as_npy(self, save_file_path: str):
+        save_file_name = self._get_save_file_name()
+        save_file_path = os.path.join(save_file_path, save_file_name)
+        result_array, error_files = self._load_dataset()
+        save_npy_file(result_array, save_file_path)
+        print_saved_npy_file_shape(save_file_path)
+        save_error_files(error_files)
+
+if __name__ == &quot;__main__&quot;:
+    img_file_dir_path = &quot;/image/file/path&quot;
+    padding = True
+    color_mode = &quot;bgr&quot;
+    input_shape = (512, 512)
+    normalize = True
+    save_file_path = &quot;/path/to/save/file&quot;
+    data_preprocessor = DataPreprocessor(
+        img_file_dir_path,
+        input_shape,
+        color_mode,
+        padding,
+        normalize
+    )
+    data_preprocessor.save_dataset_as_npy(save_file_path)
+</code></pre>
+<p><strong>Result</strong></p>
+<pre><code class="language-bash">root@4e54bd5645d1:/app# python3 prepare_npy_file.py 
+Corrupt JPEG data: 122 extraneous bytes before marker 0xc4
+Saved npy array shape is (145, 32, 32, 3)
+Please check files in error_files.txt.
+Error files: ['/app/calib_dataset/images/2007_000039_jpg']
+</code></pre>
+<h3 id="dataset-that-failed-to-be-read">Dataset that failed to be read</h3>
+<p>Image files that do not open normally through opencv-python are listed in the 'error_files.txt' created in the code execution location.</p>
+<h1 id="inference-code-for-tflite-int8">Inference Code for TFlite INT8</h1>
+<p>Write and use additional pre-processing/post-processing codes for your model.</p>
+<pre><code class="language-python">import os
+
+import cv2
+import numpy as np
+import tensorflow as tf
+
+def model_input_output_attributes(interpreter: tf.lite.Interpreter):
+    inputs = {}
+    outputs = {}
+    for input_detail in interpreter.get_input_details():
+        input_data_attribute = {}
+        input_data_attribute[&quot;name&quot;] = input_detail.get(&quot;name&quot;)
+        input_data_attribute[&quot;location&quot;] = input_detail.get(&quot;index&quot;)
+        input_data_attribute[&quot;shape&quot;] = tuple(input_detail.get(&quot;shape&quot;))
+        input_data_attribute[&quot;dtype&quot;] = input_detail.get(&quot;dtype&quot;)
+        input_data_attribute[&quot;quantization&quot;] = input_detail.get(&quot;quantization&quot;)
+        input_data_attribute[&quot;format&quot;] = &quot;nchw&quot; if input_data_attribute[&quot;shape&quot;][1] == 3 else &quot;nhwc&quot;
+        inputs[input_data_attribute[&quot;location&quot;] if input_data_attribute[&quot;location&quot;] is not None else input_data_attribute[&quot;name&quot;]] = input_data_attribute
+
+    for output_detail in interpreter.get_output_details():
+        output_data_attribute = {}
+        output_data_attribute[&quot;name&quot;] = output_detail.get(&quot;name&quot;)
+        output_data_attribute[&quot;location&quot;] = output_detail.get(&quot;index&quot;)
+        output_data_attribute[&quot;shape&quot;] = tuple(output_detail.get(&quot;shape&quot;))
+        output_data_attribute[&quot;dtype&quot;] = output_detail.get(&quot;dtype&quot;)
+        output_data_attribute[&quot;quantization&quot;] = output_detail.get(&quot;quantization&quot;)
+        output_data_attribute[&quot;format&quot;] = &quot;nchw&quot; if output_data_attribute[&quot;shape&quot;][1] == 3 else &quot;nhwc&quot;
+        outputs[output_data_attribute[&quot;location&quot;] if output_data_attribute[&quot;location&quot;] is not None else output_data_attribute[&quot;name&quot;]] = output_data_attribute
+
+    return inputs, outputs
+
+def preprocess(input_image_path:str):
+    input_image = cv2.imread(input_image_path)
+    # Write down the pre-processing process required for your model, including resizing.
+    return input_image
+
+def inference(tflite_model_path:str, input_image):
+    with open(os.path.join(tflite_model_path), &quot;rb&quot;) as f:
+        interpreter = tf.lite.Interpreter(model_content=f.read(), num_threads=1)
+    interpreter.allocate_tensors()
+
+    inputs, outputs = model_input_output_attributes(interpreter)
+    for k, v in inputs.items():
+        if v['dtype'] in [np.uint8, np.int8]:
+            input_scale, input_zero_point = v[&quot;quantization&quot;]
+            input_image = input_image / input_scale + input_zero_point
+            input_image = np.expand_dims(input_image, axis=0).astype(v[&quot;dtype&quot;])
+        interpreter.set_tensor(v[&quot;location&quot;], input_image)
+    interpreter.invoke()
+
+    output_dict = {}
+    for output_location in iter(outputs):
+        output_dict[output_location] = interpreter.get_tensor(output_location)
+
+    return output_dict
+
+def postprocess(inference_results):
+    return inference_results
+
+input_image=preprocess(&quot;your_image_file.jpg&quot;)
+inference_result=inference(&quot;your_model.tflite&quot;, input_image)
+postprocess(inference_result)
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+    
+  </body>
+</html>
