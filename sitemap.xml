@@ -2,22 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cbpark-nota.github.io/cbpark-nota/</loc>
-         <lastmod>2024-06-14</lastmod>
+         <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cbpark-nota.github.io/cbpark-nota/en/launchx/</loc>
-         <lastmod>2024-06-14</lastmod>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cbpark-nota.github.io/cbpark-nota/en/launchx/compatibility_range_of_benchmark/</loc>
+         <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cbpark-nota.github.io/cbpark-nota/en/launchx/compatibility_range_of_conversion/</loc>
-         <lastmod>2024-06-14</lastmod>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cbpark-nota.github.io/cbpark-nota/en/launchx/int8_quantization_with_launchx/</loc>
+         <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cbpark-nota.github.io/cbpark-nota/en/launchx/supported_jetpack_onnx_version/</loc>
-         <lastmod>2024-06-14</lastmod>
+         <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

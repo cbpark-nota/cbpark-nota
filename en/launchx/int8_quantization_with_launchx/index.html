@@ -8,23 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://cbpark-nota.github.io/cbpark-nota/">
+        <link rel="canonical" href="https://cbpark-nota.github.io/cbpark-nota/en/launchx/int8_quantization_with_launchx/">
+      
+      
+        <link rel="prev" href="../compatibility_range_of_benchmark/">
       
       
       
-        <link rel="next" href="en/launchx/">
-      
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
     
     
       
-        <title>Netspresso Documents</title>
+        <title>INT8 quantization with LaunchX - Netspresso Documents</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#welcome-to-netspresso-documentation" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -78,7 +73,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Netspresso Documents" class="md-header__button md-logo" aria-label="Netspresso Documents" data-md-component="logo">
+    <a href="../../.." title="Netspresso Documents" class="md-header__button md-logo" aria-label="Netspresso Documents" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -98,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              INT8 quantization with LaunchX
             
           </span>
         </div>
@@ -173,7 +168,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Netspresso Documents" class="md-nav__button md-logo" aria-label="Netspresso Documents" data-md-component="logo">
+    <a href="../../.." title="Netspresso Documents" class="md-nav__button md-logo" aria-label="Netspresso Documents" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -188,30 +183,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -220,44 +195,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about-nota" class="md-nav__link">
-    <span class="md-ellipsis">
-      About Nota
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contact-us" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contact us
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -269,7 +206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="en/launchx/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -330,7 +267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="en/launchx/compatibility_range_of_conversion/" class="md-nav__link">
+      <a href="../compatibility_range_of_conversion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -351,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="en/launchx/supported_jetpack_onnx_version/" class="md-nav__link">
+      <a href="../supported_jetpack_onnx_version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -379,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="en/launchx/compatibility_range_of_benchmark/" class="md-nav__link">
+      <a href="../compatibility_range_of_benchmark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -396,10 +333,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="en/launchx/int8_quantization_with_launchx/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -408,6 +352,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -429,34 +374,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about-nota" class="md-nav__link">
-    <span class="md-ellipsis">
-      About Nota
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contact-us" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contact us
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -471,18 +388,9 @@
                   
 
 
-<h1 id="welcome-to-netspresso-documentation">Welcome to NetsPresso Documentation</h1>
-<p>Nota has built NetsPresso to help other developers to make custom AI models faster and easier for edge devices. NetsPresso aims to provide critical features to offer hands-on experience with hardware-aware autoML, optimization, and device farm to explore possibilities with NetsPresso.</p>
-<p>This document includes product configuration, benchmarks, and other important information to help you during using NetsPresso. Please feel free to compare the results obtained using Nota NetsPresso with other model architecture optimization frameworks. We are constantly striving to keep up with the latest AI model optimization technology and we welcome your feedback!</p>
-<h3 id="about-nota">About Nota</h3>
-<p>In 2015, we started with a mobile keyboard app that prevents typos. During the app development, we realized how painful it was to optimize the deep learning model on a tiny mobile device. That experience lead us to the decision to share our know-hows with other developers not only to build, but optimize models per a particular hardware. Since then, Nota has focused on deep learning optimization technology and will continue to develop its AI software optimization platform to support AI developer community.
-Nota has offices in South Korea, US, and Germany and partners with over 35 global market leaders from a wide range of industries including system integrator, device manufacturers, platform providers, and mobility.</p>
-<p>🏠 <a href="https://nota.ai/">More about Nota</a></p>
-<h3 id="contact-us">Contact us</h3>
-<p>If you have any questions or comments, please contact us.</p>
-<p>We look forward to your feedback.</p>
-<p>🙏 Leave Feedbacks: <a href="https://github.com/Nota-NetsPresso/Discussion/discussions">NetsPresso Discussion Forum</a></p>
-<p>👨‍💻 NetsPresso Support Center: <a href="https://notaai.typeform.com/to/ZGhpfiwd">netspresso@nota.ai</a></p>
+  <h1>INT8 quantization with LaunchX</h1>
+
+
 
 
 
@@ -535,10 +443,10 @@ Nota has offices in South Korea, US, and Germany and partners with over 35 globa
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes", "navigation.top"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   </body>
