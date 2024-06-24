@@ -6,9 +6,7 @@
 LaunchX
 =======
 
-LaunchX is a web application that facilitates the essential tasks of framework conversion and benchmarking for deploying AI models on devices quickly and easily. It allows AI developers, researchers, and even non-coders to intuitively use the ultimate converter and benchmarker. If you are a Python user, you can access the same functionality as a Python package through 
-
-`NetsPresso <https://github.com/Nota-NetsPresso/PyNetsPresso/>`_.
+LaunchX is a web application that facilitates the essential tasks of framework conversion and benchmarking for deploying AI models on devices quickly and easily. It allows AI developers, researchers, and even non-coders to intuitively use the ultimate converter and benchmarker. If you are a Python user, you can access the same functionality as a Python package through `NetsPresso <https://github.com/Nota-NetsPresso/PyNetsPresso/>`_.
 
 Models
 ------
@@ -31,7 +29,6 @@ Simplify the process of framework conversion.
 - Easy and efficient model conversion.
 - Eliminate trial and error with automated conversion.
 - Quickly set up the deployment of models on target devices.
-
 `See supported frameworks <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_
 
 .. toctree::
@@ -47,7 +44,6 @@ Easily find the right device for your AI model.
 - Identify the best-fit device through benchmarking.
 - Check model compatibility with target devices.
 - Evaluate real-device performance without acquiring or setting up the device.
-
 `View compatible devices <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_.
 
 .. toctree::
@@ -55,7 +51,7 @@ Easily find the right device for your AI model.
 
 Request your device
 -------------------
-We continuously research and develop to optimize AI models whenever new devices are released through partnerships with device manufacturers. If you have a specific device you'd like to benchmark, please make a `request <https://notaai.typeform.com/to/n6yVxFov?typeform-source=launchx.netspresso.ai/>`_. to us.
+We continuously research and develop to optimize AI models whenever new devices are released through partnerships with device manufacturers. If you have a specific device you'd like to benchmark, please make a `request <https://notaai.typeform.com/to/n6yVxFov?typeform-source=launchx.netspresso.ai/>`_ to us.
 
 .. toctree::
    :maxdepth: 2
