@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Nota
+# This file is distributed under the same license as the LaunchX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaunchX \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-24 13:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../source/index.rst:7
+msgid "LaunchX"
+msgstr "LaunchX"
+
+#: ../../source/index.rst:9
+msgid ""
+"LaunchX is a web application that facilitates the essential tasks of "
+"framework conversion and benchmarking for deploying AI models on devices "
+"quickly and easily. It allows AI developers, researchers, and even non-"
+"coders to intuitively use the ultimate converter and benchmarker. If you "
+"are a Python user, you can access the same functionality as a Python "
+"package through `NetsPresso <https://github.com/Nota-"
+"NetsPresso/PyNetsPresso/>`_."
+msgstr ""
+"LaunchX는 장치에 AI 모델을 배포하기 위한 프레임워크 변환 및 벤치마킹 핵심 작업을 빠르고 쉽게 수행할 수 있는 웹 애플리케이션입니다."
+"이 애플리케이션을 통해 AI 개발자, 연구자, 심지어 비전문가도 직관적으로 최고의 변환 도구와 벤치마킹 기능을 사용할 수 있습니다."
+"만약 Python 사용자라면, Python 패키지로도 동일한 기능에 접근할 수 있습니다."
+
+#: ../../source/index.rst:12
+msgid "Models"
+msgstr "Models"
+
+#: ../../source/index.rst:14
+msgid ""
+"We provide optimized models through NetsPresso. You can immediately "
+"utilize these AI models after converting them."
+msgstr ""
+"NetsPresso를 통해 최적화된 모델을 제공합니다. 변환 후 바로 이 AI 모델들을 활용할 수 있습니다."
+
+#: ../../source/index.rst:16
+msgid "Utilize a variety of computer vision task models for free."
+msgstr "다양한 컴퓨터 비전 작업 모델을 무료로 활용하세요."
+
+#: ../../source/index.rst:17
+msgid "You can download converted models."
+msgstr "변환된 모델을 다운로드할 수 있습니다."
+
+#: ../../source/index.rst:18
+msgid ""
+"You can request customization for a fine-tuned model that is tailored to "
+"your project environment."
+msgstr ""
+"당신의 프로젝트 환경에 맞춘 세밀하게 조정된 모델을 맞춤형으로 요청할 수 있습니다."
+
+#: ../../source/index.rst:24
+msgid "Convert"
+msgstr "Convert"
+
+#: ../../source/index.rst:25
+msgid "Simplify the process of framework conversion."
+msgstr "프레임워크 변환 과정을 간단하게 만듭니다."
+
+#: ../../source/index.rst:29
+msgid "Easy and efficient model conversion."
+msgstr "쉽고 효율적인 모델 변환입니다."
+
+#: ../../source/index.rst:30
+msgid "Eliminate trial and error with automated conversion."
+msgstr "자동 변환으로 시행착오를 없앱니다."
+
+#: ../../source/index.rst:31
+msgid "Quickly set up the deployment of models on target devices."
+msgstr "빠르게 모델을 타겟 장치에 배포 설정하세요."
+
+#: ../../source/index.rst:32
+msgid ""
+"`See supported frameworks <https://docs.netspresso.ai/docs/compatible-"
+"model-scope#benchmark/>`_"
+msgstr ""
+"`지원되는 frameworks를 확인하세요. <https://docs.netspresso.ai/docs/compatible-"
+"model-scope#benchmark/>`_"
+
+#: ../../source/index.rst:39
+msgid "Benchmark"
+msgstr "Benchmark"
+
+#: ../../source/index.rst:40
+msgid "Easily find the right device for your AI model."
+msgstr "AI 모델에 적합한 장치를 쉽게 찾으세요."
+
+#: ../../source/index.rst:44
+msgid "Identify the best-fit device through benchmarking."
+msgstr "벤치마킹을 통해 최적의 장치를 식별하세요."
+
+#: ../../source/index.rst:45
+msgid "Check model compatibility with target devices."
+msgstr "타겟 장치와 모델 호환성을 확인하세요."
+
+#: ../../source/index.rst:46
+msgid ""
+"Evaluate real-device performance without acquiring or setting up the "
+"device."
+msgstr ""
+"장치를 구매하거나 설정하지 않고도 실제 장치 성능을 평가할 수 있습니다."
+
+#: ../../source/index.rst:47
+msgid ""
+"`View compatible devices <https://docs.netspresso.ai/docs/compatible-"
+"model-scope#benchmark/>`_."
+msgstr ""
+"`호환가능한 장치를 확인하세요 <https://docs.netspresso.ai/docs/compatible-"
+"model-scope#benchmark/>`_."
+
+#: ../../source/index.rst:53
+msgid "Request your device"
+msgstr "원하시는 장치를 선택하세요"
+
+#: ../../source/index.rst:54
+msgid ""
+"We continuously research and develop to optimize AI models whenever new "
+"devices are released through partnerships with device manufacturers. If "
+"you have a specific device you'd like to benchmark, please make a "
+"`request <https://notaai.typeform.com/to/n6yVxFov?typeform-"
+"source=launchx.netspresso.ai/>`_ to us."
+msgstr ""
+"새로운 장치가 출시될 때마다 장치 제조사와의 협력을 통해 AI 모델을 최적화하기 위해 지속적으로 연구 및 개발을 진행하고 있습니다."
+"특정 장치의 벤치마킹을 원하시면 `요청해주세요. <https://notaai.typeform.com/to/n6yVxFov?typeform-"
+"source=launchx.netspresso.ai/>`_"
+
+#: ../../source/index.rst:60
+msgid "We hear from you"
+msgstr "여러분의 의견을 듣고 있습니다."
+
+#: ../../source/index.rst:61
+msgid ""
+"If you encounter difficulties or need additional credits, feel free to "
+"contact us anytime!"
+msgstr ""
+"어려움이나 추가 크레딧이 필요하시면 언제든지 저희에게 연락 주세요!"
+
+#: ../../source/index.rst:63
+msgid ""
+"👨‍💻 NetsPresso Support Center: `netspresso@nota.ai "
+"<https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+"👨‍💻 NetsPresso Support Center: `netspresso@nota.ai "
+"<https://notaai.typeform.com/to/ZGhpfiwd/>`_"
