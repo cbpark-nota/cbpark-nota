@@ -45,7 +45,8 @@ extensions = [
 ]
 
 # HTML 테마 설정
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
+html_theme = 'alabaster'
 
 # 언어 선택기 추가 (HTML Context)
 html_context = {
