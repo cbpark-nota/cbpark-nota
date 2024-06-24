@@ -3,19 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to LaunchX's documentation!
+LaunchX
 ===================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-   
-   modules
+LaunchX is a web application that facilitates the essential tasks of framework conversion and benchmarking for deploying AI models on devices quickly and easily. It allows AI developers, researchers, and even non-coders to intuitively use the ultimate converter and benchmarker. If you are a Python user, you can access the same functionality as a Python package through 
+`NetsPresso <https://github.com/Nota-NetsPresso/PyNetsPresso/>`_
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. include:: contents.rst.inc
