@@ -1,6 +1,14 @@
-<!-- source/_templates/layout.html -->
-
 {%- extends "layout.html" %}
+
+{%- block extrahead %}
+<script>
+    function changeLanguage() {
+        var language = document.getElementById("language-select").value;
+        var url = "/" + language + "/";  // 언어에 따라 URL 변경
+        window.location.href = url;  // 페이지 이동
+    }
+</script>
+{%- endblock %}
 
 {%- block sidebar %}
 <div class="language-selector">
