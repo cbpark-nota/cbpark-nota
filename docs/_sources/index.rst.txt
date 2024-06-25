@@ -21,7 +21,7 @@ Convert
 -------
 Simplify the process of framework conversion.
 
-.. image:: _static/launchx_convert.png
+.. image:: _images/launchx_convert.png
 
 - Easy and efficient model conversion.
 - Eliminate trial and error with automated conversion.
@@ -33,7 +33,7 @@ Benchmark
 ---------
 Easily find the right device for your AI model.
 
-.. image:: _static/launchx_benchmark.png
+.. image:: _images/launchx_benchmark.png
 
 - Identify the best-fit device through benchmarking.
 - Check model compatibility with target devices.
@@ -51,4 +51,9 @@ If you encounter difficulties or need additional credits, feel free to contact u
 👨‍💻 NetsPresso Support Center: `netspresso@nota.ai <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 
-.. include:: contents.rst.inc
+.. toctree::
+    :maxdepth: 2
+    
+    compatibility_range_of_conversion
+    compatibility_range_of_benchmark
+    int8_quantization_with_launchx

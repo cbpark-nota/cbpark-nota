@@ -11,7 +11,7 @@ You can use LaunchX converter to automatically convert the AI model's framework 
 Converting case
 ---------------
 
-.. image:: _static/converting_case.png
+.. image:: _images/converting_case.png
 
 1. `ONNX to TensorRT <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-tensorrt/>`_
 2. `ONNX to TensorFlow Lite <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-tflite/>`_
@@ -22,7 +22,7 @@ Compatible model
 ----------------
 The input layer of the uploaded model should be as follows.
 
-.. image:: _static/compatible_model.png
+.. image:: _images/compatible_model.png
 
 - Only single-input models are supported.
 - The four-dimensional array structure of images should be organized Batch, Number of Channels, Height, and Width.
