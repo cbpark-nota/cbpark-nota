@@ -3,34 +3,137 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Compatibility range of conversion
-=================================
+Compatibility range of benchmark
+================================
 
-You can use LaunchX converter to automatically convert the AI model's framework to the target framework.
+You can measure the actual performance on the devices listed below without the need to purchase or install the device.
 
-Converting case
----------------
+Supported Hardware
+------------------
+.. image:: _images/supported_hardware.png
 
-.. image:: _images/converting_case.png
+Arm MCU/NPU
+-----------
 
-1. `ONNX to TensorRT <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-tensorrt/>`_
-2. `ONNX to TensorFlow Lite <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-tflite/>`_
-3. `ONNX to OpenVINO <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-openvino/>`_
-4. `TensorFlow-Keras to TensorFlow Lite <https://docs.netspresso.ai/docs/compatible-model-scope#tensorflow-to-tensorflowlite/>`_
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20
 
-Compatible model
-----------------
-The input layer of the uploaded model should be as follows.
+   * - Target Device
+     - .tflite
+   * - Renesas RA8D1 (Arm Cortex-M85)
+     - O (only INT8)
+   * - Renesas RA8D1 (Arm Cortex-M85) with helium
+     - O (only INT8)
+   * - Alif Ensemble DevKit-E7 Gen2 (Arm Cortex-M55 + Ethos-U55)
+     - O (only INT8)
+   * - Alif Ensemble DevKit-E7 Gen2 (Arm Cortex-M55 + Ethos-U55) with helium
+     - O (only INT8)
+   * - Arm Virtual Hardware Corstone-300(Ethos-U55/U65)
+     - O (only INT8)
+   * - Arduino Nicla Vision(Arm Cortex-M7/M4)
+     - O (only INT8)
+   * - NXP i.MX 93(Arm Cortex-A55/M33+Ethos-U65)
+     - O (only INT8)
 
-.. image:: _images/compatible_model.png
+NVIDIA
+------
+When benchmarking on Jetson, it is essential for the model file and target device to match the Jetpack version.
 
-- Only single-input models are supported.
-- The four-dimensional array structure of images should be organized Batch, Number of Channels, Height, and Width.
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20 10 10 10
 
-> 
-1. Batch size: The number of combined input datasets that the model processes simultaneously.
-2. Channel: 3 for RGB or BGR and 1 for Grayscale.
-3. Input size: In computer vision tasks, input size refers to the size of the input images.
->
+   * - Target Device
+     - .trt
+     - .engine
+     - .tflite
+     - .onnx
+   * - Jetson Nano JetPack 4.4.1
+     - O
+     - O
+     - X
+     - O
+   * - Jetson Nano JetPack 4.6
+     - O
+     - O
+     - X
+     - O
+   * - Jetson Xavier NX JetPack 4.6
+     - O
+     - O
+     - X
+     - O
+   * - Jetson Xavier NX JetPack 5.0.2
+     - O
+     - O
+     - X
+     - O
+   * - Jetson TX2 JetPack 4.6
+     - O
+     - O
+     - X
+     - O
+   * - Jetson AGX Xavier JetPack 4.6
+     - O
+     - O
+     - X
+     - O
+   * - Jetson AGX Orin JetPack 5.0.1
+     - O
+     - O
+     - X
+     - O
+   * - Jetson Orin Nano JetPack 6.0
+     - O
+     - O
+     - X
+     - O
+   * - AWS-T4
+     - O
+     - O
+     - X
+     - O
 
+Raspberry Pi
+------------
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20 10
 
+   * - Target Device
+     - .tflite
+     - .onnx
+   * - Raspberry Pi ZeroW
+     - O
+     - X
+   * - Raspberry Pi Zero2W
+     - O
+     - X
+   * - Raspberry Pi 2B
+     - O
+     - O
+   * - Raspberry Pi 3B
+     - O
+     - O
+   * - Raspberry Pi 3B+
+     - O
+     - O
+   * - Raspberry Pi 4B
+     - O
+     - O
+   * - Raspberry Pi 5
+     - O
+     - O
+
+Intel
+-----
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20
+
+   * - Target Device
+     - .zip(bin+xml)
+   * - Xeon W-2223
+     - O
