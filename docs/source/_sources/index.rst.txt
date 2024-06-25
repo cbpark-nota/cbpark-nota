@@ -26,9 +26,11 @@ Simplify the process of framework conversion.
 - Easy and efficient model conversion.
 - Eliminate trial and error with automated conversion.
 - Quickly set up the deployment of models on target devices.
-`See supported frameworks <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_
+  `See supported frameworks <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_
+
 .. toctree::
    :maxdepth: 2
+
    compatibility_range_of_conversion
 
 
@@ -41,7 +43,7 @@ Easily find the right device for your AI model.
 - Identify the best-fit device through benchmarking.
 - Check model compatibility with target devices.
 - Evaluate real-device performance without acquiring or setting up the device.
-`View compatible devices <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_.
+  `View compatible devices <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_.
 
 Request your device
 -------------------
@@ -52,9 +54,3 @@ We hear from you
 If you encounter difficulties or need additional credits, feel free to contact us anytime!
 
 👨‍💻 NetsPresso Support Center: `netspresso@nota.ai <https://notaai.typeform.com/to/ZGhpfiwd/>`_
-
-.. toctree::
-   :maxdepth: 2
-   compatibility_range_of_conversion
-
-..   mlc, vlm,
