@@ -35,7 +35,7 @@ ONNX to TensorRT
 ----------------
 `Supported JetPack-ONNX version <https://docs.netspresso.ai/docs/supported-jetpack-onnx-version/>`_
 
-.. list-table:: Devices
+.. list-table::
    :header-rows: 1
    :widths: 20 20 10 20 10 10 10
 
@@ -53,3 +53,45 @@ ONNX to TensorRT
      - 1~4
      - height, width
      - FP16
+   * - NVIDIA Jetson Xavier NX
+     - 5.0.2, 4.6
+     - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16
+   * - NVIDIA Jetson TX2
+     - 4.6
+     - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16
+   * - NVIDIA Jetson AGX Xavier
+     - 4.6
+     - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16
+   * - NVIDIA Jetson AGX Orin
+     - 5.0.1
+     - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16
+   * - NVIDIA Jetson Orin Nano
+     - 6.0
+     - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16
+   * - NVIDIA T4
+     - -
+     - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16  
