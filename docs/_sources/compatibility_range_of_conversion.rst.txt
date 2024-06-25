@@ -27,10 +27,11 @@ The input layer of the uploaded model should be as follows.
 - Only single-input models are supported.
 - The four-dimensional array structure of images should be organized Batch, Number of Channels, Height, and Width.
 
-> 
 1. Batch size: The number of combined input datasets that the model processes simultaneously.
 2. Channel: 3 for RGB or BGR and 1 for Grayscale.
 3. Input size: In computer vision tasks, input size refers to the size of the input images.
->
 
+ONNX to TensorRT
+----------------
+`Supported JetPack-ONNX version <https://docs.netspresso.ai/docs/supported-jetpack-onnx-version/>`_
 

@@ -35,21 +35,3 @@ ONNX to TensorRT
 ----------------
 `Supported JetPack-ONNX version <https://docs.netspresso.ai/docs/supported-jetpack-onnx-version/>`_
 
-.. list-table:: Devices
-   :header-rows: 1
-   :widths: 20 20 10 20 10 10 10
-
-   * - Target Device
-     - JetPack version
-     - Input datatype
-     - Batch size
-     - Channel
-     - Input size
-     - Output datatype
-   * - NVIDIA Jetson Nano
-     - 4.6, 4.4.1
-     - FP32
-     - 1~4 (Static), Dynamic
-     - 1~4
-     - height, width
-     - FP16
