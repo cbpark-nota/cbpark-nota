@@ -17,9 +17,6 @@ We provide optimized models through NetsPresso. You can immediately utilize thes
 - You can download converted models.
 - You can request customization for a fine-tuned model that is tailored to your project environment.
 
-.. toctree::
-   :maxdepth: 2
-
 Convert
 -------
 Simplify the process of framework conversion.
@@ -30,9 +27,9 @@ Simplify the process of framework conversion.
 - Eliminate trial and error with automated conversion.
 - Quickly set up the deployment of models on target devices.
 `See supported frameworks <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_
-
 .. toctree::
    :maxdepth: 2
+   compatibility_range_of_conversion
 
 
 Benchmark
@@ -46,15 +43,9 @@ Easily find the right device for your AI model.
 - Evaluate real-device performance without acquiring or setting up the device.
 `View compatible devices <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_.
 
-.. toctree::
-   :maxdepth: 2
-
 Request your device
 -------------------
 We continuously research and develop to optimize AI models whenever new devices are released through partnerships with device manufacturers. If you have a specific device you'd like to benchmark, please make a `request <https://notaai.typeform.com/to/n6yVxFov?typeform-source=launchx.netspresso.ai/>`_ to us.
-
-.. toctree::
-   :maxdepth: 2
 
 We hear from you
 ----------------
@@ -64,3 +55,6 @@ If you encounter difficulties or need additional credits, feel free to contact u
 
 .. toctree::
    :maxdepth: 2
+   compatibility_range_of_conversion
+
+..   mlc, vlm,
