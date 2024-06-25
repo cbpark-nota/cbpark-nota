@@ -1,5 +1,5 @@
 Models
-------------
+------
 
 We provide optimized models through NetsPresso. You can immediately utilize these AI models after converting them.
 
@@ -7,14 +7,12 @@ We provide optimized models through NetsPresso. You can immediately utilize thes
 - You can download converted models.
 - You can request customization for a fine-tuned model that is tailored to your project environment.
 
-.. toctree::
-   :maxdepth: 2
 
 Convert
--------------
+-------
 Simplify the process of framework conversion.
 
-.. image:: source/_static/launchx_convert.png
+.. image:: _images/launchx_convert.png
 
 - Easy and efficient model conversion.
 - Eliminate trial and error with automated conversion.
@@ -22,3 +20,5 @@ Simplify the process of framework conversion.
 
 .. toctree::
    :maxdepth: 2
+   
+   compatibility_range_of_conversion

@@ -28,11 +28,6 @@ Simplify the process of framework conversion.
 - Quickly set up the deployment of models on target devices.
   `See supported frameworks <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_
 
-.. toctree::
-   :maxdepth: 2
-
-   compatibility_range_of_conversion
-
 
 Benchmark
 ---------
@@ -54,3 +49,6 @@ We hear from you
 If you encounter difficulties or need additional credits, feel free to contact us anytime!
 
 👨‍💻 NetsPresso Support Center: `netspresso@nota.ai <https://notaai.typeform.com/to/ZGhpfiwd/>`_
+
+
+.. include:: contents.rst.inc

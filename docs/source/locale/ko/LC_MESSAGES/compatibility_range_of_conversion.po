@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Nota
+# This file is distributed under the same license as the LaunchX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaunchX \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 05:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../source/compatibility_range_of_conversion.rst:7
+msgid "Compatibility range of conversion"
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:9
+msgid ""
+"You can use LaunchX converter to automatically convert the AI model's "
+"framework to the target framework."
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:12
+msgid "Converting case"
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:16
+msgid ""
+"`ONNX to TensorRT <https://docs.netspresso.ai/docs/compatible-model-scope"
+"#onnx-to-tensorrt/>`_"
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:17
+msgid ""
+"`ONNX to TensorFlow Lite <https://docs.netspresso.ai/docs/compatible-"
+"model-scope#onnx-to-tflite/>`_"
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:18
+msgid ""
+"`ONNX to OpenVINO <https://docs.netspresso.ai/docs/compatible-model-scope"
+"#onnx-to-openvino/>`_"
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:19
+msgid ""
+"`TensorFlow-Keras to TensorFlow Lite <https://docs.netspresso.ai/docs"
+"/compatible-model-scope#tensorflow-to-tensorflowlite/>`_"
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:22
+msgid "Compatible model"
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:23
+msgid "The input layer of the uploaded model should be as follows."
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:27
+msgid "Only single-input models are supported."
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:28
+msgid ""
+"The four-dimensional array structure of images should be organized Batch,"
+" Number of Channels, Height, and Width."
+msgstr ""
+
+#: ../../source/compatibility_range_of_conversion.rst:30
+msgid ""
+"> 1. Batch size: The number of combined input datasets that the model "
+"processes simultaneously. 2. Channel: 3 for RGB or BGR and 1 for "
+"Grayscale. 3. Input size: In computer vision tasks, input size refers to "
+"the size of the input images. >"
+msgstr ""
+

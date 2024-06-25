@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Nota
+# This file is distributed under the same license as the LaunchX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaunchX \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 05:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/index.rst:7
+msgid "LaunchX"
+msgstr ""
+
+#: ../../source/index.rst:9
+msgid "LaunchX is a web application that facilitates the essential tasks of framework conversion and benchmarking for deploying AI models on devices quickly and easily. It allows AI developers, researchers, and even non-coders to intuitively use the ultimate converter and benchmarker. If you are a Python user, you can access the same functionality as a Python package through `NetsPresso <https://github.com/Nota-NetsPresso/PyNetsPresso/>`_."
+msgstr ""
+
+#: ../../source/index.rst:12
+msgid "Models"
+msgstr ""
+
+#: ../../source/index.rst:14
+msgid "We provide optimized models through NetsPresso. You can immediately utilize these AI models after converting them."
+msgstr ""
+
+#: ../../source/index.rst:16
+msgid "Utilize a variety of computer vision task models for free."
+msgstr ""
+
+#: ../../source/index.rst:17
+msgid "You can download converted models."
+msgstr ""
+
+#: ../../source/index.rst:18
+msgid "You can request customization for a fine-tuned model that is tailored to your project environment."
+msgstr ""
+
+#: ../../source/index.rst:21
+msgid "Convert"
+msgstr ""
+
+#: ../../source/index.rst:22
+msgid "Simplify the process of framework conversion."
+msgstr ""
+
+#: ../../source/index.rst:26
+msgid "Easy and efficient model conversion."
+msgstr ""
+
+#: ../../source/index.rst:27
+msgid "Eliminate trial and error with automated conversion."
+msgstr ""
+
+#: ../../source/index.rst:28
+msgid "Quickly set up the deployment of models on target devices. `See supported frameworks <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_"
+msgstr ""
+
+#: ../../source/index.rst:33
+msgid "Benchmark"
+msgstr ""
+
+#: ../../source/index.rst:34
+msgid "Easily find the right device for your AI model."
+msgstr ""
+
+#: ../../source/index.rst:38
+msgid "Identify the best-fit device through benchmarking."
+msgstr ""
+
+#: ../../source/index.rst:39
+msgid "Check model compatibility with target devices."
+msgstr ""
+
+#: ../../source/index.rst:40
+msgid "Evaluate real-device performance without acquiring or setting up the device. `View compatible devices <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_."
+msgstr ""
+
+#: ../../source/index.rst:44
+msgid "Request your device"
+msgstr ""
+
+#: ../../source/index.rst:45
+msgid "We continuously research and develop to optimize AI models whenever new devices are released through partnerships with device manufacturers. If you have a specific device you'd like to benchmark, please make a `request <https://notaai.typeform.com/to/n6yVxFov?typeform-source=launchx.netspresso.ai/>`_ to us."
+msgstr ""
+
+#: ../../source/index.rst:48
+msgid "We hear from you"
+msgstr ""
+
+#: ../../source/index.rst:49
+msgid "If you encounter difficulties or need additional credits, feel free to contact us anytime!"
+msgstr ""
+
+#: ../../source/index.rst:51
+msgid "👨‍💻 NetsPresso Support Center: `netspresso@nota.ai <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
