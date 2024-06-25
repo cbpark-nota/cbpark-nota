@@ -89,7 +89,7 @@ ONNX to TensorRT
      - height, width
      - FP16
    * - NVIDIA T4
-     - -
+     - '-'
      - FP32
      - 1~4 (Static), Dynamic
      - 1~4
