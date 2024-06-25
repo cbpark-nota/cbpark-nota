@@ -42,7 +42,7 @@ When benchmarking on Jetson, it is essential for the model file and target devic
 
 .. list-table::
    :header-rows: 1
-   :widths: 20 20 10 10 10
+   :widths: 20 10 10 10 10
 
    * - Target Device
      - .trt
@@ -99,7 +99,7 @@ Raspberry Pi
 ------------
 .. list-table::
    :header-rows: 1
-   :widths: 20 20 10
+   :widths: 20 10 10
 
    * - Target Device
      - .tflite
