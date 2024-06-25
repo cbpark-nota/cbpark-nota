@@ -89,9 +89,61 @@ ONNX to TensorRT
      - height, width
      - FP16
    * - NVIDIA T4
-     - '-'
+     - None
      - FP32
      - 1~4 (Static), Dynamic
      - 1~4
      - height, width
-     - FP16  
+     - FP16
+
+
+ONNX to TFlite
+--------------
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20 10 20 10
+
+   * - Input datatype
+     - Batch size
+     - Channel
+     - Input size
+     - Output datatype
+   * - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16, INT8
+
+ONNX to OpenVino
+----------------
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20 10 20 10
+
+   * - Input datatype
+     - Batch size
+     - Channel
+     - Input size
+     - Output datatype
+   * - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16
+
+TensorFlow to TensorFlowLite
+----------------------------
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20 10 20 10
+
+   * - Input datatype
+     - Batch size
+     - Channel
+     - Input size
+     - Output datatype
+   * - FP32
+     - 1~4 (Static), Dynamic
+     - 1~4
+     - height, width
+     - FP16, INT8
