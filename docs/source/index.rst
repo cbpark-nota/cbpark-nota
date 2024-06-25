@@ -53,6 +53,7 @@ If you encounter difficulties or need additional credits, feel free to contact u
 
 .. toctree::
     :maxdepth: 2
+    :caption: Contents:
     
     compatibility_range_of_conversion
     compatibility_range_of_benchmark
