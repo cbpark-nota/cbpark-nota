@@ -21,25 +21,26 @@ Convert
 -------
 Simplify the process of framework conversion.
 
-.. image:: _static/launchx_convert.png
+.. image:: _images/launchx_convert.png
 
 - Easy and efficient model conversion.
 - Eliminate trial and error with automated conversion.
 - Quickly set up the deployment of models on target devices.
-  `See supported frameworks <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_
-
+  
+:ref:`See supported frameworks <compatible_model_scope>`
 
 Benchmark
 ---------
 Easily find the right device for your AI model.
 
-.. image:: _static/launchx_benchmark.png
+.. image:: _images/launchx_benchmark.png
 
 - Identify the best-fit device through benchmarking.
 - Check model compatibility with target devices.
 - Evaluate real-device performance without acquiring or setting up the device.
-  `View compatible devices <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_.
-
+  
+:ref:`View compatible devices <compatibility_benchmark>`
+  
 Request your device
 -------------------
 We continuously research and develop to optimize AI models whenever new devices are released through partnerships with device manufacturers. If you have a specific device you'd like to benchmark, please make a `request <https://notaai.typeform.com/to/n6yVxFov?typeform-source=launchx.netspresso.ai/>`_ to us.
@@ -51,4 +52,11 @@ If you encounter difficulties or need additional credits, feel free to contact u
 👨‍💻 NetsPresso Support Center: `netspresso@nota.ai <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 
-.. include:: contents.rst.inc
+.. toctree::
+    :maxdepth: 2
+    :caption: Contents:
+    
+    compatibility_range_of_conversion
+    supported_jetpack_onnx_version
+    compatibility_range_of_benchmark
+    int8_quantization_with_launchx

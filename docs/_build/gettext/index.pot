@@ -8,13 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LaunchX \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 05:14+0000\n"
+"POT-Creation-Date: 2024-06-26 04:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/index.rst:55
+msgid "Contents:"
+msgstr ""
 
 #: ../../source/index.rst:7
 msgid "LaunchX"
@@ -61,7 +65,11 @@ msgid "Eliminate trial and error with automated conversion."
 msgstr ""
 
 #: ../../source/index.rst:28
-msgid "Quickly set up the deployment of models on target devices. `See supported frameworks <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_"
+msgid "Quickly set up the deployment of models on target devices."
+msgstr ""
+
+#: ../../source/index.rst:30
+msgid ":ref:`See supported frameworks <compatible_model_scope>`"
 msgstr ""
 
 #: ../../source/index.rst:33
@@ -81,25 +89,29 @@ msgid "Check model compatibility with target devices."
 msgstr ""
 
 #: ../../source/index.rst:40
-msgid "Evaluate real-device performance without acquiring or setting up the device. `View compatible devices <https://docs.netspresso.ai/docs/compatible-model-scope#benchmark/>`_."
+msgid "Evaluate real-device performance without acquiring or setting up the device."
 msgstr ""
 
-#: ../../source/index.rst:44
-msgid "Request your device"
+#: ../../source/index.rst:42
+msgid ":ref:`View compatible devices <compatibility_benchmark>`"
 msgstr ""
 
 #: ../../source/index.rst:45
+msgid "Request your device"
+msgstr ""
+
+#: ../../source/index.rst:46
 msgid "We continuously research and develop to optimize AI models whenever new devices are released through partnerships with device manufacturers. If you have a specific device you'd like to benchmark, please make a `request <https://notaai.typeform.com/to/n6yVxFov?typeform-source=launchx.netspresso.ai/>`_ to us."
 msgstr ""
 
-#: ../../source/index.rst:48
+#: ../../source/index.rst:49
 msgid "We hear from you"
 msgstr ""
 
-#: ../../source/index.rst:49
+#: ../../source/index.rst:50
 msgid "If you encounter difficulties or need additional credits, feel free to contact us anytime!"
 msgstr ""
 
-#: ../../source/index.rst:51
+#: ../../source/index.rst:52
 msgid "👨‍💻 NetsPresso Support Center: `netspresso@nota.ai <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""

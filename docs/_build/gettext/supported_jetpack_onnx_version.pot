@@ -1,0 +1,294 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Nota
+# This file is distributed under the same license as the LaunchX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaunchX \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-26 04:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/supported_jetpack_onnx_version.rst:9
+msgid "Supported JetPack-ONNX version"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:15
+msgid "JetPack"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:16
+msgid "onnxruntime"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:17
+msgid "ONNX"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:18
+msgid "ONNX opset version"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:19
+msgid "ONNX ML opset version"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:20
+msgid "ONNX IR version"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:21
+msgid "4.4"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:22
+#: ../../source/supported_jetpack_onnx_version.rst:70
+#: ../../source/supported_jetpack_onnx_version.rst:118
+msgid "1.4.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:23
+#: ../../source/supported_jetpack_onnx_version.rst:29
+#: ../../source/supported_jetpack_onnx_version.rst:71
+#: ../../source/supported_jetpack_onnx_version.rst:77
+#: ../../source/supported_jetpack_onnx_version.rst:119
+#: ../../source/supported_jetpack_onnx_version.rst:125
+msgid "1.7"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:24
+#: ../../source/supported_jetpack_onnx_version.rst:30
+#: ../../source/supported_jetpack_onnx_version.rst:72
+#: ../../source/supported_jetpack_onnx_version.rst:78
+#: ../../source/supported_jetpack_onnx_version.rst:120
+#: ../../source/supported_jetpack_onnx_version.rst:126
+msgid "12"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:25
+#: ../../source/supported_jetpack_onnx_version.rst:31
+#: ../../source/supported_jetpack_onnx_version.rst:37
+#: ../../source/supported_jetpack_onnx_version.rst:43
+#: ../../source/supported_jetpack_onnx_version.rst:49
+#: ../../source/supported_jetpack_onnx_version.rst:55
+#: ../../source/supported_jetpack_onnx_version.rst:61
+#: ../../source/supported_jetpack_onnx_version.rst:67
+#: ../../source/supported_jetpack_onnx_version.rst:73
+#: ../../source/supported_jetpack_onnx_version.rst:79
+#: ../../source/supported_jetpack_onnx_version.rst:85
+#: ../../source/supported_jetpack_onnx_version.rst:91
+#: ../../source/supported_jetpack_onnx_version.rst:97
+#: ../../source/supported_jetpack_onnx_version.rst:103
+#: ../../source/supported_jetpack_onnx_version.rst:109
+#: ../../source/supported_jetpack_onnx_version.rst:115
+#: ../../source/supported_jetpack_onnx_version.rst:121
+#: ../../source/supported_jetpack_onnx_version.rst:127
+#: ../../source/supported_jetpack_onnx_version.rst:133
+#: ../../source/supported_jetpack_onnx_version.rst:139
+#: ../../source/supported_jetpack_onnx_version.rst:145
+#: ../../source/supported_jetpack_onnx_version.rst:151
+#: ../../source/supported_jetpack_onnx_version.rst:157
+#: ../../source/supported_jetpack_onnx_version.rst:163
+msgid "2"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:26
+#: ../../source/supported_jetpack_onnx_version.rst:32
+#: ../../source/supported_jetpack_onnx_version.rst:38
+#: ../../source/supported_jetpack_onnx_version.rst:44
+#: ../../source/supported_jetpack_onnx_version.rst:50
+#: ../../source/supported_jetpack_onnx_version.rst:74
+#: ../../source/supported_jetpack_onnx_version.rst:80
+#: ../../source/supported_jetpack_onnx_version.rst:86
+#: ../../source/supported_jetpack_onnx_version.rst:92
+#: ../../source/supported_jetpack_onnx_version.rst:98
+#: ../../source/supported_jetpack_onnx_version.rst:122
+#: ../../source/supported_jetpack_onnx_version.rst:128
+#: ../../source/supported_jetpack_onnx_version.rst:134
+#: ../../source/supported_jetpack_onnx_version.rst:140
+#: ../../source/supported_jetpack_onnx_version.rst:146
+msgid "7"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:28
+#: ../../source/supported_jetpack_onnx_version.rst:76
+#: ../../source/supported_jetpack_onnx_version.rst:124
+msgid "1.5.2"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:34
+#: ../../source/supported_jetpack_onnx_version.rst:82
+#: ../../source/supported_jetpack_onnx_version.rst:130
+msgid "1.6.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:35
+#: ../../source/supported_jetpack_onnx_version.rst:41
+#: ../../source/supported_jetpack_onnx_version.rst:83
+#: ../../source/supported_jetpack_onnx_version.rst:89
+#: ../../source/supported_jetpack_onnx_version.rst:131
+#: ../../source/supported_jetpack_onnx_version.rst:137
+msgid "1.8"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:36
+#: ../../source/supported_jetpack_onnx_version.rst:42
+#: ../../source/supported_jetpack_onnx_version.rst:84
+#: ../../source/supported_jetpack_onnx_version.rst:90
+#: ../../source/supported_jetpack_onnx_version.rst:132
+#: ../../source/supported_jetpack_onnx_version.rst:138
+msgid "13"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:40
+#: ../../source/supported_jetpack_onnx_version.rst:88
+#: ../../source/supported_jetpack_onnx_version.rst:136
+msgid "1.7.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:46
+#: ../../source/supported_jetpack_onnx_version.rst:94
+#: ../../source/supported_jetpack_onnx_version.rst:142
+msgid "1.8.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:47
+#: ../../source/supported_jetpack_onnx_version.rst:95
+#: ../../source/supported_jetpack_onnx_version.rst:143
+msgid "1.9"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:48
+#: ../../source/supported_jetpack_onnx_version.rst:96
+#: ../../source/supported_jetpack_onnx_version.rst:144
+msgid "14"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:52
+#: ../../source/supported_jetpack_onnx_version.rst:100
+#: ../../source/supported_jetpack_onnx_version.rst:148
+msgid "1.9.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:53
+#: ../../source/supported_jetpack_onnx_version.rst:59
+#: ../../source/supported_jetpack_onnx_version.rst:101
+#: ../../source/supported_jetpack_onnx_version.rst:107
+#: ../../source/supported_jetpack_onnx_version.rst:149
+#: ../../source/supported_jetpack_onnx_version.rst:155
+msgid "1.10"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:54
+#: ../../source/supported_jetpack_onnx_version.rst:60
+#: ../../source/supported_jetpack_onnx_version.rst:102
+#: ../../source/supported_jetpack_onnx_version.rst:108
+#: ../../source/supported_jetpack_onnx_version.rst:150
+#: ../../source/supported_jetpack_onnx_version.rst:156
+msgid "15"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:56
+#: ../../source/supported_jetpack_onnx_version.rst:62
+#: ../../source/supported_jetpack_onnx_version.rst:68
+#: ../../source/supported_jetpack_onnx_version.rst:104
+#: ../../source/supported_jetpack_onnx_version.rst:110
+#: ../../source/supported_jetpack_onnx_version.rst:116
+#: ../../source/supported_jetpack_onnx_version.rst:152
+#: ../../source/supported_jetpack_onnx_version.rst:158
+#: ../../source/supported_jetpack_onnx_version.rst:164
+#: ../../source/supported_jetpack_onnx_version.rst:170
+#: ../../source/supported_jetpack_onnx_version.rst:176
+msgid "8"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:58
+#: ../../source/supported_jetpack_onnx_version.rst:106
+#: ../../source/supported_jetpack_onnx_version.rst:154
+msgid "1.10.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:64
+#: ../../source/supported_jetpack_onnx_version.rst:112
+#: ../../source/supported_jetpack_onnx_version.rst:160
+msgid "1.11.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:65
+#: ../../source/supported_jetpack_onnx_version.rst:113
+#: ../../source/supported_jetpack_onnx_version.rst:161
+msgid "1.11"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:66
+#: ../../source/supported_jetpack_onnx_version.rst:114
+#: ../../source/supported_jetpack_onnx_version.rst:162
+msgid "16"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:69
+msgid "4.4.1"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:117
+msgid "4.6"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:165
+msgid "5.0.1"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:166
+#: ../../source/supported_jetpack_onnx_version.rst:172
+msgid "1.12.1"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:167
+#: ../../source/supported_jetpack_onnx_version.rst:173
+msgid "1.12"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:168
+#: ../../source/supported_jetpack_onnx_version.rst:174
+msgid "17"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:169
+#: ../../source/supported_jetpack_onnx_version.rst:175
+msgid "3"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:171
+msgid "5.0.2"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:177
+msgid "6.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:178
+msgid "1.17.0"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:179
+msgid "1.15"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:180
+msgid "20"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:181
+msgid "4"
+msgstr ""
+
+#: ../../source/supported_jetpack_onnx_version.rst:182
+msgid "9"
+msgstr ""

@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Nota
+# This file is distributed under the same license as the LaunchX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaunchX \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-26 04:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../source/compatibility_range_of_benchmark.rst:9
+msgid "Compatibility range of benchmark"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:11
+msgid ""
+"You can measure the actual performance on the devices listed below "
+"without the need to purchase or install the device."
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:14
+msgid "Supported Hardware"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:18
+msgid "Arm MCU/NPU"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:24
+#: ../../source/compatibility_range_of_benchmark.rst:49
+#: ../../source/compatibility_range_of_benchmark.rst:106
+#: ../../source/compatibility_range_of_benchmark.rst:138
+msgid "Target Device"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:25
+#: ../../source/compatibility_range_of_benchmark.rst:52
+#: ../../source/compatibility_range_of_benchmark.rst:107
+msgid ".tflite"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:26
+msgid "Renesas RA8D1 (Arm Cortex-M85)"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:27
+#: ../../source/compatibility_range_of_benchmark.rst:29
+#: ../../source/compatibility_range_of_benchmark.rst:31
+#: ../../source/compatibility_range_of_benchmark.rst:33
+#: ../../source/compatibility_range_of_benchmark.rst:35
+#: ../../source/compatibility_range_of_benchmark.rst:37
+#: ../../source/compatibility_range_of_benchmark.rst:39
+msgid "O (only INT8)"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:28
+msgid "Renesas RA8D1 (Arm Cortex-M85) with helium"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:30
+msgid "Alif Ensemble DevKit-E7 Gen2 (Arm Cortex-M55 + Ethos-U55)"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:32
+msgid "Alif Ensemble DevKit-E7 Gen2 (Arm Cortex-M55 + Ethos-U55) with helium"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:34
+msgid "Arm Virtual Hardware Corstone-300(Ethos-U55/U65)"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:36
+msgid "Arduino Nicla Vision(Arm Cortex-M7/M4)"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:38
+msgid "NXP i.MX 93(Arm Cortex-A55/M33+Ethos-U65)"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:42
+msgid "NVIDIA"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:43
+msgid ""
+"When benchmarking on Jetson, it is essential for the model file and "
+"target device to match the Jetpack version."
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:50
+msgid ".trt"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:51
+msgid ".engine"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:53
+#: ../../source/compatibility_range_of_benchmark.rst:108
+msgid ".onnx"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:54
+msgid "Jetson Nano JetPack 4.4.1"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:55
+#: ../../source/compatibility_range_of_benchmark.rst:56
+#: ../../source/compatibility_range_of_benchmark.rst:58
+#: ../../source/compatibility_range_of_benchmark.rst:60
+#: ../../source/compatibility_range_of_benchmark.rst:61
+#: ../../source/compatibility_range_of_benchmark.rst:63
+#: ../../source/compatibility_range_of_benchmark.rst:65
+#: ../../source/compatibility_range_of_benchmark.rst:66
+#: ../../source/compatibility_range_of_benchmark.rst:68
+#: ../../source/compatibility_range_of_benchmark.rst:70
+#: ../../source/compatibility_range_of_benchmark.rst:71
+#: ../../source/compatibility_range_of_benchmark.rst:73
+#: ../../source/compatibility_range_of_benchmark.rst:75
+#: ../../source/compatibility_range_of_benchmark.rst:76
+#: ../../source/compatibility_range_of_benchmark.rst:78
+#: ../../source/compatibility_range_of_benchmark.rst:80
+#: ../../source/compatibility_range_of_benchmark.rst:81
+#: ../../source/compatibility_range_of_benchmark.rst:83
+#: ../../source/compatibility_range_of_benchmark.rst:85
+#: ../../source/compatibility_range_of_benchmark.rst:86
+#: ../../source/compatibility_range_of_benchmark.rst:88
+#: ../../source/compatibility_range_of_benchmark.rst:90
+#: ../../source/compatibility_range_of_benchmark.rst:91
+#: ../../source/compatibility_range_of_benchmark.rst:93
+#: ../../source/compatibility_range_of_benchmark.rst:95
+#: ../../source/compatibility_range_of_benchmark.rst:96
+#: ../../source/compatibility_range_of_benchmark.rst:98
+#: ../../source/compatibility_range_of_benchmark.rst:110
+#: ../../source/compatibility_range_of_benchmark.rst:113
+#: ../../source/compatibility_range_of_benchmark.rst:116
+#: ../../source/compatibility_range_of_benchmark.rst:117
+#: ../../source/compatibility_range_of_benchmark.rst:119
+#: ../../source/compatibility_range_of_benchmark.rst:120
+#: ../../source/compatibility_range_of_benchmark.rst:122
+#: ../../source/compatibility_range_of_benchmark.rst:123
+#: ../../source/compatibility_range_of_benchmark.rst:125
+#: ../../source/compatibility_range_of_benchmark.rst:126
+#: ../../source/compatibility_range_of_benchmark.rst:128
+#: ../../source/compatibility_range_of_benchmark.rst:129
+#: ../../source/compatibility_range_of_benchmark.rst:141
+msgid "O"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:57
+#: ../../source/compatibility_range_of_benchmark.rst:62
+#: ../../source/compatibility_range_of_benchmark.rst:67
+#: ../../source/compatibility_range_of_benchmark.rst:72
+#: ../../source/compatibility_range_of_benchmark.rst:77
+#: ../../source/compatibility_range_of_benchmark.rst:82
+#: ../../source/compatibility_range_of_benchmark.rst:87
+#: ../../source/compatibility_range_of_benchmark.rst:92
+#: ../../source/compatibility_range_of_benchmark.rst:97
+#: ../../source/compatibility_range_of_benchmark.rst:111
+#: ../../source/compatibility_range_of_benchmark.rst:114
+msgid "X"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:59
+msgid "Jetson Nano JetPack 4.6"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:64
+msgid "Jetson Xavier NX JetPack 4.6"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:69
+msgid "Jetson Xavier NX JetPack 5.0.2"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:74
+msgid "Jetson TX2 JetPack 4.6"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:79
+msgid "Jetson AGX Xavier JetPack 4.6"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:84
+msgid "Jetson AGX Orin JetPack 5.0.1"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:89
+msgid "Jetson Orin Nano JetPack 6.0"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:94
+msgid "AWS-T4"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:101
+msgid "Raspberry Pi"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:109
+msgid "Raspberry Pi ZeroW"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:112
+msgid "Raspberry Pi Zero2W"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:115
+msgid "Raspberry Pi 2B"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:118
+msgid "Raspberry Pi 3B"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:121
+msgid "Raspberry Pi 3B+"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:124
+msgid "Raspberry Pi 4B"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:127
+msgid "Raspberry Pi 5"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:132
+msgid "Intel"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:139
+msgid ".zip(bin+xml)"
+msgstr ""
+
+#: ../../source/compatibility_range_of_benchmark.rst:140
+msgid "Xeon W-2223"
+msgstr ""
+

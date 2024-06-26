@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LaunchX \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 05:14+0000\n"
+"POT-Creation-Date: 2024-06-26 04:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -18,6 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
+
+#: ../../source/index.rst:55
+#, fuzzy
+msgid "Contents:"
+msgstr "Convert"
 
 #: ../../source/index.rst:7
 msgid "LaunchX"
@@ -78,14 +83,12 @@ msgid "Eliminate trial and error with automated conversion."
 msgstr "자동 변환으로 시행착오를 없앱니다."
 
 #: ../../source/index.rst:28
-#, fuzzy
-msgid ""
-"Quickly set up the deployment of models on target devices. `See supported"
-" frameworks <https://docs.netspresso.ai/docs/compatible-model-"
-"scope#benchmark/>`_"
+msgid "Quickly set up the deployment of models on target devices."
 msgstr ""
-"`지원되는 frameworks를 확인하세요. <https://docs.netspresso.ai/docs/compatible-"
-"model-scope#benchmark/>`_"
+
+#: ../../source/index.rst:30
+msgid ":ref:`See supported frameworks <compatible_model_scope>`"
+msgstr ""
 
 #: ../../source/index.rst:33
 msgid "Benchmark"
@@ -107,17 +110,20 @@ msgstr "타겟 장치와 모델 호환성을 확인하세요."
 #, fuzzy
 msgid ""
 "Evaluate real-device performance without acquiring or setting up the "
-"device. `View compatible devices <https://docs.netspresso.ai/docs"
-"/compatible-model-scope#benchmark/>`_."
+"device."
 msgstr ""
 "`호환가능한 장치를 확인하세요 <https://docs.netspresso.ai/docs/compatible-model-"
 "scope#benchmark/>`_."
 
-#: ../../source/index.rst:44
+#: ../../source/index.rst:42
+msgid ":ref:`View compatible devices <compatibility_benchmark>`"
+msgstr ""
+
+#: ../../source/index.rst:45
 msgid "Request your device"
 msgstr "원하시는 장치를 선택하세요"
 
-#: ../../source/index.rst:45
+#: ../../source/index.rst:46
 msgid ""
 "We continuously research and develop to optimize AI models whenever new "
 "devices are released through partnerships with device manufacturers. If "
@@ -129,17 +135,17 @@ msgstr ""
 "있습니다.특정 장치의 벤치마킹을 원하시면 `요청해주세요. <https://notaai.typeform.com/to/n6yVxFov"
 "?typeform-source=launchx.netspresso.ai/>`_"
 
-#: ../../source/index.rst:48
+#: ../../source/index.rst:49
 msgid "We hear from you"
 msgstr "여러분의 의견을 듣고 있습니다."
 
-#: ../../source/index.rst:49
+#: ../../source/index.rst:50
 msgid ""
 "If you encounter difficulties or need additional credits, feel free to "
 "contact us anytime!"
 msgstr "어려움이나 추가 크레딧이 필요하시면 언제든지 저희에게 연락 주세요!"
 
-#: ../../source/index.rst:51
+#: ../../source/index.rst:52
 msgid ""
 "👨‍💻 NetsPresso Support Center: `netspresso@nota.ai "
 "<https://notaai.typeform.com/to/ZGhpfiwd/>`_"
@@ -154,4 +160,14 @@ msgstr ""
 #~ "Evaluate real-device performance without "
 #~ "acquiring or setting up the device."
 #~ msgstr "장치를 구매하거나 설정하지 않고도 실제 장치 성능을 평가할 수 있습니다."
+
+#~ msgid ""
+#~ "Quickly set up the deployment of "
+#~ "models on target devices. `See supported"
+#~ " frameworks <https://docs.netspresso.ai/docs/compatible-"
+#~ "model-scope#benchmark/>`_"
+#~ msgstr ""
+#~ "`지원되는 frameworks를 확인하세요. "
+#~ "<https://docs.netspresso.ai/docs/compatible-model-"
+#~ "scope#benchmark/>`_"
 
