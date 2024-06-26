@@ -14,9 +14,10 @@ Converting case
 .. image:: _images/converting_case.png
 
 1. :ref:`ONNX to TensorRT <onnx_to_tensorrt>`
-2. `ONNX to TensorFlow Lite <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-tflite/>`_
-3. `ONNX to OpenVINO <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-openvino/>`_
-4. `TensorFlow-Keras to TensorFlow Lite <https://docs.netspresso.ai/docs/compatible-model-scope#tensorflow-to-tensorflowlite/>`_
+2. :ref:`ONNX to TensorFlow Lite <onnx_to_tensorflow_lite>`
+3. :ref:`ONNX to OpenVINO <onnx_to_openvino>`
+4. :ref:`TensorFlow-Keras to TensorFlow Lite <tensorflow_to_tensorflow_lite>`
+
 
 Compatible model
 ----------------
@@ -101,6 +102,8 @@ ONNX to TensorRT
 
 ONNX to TFlite
 --------------
+.. _onnx_to_tensorflow_lite:
+
 .. list-table::
    :header-rows: 1
    :widths: 20 20 10 20 10
@@ -118,6 +121,8 @@ ONNX to TFlite
 
 ONNX to OpenVino
 ----------------
+.. _onnx_to_openvino:
+
 .. list-table::
    :header-rows: 1
    :widths: 20 20 10 20 10
@@ -135,6 +140,8 @@ ONNX to OpenVino
 
 TensorFlow to TensorFlowLite
 ----------------------------
+.. _tensorflow_to_tensorflow_lite:
+
 .. list-table::
    :header-rows: 1
    :widths: 20 20 10 20 10
