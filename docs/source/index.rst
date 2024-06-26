@@ -26,7 +26,8 @@ Simplify the process of framework conversion.
 - Easy and efficient model conversion.
 - Eliminate trial and error with automated conversion.
 - Quickly set up the deployment of models on target devices.
-  :ref:`See supported frameworks <compatible_model_scope>`
+  
+:ref:`See supported frameworks <compatible_model_scope>`
 
 Benchmark
 ---------
@@ -37,7 +38,8 @@ Easily find the right device for your AI model.
 - Identify the best-fit device through benchmarking.
 - Check model compatibility with target devices.
 - Evaluate real-device performance without acquiring or setting up the device.
-  :ref:`View compatible devices <compatibility_benchmark>`
+  
+:ref:`View compatible devices <compatibility_benchmark>`
   
 Request your device
 -------------------
