@@ -13,7 +13,7 @@ Converting case
 
 .. image:: _images/converting_case.png
 
-1. `ONNX to TensorRT <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-tensorrt/>`_
+1. :ref:`ONNX to TensorRT <onnx_to_tensorrt>`
 2. `ONNX to TensorFlow Lite <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-tflite/>`_
 3. `ONNX to OpenVINO <https://docs.netspresso.ai/docs/compatible-model-scope#onnx-to-openvino/>`_
 4. `TensorFlow-Keras to TensorFlow Lite <https://docs.netspresso.ai/docs/compatible-model-scope#tensorflow-to-tensorflowlite/>`_
@@ -33,6 +33,8 @@ The input layer of the uploaded model should be as follows.
 
 ONNX to TensorRT
 ----------------
+.. _onnx_to_tensorrt:
+
 `Supported JetPack-ONNX version <https://docs.netspresso.ai/docs/supported-jetpack-onnx-version/>`_
 
 .. list-table::
