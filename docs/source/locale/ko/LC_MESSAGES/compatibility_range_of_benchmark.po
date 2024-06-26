@@ -21,38 +21,39 @@ msgstr ""
 
 #: ../../source/compatibility_range_of_benchmark.rst:9
 msgid "Compatibility range of benchmark"
-msgstr ""
+msgstr "Benchmark 호환성 범위"
 
 #: ../../source/compatibility_range_of_benchmark.rst:11
 msgid ""
 "You can measure the actual performance on the devices listed below "
 "without the need to purchase or install the device."
 msgstr ""
+"장치를 구매하거나 설치할 필요 없이 아래에 나열된 장치에서 실제 성능을 측정할 수 있습니다."
 
 #: ../../source/compatibility_range_of_benchmark.rst:14
 msgid "Supported Hardware"
-msgstr ""
+msgstr "지원되는 Hardware"
 
 #: ../../source/compatibility_range_of_benchmark.rst:18
 msgid "Arm MCU/NPU"
-msgstr ""
+msgstr "Arm MCU/NPU"
 
 #: ../../source/compatibility_range_of_benchmark.rst:24
 #: ../../source/compatibility_range_of_benchmark.rst:49
 #: ../../source/compatibility_range_of_benchmark.rst:106
 #: ../../source/compatibility_range_of_benchmark.rst:138
 msgid "Target Device"
-msgstr ""
+msgstr "Target Device"
 
 #: ../../source/compatibility_range_of_benchmark.rst:25
 #: ../../source/compatibility_range_of_benchmark.rst:52
 #: ../../source/compatibility_range_of_benchmark.rst:107
 msgid ".tflite"
-msgstr ""
+msgstr ".tflite"
 
 #: ../../source/compatibility_range_of_benchmark.rst:26
 msgid "Renesas RA8D1 (Arm Cortex-M85)"
-msgstr ""
+msgstr "Renesas RA8D1 (Arm Cortex-M85)"
 
 #: ../../source/compatibility_range_of_benchmark.rst:27
 #: ../../source/compatibility_range_of_benchmark.rst:29
@@ -62,58 +63,59 @@ msgstr ""
 #: ../../source/compatibility_range_of_benchmark.rst:37
 #: ../../source/compatibility_range_of_benchmark.rst:39
 msgid "O (only INT8)"
-msgstr ""
+msgstr "O (only INT8)"
 
 #: ../../source/compatibility_range_of_benchmark.rst:28
 msgid "Renesas RA8D1 (Arm Cortex-M85) with helium"
-msgstr ""
+msgstr "Renesas RA8D1 (Arm Cortex-M85) with helium"
 
 #: ../../source/compatibility_range_of_benchmark.rst:30
 msgid "Alif Ensemble DevKit-E7 Gen2 (Arm Cortex-M55 + Ethos-U55)"
-msgstr ""
+msgstr "Alif Ensemble DevKit-E7 Gen2 (Arm Cortex-M55 + Ethos-U55)"
 
 #: ../../source/compatibility_range_of_benchmark.rst:32
 msgid "Alif Ensemble DevKit-E7 Gen2 (Arm Cortex-M55 + Ethos-U55) with helium"
-msgstr ""
+msgstr "Alif Ensemble DevKit-E7 Gen2 (Arm Cortex-M55 + Ethos-U55) with helium"
 
 #: ../../source/compatibility_range_of_benchmark.rst:34
 msgid "Arm Virtual Hardware Corstone-300(Ethos-U55/U65)"
-msgstr ""
+msgstr "Arm Virtual Hardware Corstone-300(Ethos-U55/U65)"
 
 #: ../../source/compatibility_range_of_benchmark.rst:36
 msgid "Arduino Nicla Vision(Arm Cortex-M7/M4)"
-msgstr ""
+msgstr "Arduino Nicla Vision(Arm Cortex-M7/M4)"
 
 #: ../../source/compatibility_range_of_benchmark.rst:38
 msgid "NXP i.MX 93(Arm Cortex-A55/M33+Ethos-U65)"
-msgstr ""
+msgstr "NXP i.MX 93(Arm Cortex-A55/M33+Ethos-U65)"
 
 #: ../../source/compatibility_range_of_benchmark.rst:42
 msgid "NVIDIA"
-msgstr ""
+msgstr "NVIDIA"
 
 #: ../../source/compatibility_range_of_benchmark.rst:43
 msgid ""
 "When benchmarking on Jetson, it is essential for the model file and "
 "target device to match the Jetpack version."
 msgstr ""
+"Jetson에서 Benchmark를 실행할 때는 모델 파일과 타겟 장치가 Jetpack 버전에 맞는 것이 필수적입니다.
 
 #: ../../source/compatibility_range_of_benchmark.rst:50
 msgid ".trt"
-msgstr ""
+msgstr ".trt"
 
 #: ../../source/compatibility_range_of_benchmark.rst:51
 msgid ".engine"
-msgstr ""
+msgstr ".engine"
 
 #: ../../source/compatibility_range_of_benchmark.rst:53
 #: ../../source/compatibility_range_of_benchmark.rst:108
 msgid ".onnx"
-msgstr ""
+msgstr ".onnx"
 
 #: ../../source/compatibility_range_of_benchmark.rst:54
 msgid "Jetson Nano JetPack 4.4.1"
-msgstr ""
+msgstr "Jetson Nano JetPack 4.4.1"
 
 #: ../../source/compatibility_range_of_benchmark.rst:55
 #: ../../source/compatibility_range_of_benchmark.rst:56
@@ -156,7 +158,7 @@ msgstr ""
 #: ../../source/compatibility_range_of_benchmark.rst:129
 #: ../../source/compatibility_range_of_benchmark.rst:141
 msgid "O"
-msgstr ""
+msgstr "O"
 
 #: ../../source/compatibility_range_of_benchmark.rst:57
 #: ../../source/compatibility_range_of_benchmark.rst:62
@@ -170,81 +172,81 @@ msgstr ""
 #: ../../source/compatibility_range_of_benchmark.rst:111
 #: ../../source/compatibility_range_of_benchmark.rst:114
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: ../../source/compatibility_range_of_benchmark.rst:59
 msgid "Jetson Nano JetPack 4.6"
-msgstr ""
+msgstr "Jetson Nano JetPack 4.6"
 
 #: ../../source/compatibility_range_of_benchmark.rst:64
 msgid "Jetson Xavier NX JetPack 4.6"
-msgstr ""
+msgstr "Jetson Xavier NX JetPack 4.6"
 
 #: ../../source/compatibility_range_of_benchmark.rst:69
 msgid "Jetson Xavier NX JetPack 5.0.2"
-msgstr ""
+msgstr "Jetson Xavier NX JetPack 5.0.2"
 
 #: ../../source/compatibility_range_of_benchmark.rst:74
 msgid "Jetson TX2 JetPack 4.6"
-msgstr ""
+msgstr "Jetson TX2 JetPack 4.6"
 
 #: ../../source/compatibility_range_of_benchmark.rst:79
 msgid "Jetson AGX Xavier JetPack 4.6"
-msgstr ""
+msgstr "Jetson AGX Xavier JetPack 4.6"
 
 #: ../../source/compatibility_range_of_benchmark.rst:84
 msgid "Jetson AGX Orin JetPack 5.0.1"
-msgstr ""
+msgstr "Jetson AGX Orin JetPack 5.0.1"
 
 #: ../../source/compatibility_range_of_benchmark.rst:89
 msgid "Jetson Orin Nano JetPack 6.0"
-msgstr ""
+msgstr "Jetson Orin Nano JetPack 6.0"
 
 #: ../../source/compatibility_range_of_benchmark.rst:94
 msgid "AWS-T4"
-msgstr ""
+msgstr "AWS-T4"
 
 #: ../../source/compatibility_range_of_benchmark.rst:101
 msgid "Raspberry Pi"
-msgstr ""
+msgstr "Raspberry Pi"
 
 #: ../../source/compatibility_range_of_benchmark.rst:109
 msgid "Raspberry Pi ZeroW"
-msgstr ""
+msgstr "Raspberry Pi ZeroW"
 
 #: ../../source/compatibility_range_of_benchmark.rst:112
 msgid "Raspberry Pi Zero2W"
-msgstr ""
+msgstr "Raspberry Pi Zero2W"
 
 #: ../../source/compatibility_range_of_benchmark.rst:115
 msgid "Raspberry Pi 2B"
-msgstr ""
+msgstr "Raspberry Pi 2B"
 
 #: ../../source/compatibility_range_of_benchmark.rst:118
 msgid "Raspberry Pi 3B"
-msgstr ""
+msgstr "Raspberry Pi 3B"
 
 #: ../../source/compatibility_range_of_benchmark.rst:121
 msgid "Raspberry Pi 3B+"
-msgstr ""
+msgstr "Raspberry Pi 3B+"
 
 #: ../../source/compatibility_range_of_benchmark.rst:124
 msgid "Raspberry Pi 4B"
-msgstr ""
+msgstr "Raspberry Pi 4B"
 
 #: ../../source/compatibility_range_of_benchmark.rst:127
 msgid "Raspberry Pi 5"
-msgstr ""
+msgstr "Raspberry Pi 5"
 
 #: ../../source/compatibility_range_of_benchmark.rst:132
 msgid "Intel"
-msgstr ""
+msgstr "Intel"
 
 #: ../../source/compatibility_range_of_benchmark.rst:139
 msgid ".zip(bin+xml)"
-msgstr ""
+msgstr ".zip(bin+xml)"
 
 #: ../../source/compatibility_range_of_benchmark.rst:140
 msgid "Xeon W-2223"
-msgstr ""
+msgstr "Xeon W-2223"
 
