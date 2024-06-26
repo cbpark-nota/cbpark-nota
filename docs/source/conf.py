@@ -60,3 +60,5 @@ html_context = {
         ('ko', '/cbpark-nota/ko/'),
     ],
 }
+
+html_favicon = '_images/favicon.png'
