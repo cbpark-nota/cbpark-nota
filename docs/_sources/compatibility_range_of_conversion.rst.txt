@@ -37,8 +37,7 @@ The input layer of the uploaded model should be as follows.
 ONNX to TensorRT
 ----------------
 
-
-`Supported JetPack-ONNX version <https://docs.netspresso.ai/docs/supported-jetpack-onnx-version/>`_
+:ref:`Supported JetPack-ONNX version <supported_jetpack_onnx_version>`
 
 .. list-table::
    :header-rows: 1
@@ -101,10 +100,10 @@ ONNX to TensorRT
      - height, width
      - FP16
 
+.. _onnx_to_tensorflow_lite:
 
 ONNX to TFlite
 --------------
-.. _onnx_to_tensorflow_lite:
 
 .. list-table::
    :header-rows: 1
@@ -121,9 +120,10 @@ ONNX to TFlite
      - height, width
      - FP16, INT8
 
+.. _onnx_to_openvino:
+
 ONNX to OpenVino
 ----------------
-.. _onnx_to_openvino:
 
 .. list-table::
    :header-rows: 1
@@ -140,9 +140,10 @@ ONNX to OpenVino
      - height, width
      - FP16
 
+.. _tensorflow_to_tensorflow_lite:
+
 TensorFlow to TensorFlowLite
 ----------------------------
-.. _tensorflow_to_tensorflow_lite:
 
 .. list-table::
    :header-rows: 1
