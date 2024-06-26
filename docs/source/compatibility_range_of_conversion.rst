@@ -32,9 +32,11 @@ The input layer of the uploaded model should be as follows.
 2. Channel: 3 for RGB or BGR and 1 for Grayscale.
 3. Input size: In computer vision tasks, input size refers to the size of the input images.
 
+.. _onnx_to_tensorrt:
+
 ONNX to TensorRT
 ----------------
-.. _onnx_to_tensorrt:
+
 
 `Supported JetPack-ONNX version <https://docs.netspresso.ai/docs/supported-jetpack-onnx-version/>`_
 
