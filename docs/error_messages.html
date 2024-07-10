@@ -51,15 +51,22 @@
 <li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Compatibility range of benchmark</a></li>
 <li class="toctree-l1"><a class="reference internal" href="int8_quantization_with_launchx.html">INT8 quantization with LaunchX</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Error Messages</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#benchmarkfailedexception-todo">BenchmarkFailedException(TODO)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#convertfailedexception-todo">ConvertFailedException(TODO)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#datasetfilebrokenexception">DatasetFileBrokenException</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#datasetfilesuffixexception">DatasetFileSuffixException</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#devicefarmuploaderror-todo">DeviceFarmUploadError(TODO)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#devicenotmatchedwithframeworkexception">DeviceNotMatchedWithFrameworkException</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dynamicbatchmodelexception">DynamicBatchModelException</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dynamicinputshapemodelexception">DynamicInputShapeModelException</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#frameworkexception">FrameworkException</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload">Upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#benchmark">Benchmark</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#benchmarkfailedexception-todo">BenchmarkFailedException(TODO)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#convert">Convert</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#convertfailedexception-todo">ConvertFailedException(TODO)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datasetfilebrokenexception">DatasetFileBrokenException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datasetfilesuffixexception">DatasetFileSuffixException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#devicefarmuploaderror-todo">DeviceFarmUploadError(TODO)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#devicenotmatchedwithframeworkexception">DeviceNotMatchedWithFrameworkException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamicbatchmodelexception">DynamicBatchModelException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamicinputshapemodelexception">DynamicInputShapeModelException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frameworkexception">FrameworkException</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -91,41 +98,53 @@
   <section id="error-messages">
 <span id="id1"></span><h1>Error Messages<a class="headerlink" href="#error-messages" title="Link to this heading"></a></h1>
 <p>blabla</p>
+<section id="upload">
+<h2>Upload<a class="headerlink" href="#upload" title="Link to this heading"></a></h2>
+<p>bla</p>
+</section>
+<section id="benchmark">
+<h2>Benchmark<a class="headerlink" href="#benchmark" title="Link to this heading"></a></h2>
+<p>bla</p>
 <section id="benchmarkfailedexception-todo">
-<h2>BenchmarkFailedException(TODO)<a class="headerlink" href="#benchmarkfailedexception-todo" title="Link to this heading"></a></h2>
+<h3>BenchmarkFailedException(TODO)<a class="headerlink" href="#benchmarkfailedexception-todo" title="Link to this heading"></a></h3>
 <p>This occurs during benchmark execution. Detailed investigation through log analysis is required to determine the specific cause.</p>
 </section>
+</section>
+<section id="convert">
+<h2>Convert<a class="headerlink" href="#convert" title="Link to this heading"></a></h2>
+<p>bla</p>
 <section id="convertfailedexception-todo">
-<h2>ConvertFailedException(TODO)<a class="headerlink" href="#convertfailedexception-todo" title="Link to this heading"></a></h2>
+<h3>ConvertFailedException(TODO)<a class="headerlink" href="#convertfailedexception-todo" title="Link to this heading"></a></h3>
 <p>This occurs during the conversion process. Detailed investigation through log analysis is required to determine the specific cause.</p>
 </section>
 <section id="datasetfilebrokenexception">
-<h2>DatasetFileBrokenException<a class="headerlink" href="#datasetfilebrokenexception" title="Link to this heading"></a></h2>
+<h3>DatasetFileBrokenException<a class="headerlink" href="#datasetfilebrokenexception" title="Link to this heading"></a></h3>
 <p>This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.</p>
 </section>
 <section id="datasetfilesuffixexception">
-<h2>DatasetFileSuffixException<a class="headerlink" href="#datasetfilesuffixexception" title="Link to this heading"></a></h2>
+<h3>DatasetFileSuffixException<a class="headerlink" href="#datasetfilesuffixexception" title="Link to this heading"></a></h3>
 <p>This occurs when the extension of the uploaded file is not .npy for quantization calibration.</p>
 </section>
 <section id="devicefarmuploaderror-todo">
-<h2>DeviceFarmUploadError(TODO)<a class="headerlink" href="#devicefarmuploaderror-todo" title="Link to this heading"></a></h2>
+<h3>DeviceFarmUploadError(TODO)<a class="headerlink" href="#devicefarmuploaderror-todo" title="Link to this heading"></a></h3>
 <p>This occurs during the process of uploading a model to the Device farm.</p>
 </section>
 <section id="devicenotmatchedwithframeworkexception">
-<h2>DeviceNotMatchedWithFrameworkException<a class="headerlink" href="#devicenotmatchedwithframeworkexception" title="Link to this heading"></a></h2>
+<h3>DeviceNotMatchedWithFrameworkException<a class="headerlink" href="#devicenotmatchedwithframeworkexception" title="Link to this heading"></a></h3>
 <p>This occurs when the target framework and target device do not match.</p>
 </section>
 <section id="dynamicbatchmodelexception">
-<h2>DynamicBatchModelException<a class="headerlink" href="#dynamicbatchmodelexception" title="Link to this heading"></a></h2>
+<h3>DynamicBatchModelException<a class="headerlink" href="#dynamicbatchmodelexception" title="Link to this heading"></a></h3>
 <p>This occurs when the uploaded model is a dynamic batch model. Currently, only static batch models are supported.</p>
 </section>
 <section id="dynamicinputshapemodelexception">
-<h2>DynamicInputShapeModelException<a class="headerlink" href="#dynamicinputshapemodelexception" title="Link to this heading"></a></h2>
+<h3>DynamicInputShapeModelException<a class="headerlink" href="#dynamicinputshapemodelexception" title="Link to this heading"></a></h3>
 <p>This occurs when the uploaded model has dynamic width and height, whereas only static input sizes are currently supported.</p>
 </section>
 <section id="frameworkexception">
-<h2>FrameworkException<a class="headerlink" href="#frameworkexception" title="Link to this heading"></a></h2>
+<h3>FrameworkException<a class="headerlink" href="#frameworkexception" title="Link to this heading"></a></h3>
 <p>This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.</p>
+</section>
 </section>
 </section>
 

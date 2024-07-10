@@ -10,10 +10,22 @@ Error Messages
 
 blabla
 
+Upload
+^^^^^^
+bla
+
+Benchmark
+^^^^^^^^^
+bla
+
 BenchmarkFailedException(TODO)
 """"""""""""""""""""""""""""""
 
 This occurs during benchmark execution. Detailed investigation through log analysis is required to determine the specific cause.
+
+Convert
+^^^^^^^
+bla
 
 ConvertFailedException(TODO)
 """"""""""""""""""""""""""""
