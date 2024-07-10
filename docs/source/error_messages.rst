@@ -44,3 +44,14 @@ DynamicBatchModelException
 """"""""""""""""""""""""""
 
 This occurs when the uploaded model is a dynamic batch model. Currently, only static batch models are supported.
+
+DynamicInputShapeModelException
+"""""""""""""""""""""""""""""""
+
+This occurs when the uploaded model has dynamic width and height, whereas only static input sizes are currently supported.
+
+FrameworkException
+""""""""""""""""""
+
+This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.
+

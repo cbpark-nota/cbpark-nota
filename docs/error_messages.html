@@ -58,6 +58,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#devicefarmuploaderror-todo">DeviceFarmUploadError(TODO)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#devicenotmatchedwithframeworkexception">DeviceNotMatchedWithFrameworkException</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dynamicbatchmodelexception">DynamicBatchModelException</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dynamicinputshapemodelexception">DynamicInputShapeModelException</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frameworkexception">FrameworkException</a></li>
 </ul>
 </li>
 </ul>
@@ -116,6 +118,14 @@
 <section id="dynamicbatchmodelexception">
 <h2>DynamicBatchModelException<a class="headerlink" href="#dynamicbatchmodelexception" title="Link to this heading"></a></h2>
 <p>This occurs when the uploaded model is a dynamic batch model. Currently, only static batch models are supported.</p>
+</section>
+<section id="dynamicinputshapemodelexception">
+<h2>DynamicInputShapeModelException<a class="headerlink" href="#dynamicinputshapemodelexception" title="Link to this heading"></a></h2>
+<p>This occurs when the uploaded model has dynamic width and height, whereas only static input sizes are currently supported.</p>
+</section>
+<section id="frameworkexception">
+<h2>FrameworkException<a class="headerlink" href="#frameworkexception" title="Link to this heading"></a></h2>
+<p>This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.</p>
 </section>
 </section>
 
