@@ -14,14 +14,73 @@ Upload
 ^^^^^^
 bla
 
+FrameworkException
+""""""""""""""""""
+This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.
+
+InputShapeLengthException
+"""""""""""""""""""""""""
+This occurs when the input shape length is not 4.
+
+InspectFail
+"""""""""""
+This occurs when there is an issue with the model file.
+
+KerasError
+""""""""""
+This occurs when there is an issue with the Keras model file.
+
+MakeInputsError
+"""""""""""""""
+This occurs when there is no subgraph in the TensorFlow model file.
+
+ModelFileInspectException
+"""""""""""""""""""""""""
+If there are issues during the process of inspecting the uploaded model file.
+
+ModelTypeError
+""""""""""""""
+This occurs when there is an issue with the model file.
+
+MultiLayerException
+"""""""""""""""""""
+This occurs when the input layer is multi-layered.
+
+OpenVINOError
+"""""""""""""
+This occurs when there is an issue with the OpenVINO model file.
+
+TensorRTDeserializerError
+"""""""""""""""""""""""""
+This occurs when there is an issue with the TensorRT model file.
+
+TooLargeBatchModelException
+"""""""""""""""""""""""""""
+This occurs when the batch size of the model being uploaded exceeds 4.
+
+TooLargeChannelModelException
+"""""""""""""""""""""""""""""
+This occurs when the number of channels in the model being uploaded exceeds 3.
+
 Benchmark
 ^^^^^^^^^
 bla
 
 BenchmarkFailedException(TODO)
 """"""""""""""""""""""""""""""
-
 This occurs during benchmark execution. Detailed investigation through log analysis is required to determine the specific cause.
+
+DynamicBatchModelException
+""""""""""""""""""""""""""
+This occurs when the uploaded model is a dynamic batch model. Currently, only static batch models are supported.
+
+DynamicInputShapeModelException
+"""""""""""""""""""""""""""""""
+This occurs when the uploaded model has dynamic width and height, whereas only static input sizes are currently supported.
+
+StartBenchmarkFail
+""""""""""""""""""
+This occurs when there is a failure to execute a benchmark in the device farm.
 
 Convert
 ^^^^^^^
@@ -29,41 +88,73 @@ bla
 
 ConvertFailedException(TODO)
 """"""""""""""""""""""""""""
-
 This occurs during the conversion process. Detailed investigation through log analysis is required to determine the specific cause.
 
-DatasetFileBrokenException
-""""""""""""""""""""""""""
+NeedDeviceException
+"""""""""""""""""""
+This occurs when no device is specified during the conversion process to TensorRT. Since the conversion to TensorRT runs on a device, you need to specify both the device and Jetpack versions.
 
-This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.
+NeedInputShapeException
+"""""""""""""""""""""""
+This occurs during the conversion of a model with dynamic shape when the input shape value of the model is missing.
 
-DatasetFileSuffixException
-""""""""""""""""""""""""""
 
-This occurs when the extension of the uploaded file is not .npy for quantization calibration.
+Common case
+^^^^^^^^^^^
+bla
 
 DeviceFarmUploadError(TODO)
 """""""""""""""""""""""""""
-
 This occurs during the process of uploading a model to the Device farm.
 
 DeviceNotMatchedWithFrameworkException
 """"""""""""""""""""""""""""""""""""""
-
 This occurs when the target framework and target device do not match.
 
-DynamicBatchModelException
+InternalException(TODO)
+"""""""""""""""""""""""
+In case of a temporary error.
+
+LatestJobIsNotFinished
+""""""""""""""""""""""
+This occurs when attempting to execute a new task while there are ongoing convert or benchmark operations.
+
+NoAvailableDevice
+"""""""""""""""""
+This occurs when there are no available devices in the NetsPresso device farm.
+
+NoCredit
+""""""""
+This occurs when there are not enough credits available to execute the task.
+
+NoModelUuidException
+""""""""""""""""""""
+This occurs when requesting a model_uuid that does not exist.
+
+NotSupportedDeviceException
+"""""""""""""""""""""""""""
+This occurs when the input target device is not supported by the selected framework.
+
+AccountException
+""""""""""""""""
+If there's an issue during the server's communication relay process, a related message will be displayed on the service. For undefined exception cases, log investigation is necessary to identify the detailed cause.
+
+Dataset file
+^^^^^^^^^^^^
+bla
+
+DatasetFileBrokenException
 """"""""""""""""""""""""""
+This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.
 
-This occurs when the uploaded model is a dynamic batch model. Currently, only static batch models are supported.
+DatasetFileSuffixException
+""""""""""""""""""""""""""
+This occurs when the extension of the uploaded file is not .npy for quantization calibration.
 
-DynamicInputShapeModelException
-"""""""""""""""""""""""""""""""
+InvalidTypeException
+""""""""""""""""""""
+This occurs when the dataset file is not a readable NumPy array.
 
-This occurs when the uploaded model has dynamic width and height, whereas only static input sizes are currently supported.
-
-FrameworkException
-""""""""""""""""""
-
-This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.
-
+NumpyArrayHasWrongShapeException
+""""""""""""""""""""""""""""""""
+This occurs when the shape of the npy file for quantization calibration does not match the input shape of the model being converted.

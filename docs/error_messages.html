@@ -51,20 +51,51 @@
 <li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Compatibility range of benchmark</a></li>
 <li class="toctree-l1"><a class="reference internal" href="int8_quantization_with_launchx.html">INT8 quantization with LaunchX</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Error Messages</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#upload">Upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload">Upload</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#frameworkexception">FrameworkException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inputshapelengthexception">InputShapeLengthException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inspectfail">InspectFail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keraserror">KerasError</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#makeinputserror">MakeInputsError</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelfileinspectexception">ModelFileInspectException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modeltypeerror">ModelTypeError</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multilayerexception">MultiLayerException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openvinoerror">OpenVINOError</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tensorrtdeserializererror">TensorRTDeserializerError</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toolargebatchmodelexception">TooLargeBatchModelException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toolargechannelmodelexception">TooLargeChannelModelException</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#benchmark">Benchmark</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#benchmarkfailedexception-todo">BenchmarkFailedException(TODO)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamicbatchmodelexception">DynamicBatchModelException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamicinputshapemodelexception">DynamicInputShapeModelException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#startbenchmarkfail">StartBenchmarkFail</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#convert">Convert</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#convertfailedexception-todo">ConvertFailedException(TODO)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#datasetfilebrokenexception">DatasetFileBrokenException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#datasetfilesuffixexception">DatasetFileSuffixException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#needdeviceexception">NeedDeviceException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#needinputshapeexception">NeedInputShapeException</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#common-case">Common case</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#devicefarmuploaderror-todo">DeviceFarmUploadError(TODO)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#devicenotmatchedwithframeworkexception">DeviceNotMatchedWithFrameworkException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dynamicbatchmodelexception">DynamicBatchModelException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dynamicinputshapemodelexception">DynamicInputShapeModelException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#frameworkexception">FrameworkException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#internalexception-todo">InternalException(TODO)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#latestjobisnotfinished">LatestJobIsNotFinished</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#noavailabledevice">NoAvailableDevice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nocredit">NoCredit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nomodeluuidexception">NoModelUuidException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notsupporteddeviceexception">NotSupportedDeviceException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#accountexception">AccountException</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dataset-file">Dataset file</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#datasetfilebrokenexception">DatasetFileBrokenException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datasetfilesuffixexception">DatasetFileSuffixException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#invalidtypeexception">InvalidTypeException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#numpyarrayhaswrongshapeexception">NumpyArrayHasWrongShapeException</a></li>
 </ul>
 </li>
 </ul>
@@ -101,6 +132,54 @@
 <section id="upload">
 <h2>Upload<a class="headerlink" href="#upload" title="Link to this heading"></a></h2>
 <p>bla</p>
+<section id="frameworkexception">
+<h3>FrameworkException<a class="headerlink" href="#frameworkexception" title="Link to this heading"></a></h3>
+<p>This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.</p>
+</section>
+<section id="inputshapelengthexception">
+<h3>InputShapeLengthException<a class="headerlink" href="#inputshapelengthexception" title="Link to this heading"></a></h3>
+<p>This occurs when the input shape length is not 4.</p>
+</section>
+<section id="inspectfail">
+<h3>InspectFail<a class="headerlink" href="#inspectfail" title="Link to this heading"></a></h3>
+<p>This occurs when there is an issue with the model file.</p>
+</section>
+<section id="keraserror">
+<h3>KerasError<a class="headerlink" href="#keraserror" title="Link to this heading"></a></h3>
+<p>This occurs when there is an issue with the Keras model file.</p>
+</section>
+<section id="makeinputserror">
+<h3>MakeInputsError<a class="headerlink" href="#makeinputserror" title="Link to this heading"></a></h3>
+<p>This occurs when there is no subgraph in the TensorFlow model file.</p>
+</section>
+<section id="modelfileinspectexception">
+<h3>ModelFileInspectException<a class="headerlink" href="#modelfileinspectexception" title="Link to this heading"></a></h3>
+<p>If there are issues during the process of inspecting the uploaded model file.</p>
+</section>
+<section id="modeltypeerror">
+<h3>ModelTypeError<a class="headerlink" href="#modeltypeerror" title="Link to this heading"></a></h3>
+<p>This occurs when there is an issue with the model file.</p>
+</section>
+<section id="multilayerexception">
+<h3>MultiLayerException<a class="headerlink" href="#multilayerexception" title="Link to this heading"></a></h3>
+<p>This occurs when the input layer is multi-layered.</p>
+</section>
+<section id="openvinoerror">
+<h3>OpenVINOError<a class="headerlink" href="#openvinoerror" title="Link to this heading"></a></h3>
+<p>This occurs when there is an issue with the OpenVINO model file.</p>
+</section>
+<section id="tensorrtdeserializererror">
+<h3>TensorRTDeserializerError<a class="headerlink" href="#tensorrtdeserializererror" title="Link to this heading"></a></h3>
+<p>This occurs when there is an issue with the TensorRT model file.</p>
+</section>
+<section id="toolargebatchmodelexception">
+<h3>TooLargeBatchModelException<a class="headerlink" href="#toolargebatchmodelexception" title="Link to this heading"></a></h3>
+<p>This occurs when the batch size of the model being uploaded exceeds 4.</p>
+</section>
+<section id="toolargechannelmodelexception">
+<h3>TooLargeChannelModelException<a class="headerlink" href="#toolargechannelmodelexception" title="Link to this heading"></a></h3>
+<p>This occurs when the number of channels in the model being uploaded exceeds 3.</p>
+</section>
 </section>
 <section id="benchmark">
 <h2>Benchmark<a class="headerlink" href="#benchmark" title="Link to this heading"></a></h2>
@@ -108,30 +187,6 @@
 <section id="benchmarkfailedexception-todo">
 <h3>BenchmarkFailedException(TODO)<a class="headerlink" href="#benchmarkfailedexception-todo" title="Link to this heading"></a></h3>
 <p>This occurs during benchmark execution. Detailed investigation through log analysis is required to determine the specific cause.</p>
-</section>
-</section>
-<section id="convert">
-<h2>Convert<a class="headerlink" href="#convert" title="Link to this heading"></a></h2>
-<p>bla</p>
-<section id="convertfailedexception-todo">
-<h3>ConvertFailedException(TODO)<a class="headerlink" href="#convertfailedexception-todo" title="Link to this heading"></a></h3>
-<p>This occurs during the conversion process. Detailed investigation through log analysis is required to determine the specific cause.</p>
-</section>
-<section id="datasetfilebrokenexception">
-<h3>DatasetFileBrokenException<a class="headerlink" href="#datasetfilebrokenexception" title="Link to this heading"></a></h3>
-<p>This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.</p>
-</section>
-<section id="datasetfilesuffixexception">
-<h3>DatasetFileSuffixException<a class="headerlink" href="#datasetfilesuffixexception" title="Link to this heading"></a></h3>
-<p>This occurs when the extension of the uploaded file is not .npy for quantization calibration.</p>
-</section>
-<section id="devicefarmuploaderror-todo">
-<h3>DeviceFarmUploadError(TODO)<a class="headerlink" href="#devicefarmuploaderror-todo" title="Link to this heading"></a></h3>
-<p>This occurs during the process of uploading a model to the Device farm.</p>
-</section>
-<section id="devicenotmatchedwithframeworkexception">
-<h3>DeviceNotMatchedWithFrameworkException<a class="headerlink" href="#devicenotmatchedwithframeworkexception" title="Link to this heading"></a></h3>
-<p>This occurs when the target framework and target device do not match.</p>
 </section>
 <section id="dynamicbatchmodelexception">
 <h3>DynamicBatchModelException<a class="headerlink" href="#dynamicbatchmodelexception" title="Link to this heading"></a></h3>
@@ -141,9 +196,85 @@
 <h3>DynamicInputShapeModelException<a class="headerlink" href="#dynamicinputshapemodelexception" title="Link to this heading"></a></h3>
 <p>This occurs when the uploaded model has dynamic width and height, whereas only static input sizes are currently supported.</p>
 </section>
-<section id="frameworkexception">
-<h3>FrameworkException<a class="headerlink" href="#frameworkexception" title="Link to this heading"></a></h3>
-<p>This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.</p>
+<section id="startbenchmarkfail">
+<h3>StartBenchmarkFail<a class="headerlink" href="#startbenchmarkfail" title="Link to this heading"></a></h3>
+<p>This occurs when there is a failure to execute a benchmark in the device farm.</p>
+</section>
+</section>
+<section id="convert">
+<h2>Convert<a class="headerlink" href="#convert" title="Link to this heading"></a></h2>
+<p>bla</p>
+<section id="convertfailedexception-todo">
+<h3>ConvertFailedException(TODO)<a class="headerlink" href="#convertfailedexception-todo" title="Link to this heading"></a></h3>
+<p>This occurs during the conversion process. Detailed investigation through log analysis is required to determine the specific cause.</p>
+</section>
+<section id="needdeviceexception">
+<h3>NeedDeviceException<a class="headerlink" href="#needdeviceexception" title="Link to this heading"></a></h3>
+<p>This occurs when no device is specified during the conversion process to TensorRT. Since the conversion to TensorRT runs on a device, you need to specify both the device and Jetpack versions.</p>
+</section>
+<section id="needinputshapeexception">
+<h3>NeedInputShapeException<a class="headerlink" href="#needinputshapeexception" title="Link to this heading"></a></h3>
+<p>This occurs during the conversion of a model with dynamic shape when the input shape value of the model is missing.</p>
+</section>
+</section>
+<section id="common-case">
+<h2>Common case<a class="headerlink" href="#common-case" title="Link to this heading"></a></h2>
+<p>bla</p>
+<section id="devicefarmuploaderror-todo">
+<h3>DeviceFarmUploadError(TODO)<a class="headerlink" href="#devicefarmuploaderror-todo" title="Link to this heading"></a></h3>
+<p>This occurs during the process of uploading a model to the Device farm.</p>
+</section>
+<section id="devicenotmatchedwithframeworkexception">
+<h3>DeviceNotMatchedWithFrameworkException<a class="headerlink" href="#devicenotmatchedwithframeworkexception" title="Link to this heading"></a></h3>
+<p>This occurs when the target framework and target device do not match.</p>
+</section>
+<section id="internalexception-todo">
+<h3>InternalException(TODO)<a class="headerlink" href="#internalexception-todo" title="Link to this heading"></a></h3>
+<p>In case of a temporary error.</p>
+</section>
+<section id="latestjobisnotfinished">
+<h3>LatestJobIsNotFinished<a class="headerlink" href="#latestjobisnotfinished" title="Link to this heading"></a></h3>
+<p>This occurs when attempting to execute a new task while there are ongoing convert or benchmark operations.</p>
+</section>
+<section id="noavailabledevice">
+<h3>NoAvailableDevice<a class="headerlink" href="#noavailabledevice" title="Link to this heading"></a></h3>
+<p>This occurs when there are no available devices in the NetsPresso device farm.</p>
+</section>
+<section id="nocredit">
+<h3>NoCredit<a class="headerlink" href="#nocredit" title="Link to this heading"></a></h3>
+<p>This occurs when there are not enough credits available to execute the task.</p>
+</section>
+<section id="nomodeluuidexception">
+<h3>NoModelUuidException<a class="headerlink" href="#nomodeluuidexception" title="Link to this heading"></a></h3>
+<p>This occurs when requesting a model_uuid that does not exist.</p>
+</section>
+<section id="notsupporteddeviceexception">
+<h3>NotSupportedDeviceException<a class="headerlink" href="#notsupporteddeviceexception" title="Link to this heading"></a></h3>
+<p>This occurs when the input target device is not supported by the selected framework.</p>
+</section>
+<section id="accountexception">
+<h3>AccountException<a class="headerlink" href="#accountexception" title="Link to this heading"></a></h3>
+<p>If there’s an issue during the server’s communication relay process, a related message will be displayed on the service. For undefined exception cases, log investigation is necessary to identify the detailed cause.</p>
+</section>
+</section>
+<section id="dataset-file">
+<h2>Dataset file<a class="headerlink" href="#dataset-file" title="Link to this heading"></a></h2>
+<p>bla</p>
+<section id="datasetfilebrokenexception">
+<h3>DatasetFileBrokenException<a class="headerlink" href="#datasetfilebrokenexception" title="Link to this heading"></a></h3>
+<p>This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.</p>
+</section>
+<section id="datasetfilesuffixexception">
+<h3>DatasetFileSuffixException<a class="headerlink" href="#datasetfilesuffixexception" title="Link to this heading"></a></h3>
+<p>This occurs when the extension of the uploaded file is not .npy for quantization calibration.</p>
+</section>
+<section id="invalidtypeexception">
+<h3>InvalidTypeException<a class="headerlink" href="#invalidtypeexception" title="Link to this heading"></a></h3>
+<p>This occurs when the dataset file is not a readable NumPy array.</p>
+</section>
+<section id="numpyarrayhaswrongshapeexception">
+<h3>NumpyArrayHasWrongShapeException<a class="headerlink" href="#numpyarrayhaswrongshapeexception" title="Link to this heading"></a></h3>
+<p>This occurs when the shape of the npy file for quantization calibration does not match the input shape of the model being converted.</p>
 </section>
 </section>
 </section>
