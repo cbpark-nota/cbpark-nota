@@ -6,13 +6,10 @@
 .. _error_messages:
 
 Error Messages
-================================
-
-blabla
+==============
 
 Upload
 ^^^^^^
-bla
 
 FrameworkException
 """"""""""""""""""
@@ -64,7 +61,7 @@ This occurs when the number of channels in the model being uploaded exceeds 3.
 
 Benchmark
 ^^^^^^^^^
-bla
+
 
 BenchmarkFailedException(TODO)
 """"""""""""""""""""""""""""""
@@ -84,7 +81,6 @@ This occurs when there is a failure to execute a benchmark in the device farm.
 
 Convert
 ^^^^^^^
-bla
 
 ConvertFailedException(TODO)
 """"""""""""""""""""""""""""
@@ -99,9 +95,8 @@ NeedInputShapeException
 This occurs during the conversion of a model with dynamic shape when the input shape value of the model is missing.
 
 
-Common case
-^^^^^^^^^^^
-bla
+Common cases
+^^^^^^^^^^^^
 
 DeviceFarmUploadError(TODO)
 """""""""""""""""""""""""""
@@ -141,7 +136,6 @@ If there's an issue during the server's communication relay process, a related m
 
 Dataset file
 ^^^^^^^^^^^^
-bla
 
 DatasetFileBrokenException
 """"""""""""""""""""""""""
