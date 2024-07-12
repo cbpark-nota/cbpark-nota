@@ -133,132 +133,124 @@
 <h2>Upload<a class="headerlink" href="#upload" title="Link to this heading"></a></h2>
 <section id="frameworkexception">
 <h3>FrameworkException<a class="headerlink" href="#frameworkexception" title="Link to this heading"></a></h3>
-<p>This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.</p>
+<p>업로드한 model file이 지원하는 framework가 아닌 경우입니다. 지원범위 문서를 확인해주세요</p>
 </section>
 <section id="inputshapelengthexception">
 <h3>InputShapeLengthException<a class="headerlink" href="#inputshapelengthexception" title="Link to this heading"></a></h3>
-<p>This occurs when the input shape length is not 4.</p>
+<p>input shape 길이가 4가 아닌 경우입니다.</p>
 </section>
 <section id="inspectfail">
 <h3>InspectFail<a class="headerlink" href="#inspectfail" title="Link to this heading"></a></h3>
-<p>This occurs when there is an issue with the model file.</p>
+<p>모델 파일에 문제가 있는 경우입니다.</p>
 </section>
 <section id="keraserror">
 <h3>KerasError<a class="headerlink" href="#keraserror" title="Link to this heading"></a></h3>
-<p>This occurs when there is an issue with the Keras model file.</p>
+<p>Keras 모델 파일에 문제가 있는 경우입니다.</p>
 </section>
 <section id="makeinputserror">
 <h3>MakeInputsError<a class="headerlink" href="#makeinputserror" title="Link to this heading"></a></h3>
-<p>This occurs when there is no subgraph in the TensorFlow model file.</p>
+<p>Tensorflow 모델 파일에 서브그래프가 없는 경우입니다.</p>
 </section>
 <section id="modelfileinspectexception">
 <h3>ModelFileInspectException<a class="headerlink" href="#modelfileinspectexception" title="Link to this heading"></a></h3>
-<p>If there are issues during the process of inspecting the uploaded model file.</p>
+<p>업로드된 model file을 확인하는 과정에서 문제가 발생한 경우입니다.</p>
 </section>
 <section id="modeltypeerror">
 <h3>ModelTypeError<a class="headerlink" href="#modeltypeerror" title="Link to this heading"></a></h3>
-<p>This occurs when there is an issue with the model file.</p>
+<p>모델 파일에 문제가 있는 경우입니다.</p>
 </section>
 <section id="multilayerexception">
 <h3>MultiLayerException<a class="headerlink" href="#multilayerexception" title="Link to this heading"></a></h3>
-<p>This occurs when the input layer is multi-layered.</p>
+<p>input layer 가 multi layer인 경우입니다.</p>
 </section>
 <section id="openvinoerror">
 <h3>OpenVINOError<a class="headerlink" href="#openvinoerror" title="Link to this heading"></a></h3>
-<p>This occurs when there is an issue with the OpenVINO model file.</p>
+<p>OpenVINO 모델 파일에 문제가 있는 경우입니다.</p>
 </section>
 <section id="tensorrtdeserializererror">
 <h3>TensorRTDeserializerError<a class="headerlink" href="#tensorrtdeserializererror" title="Link to this heading"></a></h3>
-<p>This occurs when there is an issue with the TensorRT model file.</p>
+<p>TensorRT 모델 파일에 문제가 있는 경우입니다.</p>
 </section>
 <section id="toolargebatchmodelexception">
 <h3>TooLargeBatchModelException<a class="headerlink" href="#toolargebatchmodelexception" title="Link to this heading"></a></h3>
-<p>This occurs when the batch size of the model being uploaded exceeds 4.</p>
+<p>업로드하려는 모델의 batch size가 4를 초과한 경우입니다.</p>
 </section>
 <section id="toolargechannelmodelexception">
 <h3>TooLargeChannelModelException<a class="headerlink" href="#toolargechannelmodelexception" title="Link to this heading"></a></h3>
-<p>This occurs when the number of channels in the model being uploaded exceeds 3.</p>
+<p>업로드하려는 모델의 channel이 3을 초과한 경우입니다.</p>
 </section>
 </section>
 <section id="benchmark">
 <h2>Benchmark<a class="headerlink" href="#benchmark" title="Link to this heading"></a></h2>
 <section id="benchmarkfailedexception">
 <h3>BenchmarkFailedException<a class="headerlink" href="#benchmarkfailedexception" title="Link to this heading"></a></h3>
-<p>This occurs during benchmark execution. Detailed investigation through log analysis is required to determine the specific cause.
-<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
+<p>벤치마크 실행중 발생한 에러입니다. 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. <a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
 </section>
 <section id="dynamicbatchmodelexception">
 <h3>DynamicBatchModelException<a class="headerlink" href="#dynamicbatchmodelexception" title="Link to this heading"></a></h3>
-<p>This occurs when the uploaded model is a dynamic batch model. Currently, only static batch models are supported.</p>
+<p>upload된 model이 dynamic batch인 경우입니다. 현재 static batch 모델만 이용가능합니다.</p>
 </section>
 <section id="dynamicinputshapemodelexception">
 <h3>DynamicInputShapeModelException<a class="headerlink" href="#dynamicinputshapemodelexception" title="Link to this heading"></a></h3>
-<p>This occurs when the uploaded model has dynamic width and height, whereas only static input sizes are currently supported.</p>
+<p>upload된 model이 dynamic width, height인 경우입니다. 현재 static Input size만 가능합니다.</p>
 </section>
 <section id="startbenchmarkfail">
 <h3>StartBenchmarkFail<a class="headerlink" href="#startbenchmarkfail" title="Link to this heading"></a></h3>
-<p>This occurs when there is a failure to execute a benchmark in the device farm.
-<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
+<p>Device farm에서 Benchmark를 실행에 실패한 경우입니다. <a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
 </section>
 </section>
 <section id="convert">
 <h2>Convert<a class="headerlink" href="#convert" title="Link to this heading"></a></h2>
 <section id="convertfailedexception">
 <h3>ConvertFailedException<a class="headerlink" href="#convertfailedexception" title="Link to this heading"></a></h3>
-<p>This occurs during the conversion process. Detailed investigation through log analysis is required to determine the specific cause.
-<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
+<p>변환 실행중 발생한 에러입니다. 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. <a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
 </section>
 <section id="needdeviceexception">
 <h3>NeedDeviceException<a class="headerlink" href="#needdeviceexception" title="Link to this heading"></a></h3>
-<p>This occurs when no device is specified during the conversion process to TensorRT. Since the conversion to TensorRT runs on a device, you need to specify both the device and Jetpack versions.</p>
+<p>TensorRT로 변환을 하는 과정에서 변환을 하기 위한 device가 지정되지 않은 경우입니다. TensorRT는 device 위에서 변환을 하기 때문에 반드시 device와 Jetpack을 지정해야합니다.</p>
 </section>
 <section id="needinputshapeexception">
 <h3>NeedInputShapeException<a class="headerlink" href="#needinputshapeexception" title="Link to this heading"></a></h3>
-<p>This occurs during the conversion of a model with dynamic shape when the input shape value of the model is missing.</p>
+<p>dynamic shape을 가진 model을 변환하는 과정에서 model의 input shape 값이 없는 경우입니다.</p>
 </section>
 </section>
 <section id="common-cases">
 <h2>Common cases<a class="headerlink" href="#common-cases" title="Link to this heading"></a></h2>
 <section id="devicefarmuploaderror">
 <h3>DeviceFarmUploadError<a class="headerlink" href="#devicefarmuploaderror" title="Link to this heading"></a></h3>
-<p>This occurs during the process of uploading a model to the Device farm.
-<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
+<p>Device farm에서 model을 upload하는 과정에서 에러가 발생한 경우입니다.`[Contact support] &lt;<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">https://notaai.typeform.com/to/ZGhpfiwd/</a>&gt;`_</p>
 </section>
 <section id="devicenotmatchedwithframeworkexception">
 <h3>DeviceNotMatchedWithFrameworkException<a class="headerlink" href="#devicenotmatchedwithframeworkexception" title="Link to this heading"></a></h3>
-<p>This occurs when the target framework and target device do not match.</p>
+<p>대상 프레임워크와 대상 기기가 일치하지 않는 경우입니다.</p>
 </section>
 <section id="internalexception">
 <h3>InternalException<a class="headerlink" href="#internalexception" title="Link to this heading"></a></h3>
-<p>In case of a temporary error.
-<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
+<p>일시적인 장애입니다. <a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
 </section>
 <section id="latestjobisnotfinished">
 <h3>LatestJobIsNotFinished<a class="headerlink" href="#latestjobisnotfinished" title="Link to this heading"></a></h3>
-<p>This occurs when attempting to execute a new task while there are ongoing convert or benchmark operations.</p>
+<p>진행중인 convert나 benchmark 작업이 있는 상태에서 새로운 task를 실행하려고 한 경우입니다.</p>
 </section>
 <section id="noavailabledevice">
 <h3>NoAvailableDevice<a class="headerlink" href="#noavailabledevice" title="Link to this heading"></a></h3>
-<p>This occurs when there are no available devices in the NetsPresso device farm.
-<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
+<p>NetsPresso device farm에 이용 가능한 device가 없는 경우입니다.</p>
 </section>
 <section id="nocredit">
 <h3>NoCredit<a class="headerlink" href="#nocredit" title="Link to this heading"></a></h3>
-<p>This occurs when there are not enough credits available to execute the task.
-<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
+<p>작업을 실행하기 위한 충분한 크레딧이 없는 경우입니다.`[Contact support] &lt;<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">https://notaai.typeform.com/to/ZGhpfiwd/</a>&gt;`_</p>
 </section>
 <section id="nomodeluuidexception">
 <h3>NoModelUuidException<a class="headerlink" href="#nomodeluuidexception" title="Link to this heading"></a></h3>
-<p>This occurs when requesting a model_uuid that does not exist.</p>
+<p>존재하지 않는 model_uuid 를 요청한 경우입니다.</p>
 </section>
 <section id="notsupporteddeviceexception">
 <h3>NotSupportedDeviceException<a class="headerlink" href="#notsupporteddeviceexception" title="Link to this heading"></a></h3>
-<p>This occurs when the input target device is not supported by the selected framework.</p>
+<p>입력된 target device가 선택한 framework에서 지원하는 device가 아닌 경우입니다.</p>
 </section>
 <section id="accountexception">
 <h3>AccountException<a class="headerlink" href="#accountexception" title="Link to this heading"></a></h3>
-<p>If there’s an issue during the server’s communication relay process, a related message will be displayed on the service. For undefined exception cases, log investigation is necessary to identify the detailed cause.
-<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
+<p>서버가 통신을 중계하는 과정에서 문제가 생기면 관련 메시지가 서비스 상에 표시됩니다. 정의되지 않은 예외 경우는 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다.`[Contact support] &lt;<a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">https://notaai.typeform.com/to/ZGhpfiwd/</a>&gt;`_</p>
 </section>
 </section>
 <section id="dataset-file">
@@ -266,19 +258,19 @@
 <p><a class="reference internal" href="int8_quantization_with_launchx.html#int8-quantization-with-launchx"><span class="std std-ref">Prepare dataset file for INT8 quantization with LaunchX</span></a></p>
 <section id="datasetfilebrokenexception">
 <h3>DatasetFileBrokenException<a class="headerlink" href="#datasetfilebrokenexception" title="Link to this heading"></a></h3>
-<p>This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.</p>
+<p>양자화 calibration을 위하여 업로드된 NumPy 파일을 불러오는데 실패한 경우입니다. NumPy 파일에 오류가 있을 가능성이 높습니다.</p>
 </section>
 <section id="datasetfilesuffixexception">
 <h3>DatasetFileSuffixException<a class="headerlink" href="#datasetfilesuffixexception" title="Link to this heading"></a></h3>
-<p>This occurs when the extension of the uploaded file is not .npy for quantization calibration.</p>
+<p>양자화 calibration을 위하여 업로드된 파일의 확장자가 .npy가 아닌 경우 발생.</p>
 </section>
 <section id="invalidtypeexception">
 <h3>InvalidTypeException<a class="headerlink" href="#invalidtypeexception" title="Link to this heading"></a></h3>
-<p>This occurs when the dataset file is not a readable NumPy array.</p>
+<p>dataset file이 읽을 수 있는 NumPy array가 아닌 경우입니다.</p>
 </section>
 <section id="numpyarrayhaswrongshapeexception">
 <h3>NumpyArrayHasWrongShapeException<a class="headerlink" href="#numpyarrayhaswrongshapeexception" title="Link to this heading"></a></h3>
-<p>This occurs when the shape of the npy file for quantization calibration does not match the input shape of the model being converted.</p>
+<p>양자화 calibration을 위한 NumPy 파일의 shape이, 변환하려는 model의 input shape과 일치하지 않는 경우입니다.</p>
 </section>
 </section>
 </section>

@@ -21,117 +21,120 @@ msgstr ""
 
 #: ../../source/error_messages.rst:9
 msgid "Error Messages"
-msgstr ""
+msgstr "Error Messages"
 
 #: ../../source/error_messages.rst:12
 msgid "Upload"
-msgstr ""
+msgstr "Upload"
 
 #: ../../source/error_messages.rst:15
 msgid "FrameworkException"
-msgstr ""
+msgstr "FrameworkException"
 
 #: ../../source/error_messages.rst:16
 msgid ""
 "This occurs when the uploaded model file is not supported by the "
 "framework. Please check the scope of support."
 msgstr ""
+"업로드한 model file이 지원하는 framework가 아닌 경우입니다. 지원범위 문서를 확인해주세요.
 
 #: ../../source/error_messages.rst:19
 msgid "InputShapeLengthException"
-msgstr ""
+msgstr "InputShapeLengthException"
 
 #: ../../source/error_messages.rst:20
 msgid "This occurs when the input shape length is not 4."
-msgstr ""
+msgstr "input shape 길이가 4가 아닌 경우입니다."
 
 #: ../../source/error_messages.rst:23
 msgid "InspectFail"
-msgstr ""
+msgstr "InspectFail"
 
 #: ../../source/error_messages.rst:24 ../../source/error_messages.rst:40
 msgid "This occurs when there is an issue with the model file."
-msgstr ""
+msgstr "모델 파일에 문제가 있는 경우입니다."
 
 #: ../../source/error_messages.rst:27
 msgid "KerasError"
-msgstr ""
+msgstr "KerasError"
 
 #: ../../source/error_messages.rst:28
 msgid "This occurs when there is an issue with the Keras model file."
-msgstr ""
+msgstr "Keras 모델 파일에 문제가 있는 경우입니다."
 
 #: ../../source/error_messages.rst:31
 msgid "MakeInputsError"
-msgstr ""
+msgstr "MakeInputsError"
 
 #: ../../source/error_messages.rst:32
 msgid "This occurs when there is no subgraph in the TensorFlow model file."
-msgstr ""
+msgstr "Tensorflow 모델 파일에 서브그래프가 없는 경우입니다."
 
 #: ../../source/error_messages.rst:35
 msgid "ModelFileInspectException"
-msgstr ""
+msgstr "ModelFileInspectException"
 
 #: ../../source/error_messages.rst:36
 msgid ""
 "If there are issues during the process of inspecting the uploaded model "
 "file."
 msgstr ""
+"업로드된 model file을 확인하는 과정에서 문제가 발생한 경우입니다."
 
 #: ../../source/error_messages.rst:39
 msgid "ModelTypeError"
-msgstr ""
+msgstr "ModelTypeError"
 
 #: ../../source/error_messages.rst:43
 msgid "MultiLayerException"
-msgstr ""
+msgstr "MultiLayerException"
 
 #: ../../source/error_messages.rst:44
 msgid "This occurs when the input layer is multi-layered."
-msgstr ""
+msgstr "input layer 가 multi layer인 경우입니다."
 
 #: ../../source/error_messages.rst:47
 msgid "OpenVINOError"
-msgstr ""
+msgstr "OpenVINOError"
 
 #: ../../source/error_messages.rst:48
 msgid "This occurs when there is an issue with the OpenVINO model file."
-msgstr ""
+msgstr "OpenVINO 모델 파일에 문제가 있는 경우입니다."
 
 #: ../../source/error_messages.rst:51
 msgid "TensorRTDeserializerError"
-msgstr ""
+msgstr "TensorRTDeserializerError"
 
 #: ../../source/error_messages.rst:52
 msgid "This occurs when there is an issue with the TensorRT model file."
-msgstr ""
+msgstr "TensorRT 모델 파일에 문제가 있는 경우입니다."
 
 #: ../../source/error_messages.rst:55
 msgid "TooLargeBatchModelException"
-msgstr ""
+msgstr "TooLargeBatchModelException"
 
 #: ../../source/error_messages.rst:56
 msgid "This occurs when the batch size of the model being uploaded exceeds 4."
-msgstr ""
+msgstr "업로드하려는 모델의 batch size가 4를 초과한 경우입니다."
 
 #: ../../source/error_messages.rst:59
 msgid "TooLargeChannelModelException"
-msgstr ""
+msgstr "TooLargeChannelModelException"
 
 #: ../../source/error_messages.rst:60
 msgid ""
 "This occurs when the number of channels in the model being uploaded "
 "exceeds 3."
 msgstr ""
+"업로드하려는 모델의 channel이 3을 초과한 경우입니다."
 
 #: ../../source/error_messages.rst:63
 msgid "Benchmark"
-msgstr ""
+msgstr "Benchmark"
 
 #: ../../source/error_messages.rst:66
 msgid "BenchmarkFailedException"
-msgstr ""
+msgstr "BenchmarkFailedException"
 
 #: ../../source/error_messages.rst:67
 msgid ""
@@ -139,44 +142,49 @@ msgid ""
 "log analysis is required to determine the specific cause. `[Contact "
 "support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
+"벤치마크 실행중 발생한 에러입니다. 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. `[Contact "
+"support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:71
 msgid "DynamicBatchModelException"
-msgstr ""
+msgstr "DynamicBatchModelException"
 
 #: ../../source/error_messages.rst:72
 msgid ""
 "This occurs when the uploaded model is a dynamic batch model. Currently, "
 "only static batch models are supported."
 msgstr ""
+"upload된 model이 dynamic batch인 경우입니다. 현재 static batch 모델만 이용가능합니다."
 
 #: ../../source/error_messages.rst:75
 msgid "DynamicInputShapeModelException"
-msgstr ""
+msgstr "DynamicInputShapeModelException"
 
 #: ../../source/error_messages.rst:76
 msgid ""
 "This occurs when the uploaded model has dynamic width and height, whereas"
 " only static input sizes are currently supported."
 msgstr ""
+"upload된 model이 dynamic width, height인 경우입니다. 현재 static Input size만 가능합니다."
 
 #: ../../source/error_messages.rst:79
 msgid "StartBenchmarkFail"
-msgstr ""
+msgstr "StartBenchmarkFail"
 
 #: ../../source/error_messages.rst:80
 msgid ""
 "This occurs when there is a failure to execute a benchmark in the device "
 "farm. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
+"Device farm에서 Benchmark를 실행에 실패한 경우입니다. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:84
 msgid "Convert"
-msgstr ""
+msgstr "Convert"
 
 #: ../../source/error_messages.rst:87
 msgid "ConvertFailedException"
-msgstr ""
+msgstr "ConvertFailedException"
 
 #: ../../source/error_messages.rst:88
 msgid ""
@@ -184,10 +192,12 @@ msgid ""
 " log analysis is required to determine the specific cause. `[Contact "
 "support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
+"변환 실행중 발생한 에러입니다. 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. `[Contact "
+"support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:92
 msgid "NeedDeviceException"
-msgstr ""
+msgstr "NeedDeviceException"
 
 #: ../../source/error_messages.rst:93
 msgid ""
@@ -195,100 +205,113 @@ msgid ""
 "TensorRT. Since the conversion to TensorRT runs on a device, you need to "
 "specify both the device and Jetpack versions."
 msgstr ""
+"TensorRT로 변환을 하는 과정에서 변환을 하기 위한 device가 지정되지 않은 경우입니다. "
+"TensorRT는 device 위에서 변환을 하기 때문에 반드시 device와 Jetpack을 지정해야합니다."
 
 #: ../../source/error_messages.rst:96
 msgid "NeedInputShapeException"
-msgstr ""
+msgstr "NeedInputShapeException"
 
 #: ../../source/error_messages.rst:97
 msgid ""
 "This occurs during the conversion of a model with dynamic shape when the "
 "input shape value of the model is missing."
 msgstr ""
+"dynamic shape을 가진 model을 변환하는 과정에서 model의 input shape 값이 없는 경우입니다."
 
 #: ../../source/error_messages.rst:101
 msgid "Common cases"
-msgstr ""
+msgstr "Common cases"
 
 #: ../../source/error_messages.rst:104
 msgid "DeviceFarmUploadError"
-msgstr ""
+msgstr "DeviceFarmUploadError"
 
 #: ../../source/error_messages.rst:105
 msgid ""
 "This occurs during the process of uploading a model to the Device farm. "
 "`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
+"Device farm에서 model을 upload하는 과정에서 에러가 발생한 경우입니다."
+"`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:109
 msgid "DeviceNotMatchedWithFrameworkException"
-msgstr ""
+msgstr "DeviceNotMatchedWithFrameworkException"
 
 #: ../../source/error_messages.rst:110
 msgid "This occurs when the target framework and target device do not match."
-msgstr ""
+msgstr "대상 프레임워크와 대상 기기가 일치하지 않는 경우입니다."
 
 #: ../../source/error_messages.rst:113
 msgid "InternalException"
-msgstr ""
+msgstr "InternalException"
 
 #: ../../source/error_messages.rst:114
 msgid ""
 "In case of a temporary error. `[Contact support] "
 "<https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
+"일시적인 장애입니다. `[Contact support] "
+"<https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:118
 msgid "LatestJobIsNotFinished"
-msgstr ""
+msgstr "LatestJobIsNotFinished"
 
 #: ../../source/error_messages.rst:119
 msgid ""
 "This occurs when attempting to execute a new task while there are ongoing"
 " convert or benchmark operations."
 msgstr ""
+"진행중인 convert나 benchmark 작업이 있는 상태에서 새로운 task를 실행하려고 한 경우입니다."
 
 #: ../../source/error_messages.rst:122
 msgid "NoAvailableDevice"
-msgstr ""
+msgstr "NoAvailableDevice"
 
 #: ../../source/error_messages.rst:123
 msgid ""
 "This occurs when there are no available devices in the NetsPresso device "
 "farm. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
+"NetsPresso device farm에 이용 가능한 device가 없는 경우입니다. "
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:127
 msgid "NoCredit"
-msgstr ""
+msgstr "NoCredit"
 
 #: ../../source/error_messages.rst:128
 msgid ""
 "This occurs when there are not enough credits available to execute the "
 "task. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
+"작업을 실행하기 위한 충분한 크레딧이 없는 경우입니다."
+"`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:132
 msgid "NoModelUuidException"
-msgstr ""
+msgstr "NoModelUuidException"
 
 #: ../../source/error_messages.rst:133
 msgid "This occurs when requesting a model_uuid that does not exist."
-msgstr ""
+msgstr "존재하지 않는 model_uuid 를 요청한 경우입니다."
 
 #: ../../source/error_messages.rst:136
 msgid "NotSupportedDeviceException"
-msgstr ""
+msgstr "NotSupportedDeviceException"
 
 #: ../../source/error_messages.rst:137
 msgid ""
 "This occurs when the input target device is not supported by the selected"
 " framework."
 msgstr ""
+"입력된 target device가 선택한 framework에서 지원하는 device가 아닌 경우입니다."
 
 #: ../../source/error_messages.rst:140
 msgid "AccountException"
-msgstr ""
+msgstr "AccountException"
 
 #: ../../source/error_messages.rst:141
 msgid ""
@@ -297,20 +320,24 @@ msgid ""
 " cases, log investigation is necessary to identify the detailed cause. "
 "`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
+"서버가 통신을 중계하는 과정에서 문제가 생기면 관련 메시지가 서비스 상에 표시됩니다. 정의되지 않은 예외 경우는 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다."
+"`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:145
 msgid "Dataset file"
-msgstr ""
+msgstr "Dataset file"
 
 #: ../../source/error_messages.rst:146
 msgid ""
 ":ref:`Prepare dataset file for INT8 quantization with LaunchX "
 "<int8_quantization_with_launchx>`"
 msgstr ""
+":ref:`Prepare dataset file for INT8 quantization with LaunchX "
+"<int8_quantization_with_launchx>`"
 
 #: ../../source/error_messages.rst:149
 msgid "DatasetFileBrokenException"
-msgstr ""
+msgstr "DatasetFileBrokenException"
 
 #: ../../source/error_messages.rst:150
 msgid ""
@@ -318,32 +345,34 @@ msgid ""
 "quantization calibration. There is a high possibility that there is an "
 "error in the NumPy file."
 msgstr ""
+"양자화 calibration을 위하여 업로드된 NumPy 파일을 불러오는데 실패한 경우입니다. NumPy 파일에 오류가 있을 가능성이 높습니다."
 
 #: ../../source/error_messages.rst:153
 msgid "DatasetFileSuffixException"
-msgstr ""
+msgstr "DatasetFileSuffixException"
 
 #: ../../source/error_messages.rst:154
 msgid ""
 "This occurs when the extension of the uploaded file is not .npy for "
 "quantization calibration."
 msgstr ""
+"양자화 calibration을 위하여 업로드된 파일의 확장자가 .npy가 아닌 경우 발생."
 
 #: ../../source/error_messages.rst:157
 msgid "InvalidTypeException"
-msgstr ""
+msgstr "InvalidTypeException"
 
 #: ../../source/error_messages.rst:158
 msgid "This occurs when the dataset file is not a readable NumPy array."
-msgstr ""
+msgstr "dataset file이 읽을 수 있는 NumPy array가 아닌 경우입니다."
 
 #: ../../source/error_messages.rst:161
 msgid "NumpyArrayHasWrongShapeException"
-msgstr ""
+msgstr "NumpyArrayHasWrongShapeException"
 
 #: ../../source/error_messages.rst:162
 msgid ""
 "This occurs when the shape of the npy file for quantization calibration "
 "does not match the input shape of the model being converted."
 msgstr ""
-
+"양자화 calibration을 위한 NumPy 파일의 shape이, 변환하려는 model의 input shape과 일치하지 않는 경우입니다."

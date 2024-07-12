@@ -23,17 +23,18 @@ msgstr ""
 #: ../../source/int8_quantization_with_launchx.rst:20
 #: ../../source/int8_quantization_with_launchx.rst:25
 msgid "INT8 quantization with LaunchX"
-msgstr ""
+msgstr "INT8 quantization with LaunchX"
 
 #: ../../source/int8_quantization_with_launchx.rst:9
 msgid ""
 "You can use LaunchX converter to automatically convert the AI model's "
 "framework to the target framework."
 msgstr ""
+"LaunchX Converter를 사용하여 AI 모델의 프레임워크를 목표 프레임워크로 자동 변환할 수 있습니다."
 
 #: ../../source/int8_quantization_with_launchx.rst:12
 msgid "What is Quantization?"
-msgstr ""
+msgstr "양자화가 무엇인가요?"
 
 #: ../../source/int8_quantization_with_launchx.rst:14
 msgid ""
@@ -41,6 +42,7 @@ msgid ""
 "represent weights and activations in a deep learning model. This makes "
 "the model lighter, reducing memory usage and improving inference speed."
 msgstr ""
+"양자화는 딥러닝 모델에서 가중치와 활성화를 표현하는 데 사용되는 비트 수를 줄이는 기술입니다. 이는 모델을 더 가볍게 만들어 메모리 사용량을 줄이고 추론 속도를 향상시킵니다."
 
 #: ../../source/int8_quantization_with_launchx.rst:16
 msgid ""
@@ -49,39 +51,43 @@ msgid ""
 "activations as 8-bit integers, saving memory and accelerating "
 "computations."
 msgstr ""
+"LaunchX는 모델에 학습 후 INT8 양자화를 쉽게 적용할 수 있도록 도와줍니다. 이는 모델의 가중치와 활성화를 8비트 정수로 표현하여 메모리를 절약하고 계산을 가속화합니다."
 
 #: ../../source/int8_quantization_with_launchx.rst:18
 msgid "This document provides information as follows:"
-msgstr ""
+msgstr "이 문서는 다음과 같은 정보를 제공합니다:"
 
 #: ../../source/int8_quantization_with_launchx.rst:21
 #: ../../source/int8_quantization_with_launchx.rst:34
 msgid "Preparing the calibration dataset"
-msgstr ""
+msgstr Calibration dataset 준비하기"
 
 #: ../../source/int8_quantization_with_launchx.rst:22
 msgid "Inference code for TFlite INT8 model"
-msgstr ""
+msgstr "TFlite INT8 model를 위한 추론 code"
 
 #: ../../source/int8_quantization_with_launchx.rst:26
 msgid ""
 "To quantize, upload your target model or select from the free models in "
 "Models."
 msgstr ""
+"양자화하려면 목표 모델을 업로드하거나 Models 에서 무료 모델을 선택하세요."
+
 
 #: ../../source/int8_quantization_with_launchx.rst:27
 msgid ""
 "On the Convert Setting page, choose Tensorflow Lite, select the target "
 "device, and then choose the INT8 option."
 msgstr ""
+"Convert 설정 페이지에서 Tensorflow Lite를 선택하고, 대상 기기를 선택한 다음, INT8 옵션을 선택하세요."
 
 #: ../../source/int8_quantization_with_launchx.rst:28
 msgid "Upload the calibration dataset(<= 500MB) to minimize quantization error."
-msgstr ""
+msgstr "양자화 오차를 최소화하기 위해 calibration dataset(500MB 이하)을 업로드하세요."
 
 #: ../../source/int8_quantization_with_launchx.rst:29
 msgid "Click the convert button."
-msgstr ""
+msgstr "Convert 버튼을 클릭하세요."
 
 #: ../../source/int8_quantization_with_launchx.rst:35
 msgid ""
@@ -89,6 +95,7 @@ msgid ""
 "data distribution, adjusting quantization parameters such as scaling and "
 "zero points."
 msgstr ""
+"Calibration은 scaling과 zero point와 같은 양자화 매개변수를 조정하여 양자화된 모델을 특정 데이터 분포에 맞추는 과정입니다."
 
 #: ../../source/int8_quantization_with_launchx.rst:37
 msgid ""
@@ -101,58 +108,64 @@ msgid ""
 "minimizing the impact of quantization on accuracy by adapting parameters "
 "based on observed value distributions."
 msgstr ""
+"일반적으로 Calibration 데이터셋은 원래 훈련 데이터의 일부로, 양자화 매개변수를 미세 조정하는 데 사용됩니다. "
+"이 데이터셋의 목적은 실제 데이터에서 양자화된 모델이 최적의 성능을 발휘하면서도 허용 가능한 정확도를 유지하도록 하는 것입니다. "
+"Calibration 중 모델은 이 데이터셋에서 실행되며 활성화 통계가 수집됩니다. 이러한 통계는 각 신경망 층의 양자화 매개변수를 결정하여"
+" 관찰된 값 분포에 따라 매개변수를 조정함으로써 양자화가 정확도에 미치는 영향을 최소화합니다."
 
 #: ../../source/int8_quantization_with_launchx.rst:40
 msgid "Convert the dataset to NumPy for calibration."
-msgstr ""
+msgstr "Calibration을 위해 데이터셋을 NumPy로 변환"
 
 #: ../../source/int8_quantization_with_launchx.rst:42
 msgid "img_file_dir_path : Path where the dataset for calibration is stored."
-msgstr ""
+msgstr "img_file_dir_path: Calibration에 사용될 데이터셋이 저장된 경로."
 
 #: ../../source/int8_quantization_with_launchx.rst:43
 msgid "padding : Value for padding preprocessing."
-msgstr ""
+msgstr "padding: Padding 전처리에 사용되는 값."
 
 #: ../../source/int8_quantization_with_launchx.rst:44
 msgid ""
 "color_mode : Value to change the color mode of an image for "
 "preprocessing. Select ‘bgr’ or ‘rgb’."
 msgstr ""
+"color_mode: 전처리를 위해 이미지의 색상 모드를 변경하는 값. 'bgr' 또는 'rgb'를 선택하세요."
 
 #: ../../source/int8_quantization_with_launchx.rst:45
 msgid "normalize : Value for normalization preprocessing."
-msgstr ""
+msgstr "normalize: 정규화 전처리에 사용되는 값."
 
 #: ../../source/int8_quantization_with_launchx.rst:46
 msgid "input_shape : Value for width and height of model input shape."
-msgstr ""
+msgstr "input_shape: 모델 입력 형태의 너비와 높이에 대한 값."
 
 #: ../../source/int8_quantization_with_launchx.rst:47
 msgid "save_file_path : Path to save the npy file."
-msgstr ""
+msgstr "save_file_path : npy 파일을 저장할 경로."
 
 #: ../../source/int8_quantization_with_launchx.rst:222
 msgid "Result"
-msgstr ""
+msgstr "결과"
 
 #: ../../source/int8_quantization_with_launchx.rst:234
 msgid "Dataset that failed to be read"
-msgstr ""
+msgstr "Dataset that failed to be read"
 
 #: ../../source/int8_quantization_with_launchx.rst:236
 msgid ""
 "Image files that do not open normally through opencv-python are listed in"
 " the 'error_files.txt' created in the code execution location."
 msgstr ""
+"opencv-python을 통해 정상적으로 열리지 않는 이미지 파일들은 코드 실행 위치에 생성된 'error_files.txt'에 나열됩니다."
 
 #: ../../source/int8_quantization_with_launchx.rst:239
 msgid "Inference Code for TFlite INT8"
-msgstr ""
+msgstr "TFlite INT8 추론을 위한 코드"
 
 #: ../../source/int8_quantization_with_launchx.rst:241
 msgid ""
 "Write and use additional pre-processing/post-processing codes for your "
 "model."
 msgstr ""
-
+"모델을 위해 추가적인 전처리/후처리 코드를 작성하고 사용하세요."
