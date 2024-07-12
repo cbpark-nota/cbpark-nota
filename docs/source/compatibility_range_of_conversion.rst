@@ -47,11 +47,11 @@ ONNX to TensorRT
 
    * - Target Device
      - JetPack version
-     - Input datatype
+     - Input data type
      - Batch size
      - Channel
      - Input size
-     - Output datatype
+     - Output data type
    * - NVIDIA Jetson Nano
      - 4.6, 4.4.1
      - FP32
@@ -111,11 +111,11 @@ ONNX to TFlite
    :header-rows: 1
    :widths: 20 20 10 20 10
 
-   * - Input datatype
+   * - Input data type
      - Batch size
      - Channel
      - Input size
-     - Output datatype
+     - Output data type
    * - FP32
      - 1~4 (Static), Dynamic
      - 1~4
@@ -131,11 +131,11 @@ ONNX to OpenVino
    :header-rows: 1
    :widths: 20 20 10 20 10
 
-   * - Input datatype
+   * - Input data type
      - Batch size
      - Channel
      - Input size
-     - Output datatype
+     - Output data type
    * - FP32
      - 1~4 (Static), Dynamic
      - 1~4
@@ -151,11 +151,11 @@ TensorFlow to TensorFlowLite
    :header-rows: 1
    :widths: 20 20 10 20 10
 
-   * - Input datatype
+   * - Input data type
      - Batch size
      - Channel
      - Input size
-     - Output datatype
+     - Output data type
    * - FP32
      - 1~4 (Static), Dynamic
      - 1~4

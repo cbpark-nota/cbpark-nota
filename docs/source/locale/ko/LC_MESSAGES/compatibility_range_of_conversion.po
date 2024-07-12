@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LaunchX \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 04:20+0000\n"
+"POT-Creation-Date: 2024-07-12 06:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -21,126 +21,128 @@ msgstr ""
 
 #: ../../source/compatibility_range_of_conversion.rst:9
 msgid "Compatibility range of conversion"
-msgstr ""
+msgstr "Conversion 호환성 범위"
 
 #: ../../source/compatibility_range_of_conversion.rst:11
 msgid ""
 "You can use LaunchX converter to automatically convert the AI model's "
 "framework to the target framework."
-msgstr ""
+msgstr "LaunchX를 사용하여 AI 모델의 프레임워크를 목표 프레임워크로 자동 변환할 수 있습니다."
 
 #: ../../source/compatibility_range_of_conversion.rst:14
 msgid "Converting case"
-msgstr ""
+msgstr "Converting case"
 
 #: ../../source/compatibility_range_of_conversion.rst:18
 msgid ":ref:`ONNX to TensorRT <onnx_to_tensorrt>`"
-msgstr ""
+msgstr ":ref:`ONNX to TensorRT <onnx_to_tensorrt>`"
 
 #: ../../source/compatibility_range_of_conversion.rst:19
 msgid ":ref:`ONNX to TensorFlow Lite <onnx_to_tensorflow_lite>`"
-msgstr ""
+msgstr ":ref:`ONNX to TensorFlow Lite <onnx_to_tensorflow_lite>`"
 
 #: ../../source/compatibility_range_of_conversion.rst:20
 msgid ":ref:`ONNX to OpenVINO <onnx_to_openvino>`"
-msgstr ""
+msgstr ":ref:`ONNX to OpenVINO <onnx_to_openvino>`"
 
 #: ../../source/compatibility_range_of_conversion.rst:21
 msgid ":ref:`TensorFlow-Keras to TensorFlow Lite <tensorflow_to_tensorflow_lite>`"
-msgstr ""
+msgstr ":ref:`TensorFlow-Keras to TensorFlow Lite <tensorflow_to_tensorflow_lite>`"
 
 #: ../../source/compatibility_range_of_conversion.rst:25
 msgid "Compatible model"
-msgstr ""
+msgstr "호환 가능한 모델"
 
 #: ../../source/compatibility_range_of_conversion.rst:26
 msgid "The input layer of the uploaded model should be as follows."
-msgstr ""
+msgstr "업로드된 모델의 입력 레이어는 다음과 같아야 합니다."
 
 #: ../../source/compatibility_range_of_conversion.rst:30
 msgid "Only single-input models are supported."
-msgstr ""
+msgstr "단일 입력 모델만 지원됩니다."
 
 #: ../../source/compatibility_range_of_conversion.rst:31
 msgid ""
 "The four-dimensional array structure of images should be organized Batch,"
 " Number of Channels, Height, and Width."
-msgstr ""
+msgstr "이미지의 4차원 배열 구조는 배치, 채널 수, 높이, 너비 순으로 구성되어야 합니다."
 
 #: ../../source/compatibility_range_of_conversion.rst:33
 msgid ""
 "Batch size: The number of combined input datasets that the model "
 "processes simultaneously."
-msgstr ""
+msgstr "Batch size: 모델이 동시에 처리하는 결합된 입력 데이터셋의 수입니다."
 
 #: ../../source/compatibility_range_of_conversion.rst:34
 msgid "Channel: 3 for RGB or BGR and 1 for Grayscale."
-msgstr ""
+msgstr "Channel: RGB 또는 BGR의 경우 3, 그레이스케일의 경우 1입니다."
 
 #: ../../source/compatibility_range_of_conversion.rst:35
 msgid ""
 "Input size: In computer vision tasks, input size refers to the size of "
 "the input images."
-msgstr ""
+msgstr "Input size: 컴퓨터 비전 작업에서 입력 크기는 입력 이미지의 크기를 의미합니다."
 
 #: ../../source/compatibility_range_of_conversion.rst:40
 msgid "ONNX to TensorRT"
-msgstr ""
+msgstr "ONNX to TensorRT"
 
 #: ../../source/compatibility_range_of_conversion.rst:42
 msgid ":ref:`Supported JetPack-ONNX version <supported_jetpack_onnx_version>`"
-msgstr ""
+msgstr ":ref:`Supported JetPack-ONNX version <supported_jetpack_onnx_version>`"
 
 #: ../../source/compatibility_range_of_conversion.rst:48
 msgid "Target Device"
-msgstr ""
+msgstr "Target Device"
 
 #: ../../source/compatibility_range_of_conversion.rst:49
 msgid "JetPack version"
-msgstr ""
+msgstr "JetPack version"
 
 #: ../../source/compatibility_range_of_conversion.rst:50
 #: ../../source/compatibility_range_of_conversion.rst:114
 #: ../../source/compatibility_range_of_conversion.rst:134
 #: ../../source/compatibility_range_of_conversion.rst:154
-msgid "Input datatype"
-msgstr ""
+#, fuzzy
+msgid "Input data type"
+msgstr "Input data type"
 
 #: ../../source/compatibility_range_of_conversion.rst:51
 #: ../../source/compatibility_range_of_conversion.rst:115
 #: ../../source/compatibility_range_of_conversion.rst:135
 #: ../../source/compatibility_range_of_conversion.rst:155
 msgid "Batch size"
-msgstr ""
+msgstr "Batch size"
 
 #: ../../source/compatibility_range_of_conversion.rst:52
 #: ../../source/compatibility_range_of_conversion.rst:116
 #: ../../source/compatibility_range_of_conversion.rst:136
 #: ../../source/compatibility_range_of_conversion.rst:156
 msgid "Channel"
-msgstr ""
+msgstr "Channel"
 
 #: ../../source/compatibility_range_of_conversion.rst:53
 #: ../../source/compatibility_range_of_conversion.rst:117
 #: ../../source/compatibility_range_of_conversion.rst:137
 #: ../../source/compatibility_range_of_conversion.rst:157
 msgid "Input size"
-msgstr ""
+msgstr "Input size"
 
 #: ../../source/compatibility_range_of_conversion.rst:54
 #: ../../source/compatibility_range_of_conversion.rst:118
 #: ../../source/compatibility_range_of_conversion.rst:138
 #: ../../source/compatibility_range_of_conversion.rst:158
-msgid "Output datatype"
-msgstr ""
+#, fuzzy
+msgid "Output data type"
+msgstr "Output data type"
 
 #: ../../source/compatibility_range_of_conversion.rst:55
 msgid "NVIDIA Jetson Nano"
-msgstr ""
+msgstr "NVIDIA Jetson Nano"
 
 #: ../../source/compatibility_range_of_conversion.rst:56
 msgid "4.6, 4.4.1"
-msgstr ""
+msgstr "4.6, 4.4.1"
 
 #: ../../source/compatibility_range_of_conversion.rst:57
 #: ../../source/compatibility_range_of_conversion.rst:64
@@ -153,7 +155,7 @@ msgstr ""
 #: ../../source/compatibility_range_of_conversion.rst:139
 #: ../../source/compatibility_range_of_conversion.rst:159
 msgid "FP32"
-msgstr ""
+msgstr "FP32"
 
 #: ../../source/compatibility_range_of_conversion.rst:58
 #: ../../source/compatibility_range_of_conversion.rst:65
@@ -166,7 +168,7 @@ msgstr ""
 #: ../../source/compatibility_range_of_conversion.rst:140
 #: ../../source/compatibility_range_of_conversion.rst:160
 msgid "1~4 (Static), Dynamic"
-msgstr ""
+msgstr "1~4 (Static), Dynamic"
 
 #: ../../source/compatibility_range_of_conversion.rst:59
 #: ../../source/compatibility_range_of_conversion.rst:66
@@ -179,7 +181,7 @@ msgstr ""
 #: ../../source/compatibility_range_of_conversion.rst:141
 #: ../../source/compatibility_range_of_conversion.rst:161
 msgid "1~4"
-msgstr ""
+msgstr "1~4"
 
 #: ../../source/compatibility_range_of_conversion.rst:60
 #: ../../source/compatibility_range_of_conversion.rst:67
@@ -192,7 +194,7 @@ msgstr ""
 #: ../../source/compatibility_range_of_conversion.rst:142
 #: ../../source/compatibility_range_of_conversion.rst:162
 msgid "height, width"
-msgstr ""
+msgstr "height, width"
 
 #: ../../source/compatibility_range_of_conversion.rst:61
 #: ../../source/compatibility_range_of_conversion.rst:68
@@ -203,91 +205,101 @@ msgstr ""
 #: ../../source/compatibility_range_of_conversion.rst:103
 #: ../../source/compatibility_range_of_conversion.rst:143
 msgid "FP16"
-msgstr ""
+msgstr "FP16"
 
 #: ../../source/compatibility_range_of_conversion.rst:62
 msgid "NVIDIA Jetson Xavier NX"
-msgstr ""
+msgstr "NVIDIA Jetson Xavier NX"
 
 #: ../../source/compatibility_range_of_conversion.rst:63
 msgid "5.0.2, 4.6"
-msgstr ""
+msgstr "5.0.2, 4.6"
 
 #: ../../source/compatibility_range_of_conversion.rst:69
 msgid "NVIDIA Jetson TX2"
-msgstr ""
+msgstr "NVIDIA Jetson TX2"
 
 #: ../../source/compatibility_range_of_conversion.rst:70
 #: ../../source/compatibility_range_of_conversion.rst:77
 msgid "4.6"
-msgstr ""
+msgstr "4.6"
 
 #: ../../source/compatibility_range_of_conversion.rst:76
 msgid "NVIDIA Jetson AGX Xavier"
-msgstr ""
+msgstr "NVIDIA Jetson AGX Xavier"
 
 #: ../../source/compatibility_range_of_conversion.rst:83
 msgid "NVIDIA Jetson AGX Orin"
-msgstr ""
+msgstr "NVIDIA Jetson AGX Orin"
 
 #: ../../source/compatibility_range_of_conversion.rst:84
 msgid "5.0.1"
-msgstr ""
+msgstr "5.0.1"
 
 #: ../../source/compatibility_range_of_conversion.rst:90
 msgid "NVIDIA Jetson Orin Nano"
-msgstr ""
+msgstr "NVIDIA Jetson Orin Nano"
 
 #: ../../source/compatibility_range_of_conversion.rst:91
 msgid "6.0"
-msgstr ""
+msgstr "6.0"
 
 #: ../../source/compatibility_range_of_conversion.rst:97
 msgid "NVIDIA T4"
-msgstr ""
+msgstr "NVIDIA T4"
 
 #: ../../source/compatibility_range_of_conversion.rst:98
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: ../../source/compatibility_range_of_conversion.rst:108
 msgid "ONNX to TFlite"
-msgstr ""
+msgstr "ONNX to TFlite"
 
 #: ../../source/compatibility_range_of_conversion.rst:123
 #: ../../source/compatibility_range_of_conversion.rst:163
 msgid "FP16, INT8"
-msgstr ""
+msgstr "FP16, INT8"
 
 #: ../../source/compatibility_range_of_conversion.rst:128
 msgid "ONNX to OpenVino"
-msgstr ""
+msgstr "ONNX to OpenVino"
 
 #: ../../source/compatibility_range_of_conversion.rst:148
 msgid "TensorFlow to TensorFlowLite"
-msgstr ""
+msgstr "TensorFlow to TensorFlowLite"
 
 #~ msgid ""
 #~ "`ONNX to TensorRT <https://docs.netspresso.ai/docs"
 #~ "/compatible-model-scope#onnx-to-tensorrt/>`_"
 #~ msgstr ""
+#~ "`ONNX to TensorRT <https://docs.netspresso.ai/docs"
+#~ "/compatible-model-scope#onnx-to-tensorrt/>`_"
 
 #~ msgid ""
 #~ "`ONNX to TensorFlow Lite "
 #~ "<https://docs.netspresso.ai/docs/compatible-model-scope"
 #~ "#onnx-to-tflite/>`_"
 #~ msgstr ""
+#~ "`ONNX to TensorFlow Lite "
+#~ "<https://docs.netspresso.ai/docs/compatible-model-scope"
+#~ "#onnx-to-tflite/>`_"
 
 #~ msgid ""
 #~ "`ONNX to OpenVINO <https://docs.netspresso.ai/docs"
 #~ "/compatible-model-scope#onnx-to-openvino/>`_"
 #~ msgstr ""
+#~ "`ONNX to OpenVINO <https://docs.netspresso.ai/docs"
+#~ "/compatible-model-scope#onnx-to-openvino/>`_"
 
 #~ msgid ""
 #~ "`TensorFlow-Keras to TensorFlow Lite "
 #~ "<https://docs.netspresso.ai/docs/compatible-model-scope"
 #~ "#tensorflow-to-tensorflowlite/>`_"
 #~ msgstr ""
+#~ "`TensorFlow-Keras to TensorFlow Lite "
+#~ "<https://docs.netspresso.ai/docs/compatible-model-scope"
+#~ "#tensorflow-to-tensorflowlite/>`_"
 
 #~ msgid ""
 #~ "> 1. Batch size: The number of "
@@ -299,4 +311,11 @@ msgstr ""
 #~ " the size of the input images. "
 #~ ">"
 #~ msgstr ""
-
+#~ "> 1. Batch size: The number of "
+#~ "combined input datasets that the model"
+#~ " processes simultaneously. 2. Channel: 3"
+#~ " for RGB or BGR and 1 for "
+#~ "Grayscale. 3. Input size: In computer"
+#~ " vision tasks, input size refers to"
+#~ " the size of the input images. "
+#~ ">"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LaunchX \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 04:20+0000\n"
+"POT-Creation-Date: 2024-07-12 06:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,109 +16,109 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/int8_quantization_with_launchx.rst:7
-#: ../../source/int8_quantization_with_launchx.rst:20
-#: ../../source/int8_quantization_with_launchx.rst:25
+#: ../../source/int8_quantization_with_launchx.rst:9
+#: ../../source/int8_quantization_with_launchx.rst:22
+#: ../../source/int8_quantization_with_launchx.rst:27
 msgid "INT8 quantization with LaunchX"
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:9
+#: ../../source/int8_quantization_with_launchx.rst:11
 msgid "You can use LaunchX converter to automatically convert the AI model's framework to the target framework."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:12
+#: ../../source/int8_quantization_with_launchx.rst:14
 msgid "What is Quantization?"
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:14
+#: ../../source/int8_quantization_with_launchx.rst:16
 msgid "Quantization is a technique that reduces the number of bits used to represent weights and activations in a deep learning model. This makes the model lighter, reducing memory usage and improving inference speed."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:16
+#: ../../source/int8_quantization_with_launchx.rst:18
 msgid "LaunchX facilitates the easy application of post-training INT8 quantization to the model. It represents the model's weights and activations as 8-bit integers, saving memory and accelerating computations."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:18
+#: ../../source/int8_quantization_with_launchx.rst:20
 msgid "This document provides information as follows:"
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:21
-#: ../../source/int8_quantization_with_launchx.rst:34
+#: ../../source/int8_quantization_with_launchx.rst:23
+#: ../../source/int8_quantization_with_launchx.rst:36
 msgid "Preparing the calibration dataset"
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:22
+#: ../../source/int8_quantization_with_launchx.rst:24
 msgid "Inference code for TFlite INT8 model"
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:26
+#: ../../source/int8_quantization_with_launchx.rst:28
 msgid "To quantize, upload your target model or select from the free models in Models."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:27
+#: ../../source/int8_quantization_with_launchx.rst:29
 msgid "On the Convert Setting page, choose Tensorflow Lite, select the target device, and then choose the INT8 option."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:28
+#: ../../source/int8_quantization_with_launchx.rst:30
 msgid "Upload the calibration dataset(<= 500MB) to minimize quantization error."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:29
+#: ../../source/int8_quantization_with_launchx.rst:31
 msgid "Click the convert button."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:35
+#: ../../source/int8_quantization_with_launchx.rst:37
 msgid "Calibration is the process of aligning a quantized model with a specific data distribution, adjusting quantization parameters such as scaling and zero points."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:37
+#: ../../source/int8_quantization_with_launchx.rst:39
 msgid "Generally, the calibration dataset is a subset of the original training data, used to fine-tune quantization parameters. Its purpose is to ensure the quantized model's optimal performance on real-world data while maintaining acceptable accuracy. During calibration, the model runs on this dataset, and activation statistics are collected. These statistics determine quantization parameters for each neural network layer, minimizing the impact of quantization on accuracy by adapting parameters based on observed value distributions."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:40
+#: ../../source/int8_quantization_with_launchx.rst:42
 msgid "Convert the dataset to NumPy for calibration."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:42
+#: ../../source/int8_quantization_with_launchx.rst:44
 msgid "img_file_dir_path : Path where the dataset for calibration is stored."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:43
+#: ../../source/int8_quantization_with_launchx.rst:45
 msgid "padding : Value for padding preprocessing."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:44
+#: ../../source/int8_quantization_with_launchx.rst:46
 msgid "color_mode : Value to change the color mode of an image for preprocessing. Select ‘bgr’ or ‘rgb’."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:45
+#: ../../source/int8_quantization_with_launchx.rst:47
 msgid "normalize : Value for normalization preprocessing."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:46
+#: ../../source/int8_quantization_with_launchx.rst:48
 msgid "input_shape : Value for width and height of model input shape."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:47
+#: ../../source/int8_quantization_with_launchx.rst:49
 msgid "save_file_path : Path to save the npy file."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:222
+#: ../../source/int8_quantization_with_launchx.rst:224
 msgid "Result"
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:234
+#: ../../source/int8_quantization_with_launchx.rst:236
 msgid "Dataset that failed to be read"
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:236
+#: ../../source/int8_quantization_with_launchx.rst:238
 msgid "Image files that do not open normally through opencv-python are listed in the 'error_files.txt' created in the code execution location."
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:239
+#: ../../source/int8_quantization_with_launchx.rst:241
 msgid "Inference Code for TFlite INT8"
 msgstr ""
 
-#: ../../source/int8_quantization_with_launchx.rst:241
+#: ../../source/int8_quantization_with_launchx.rst:243
 msgid "Write and use additional pre-processing/post-processing codes for your model."
 msgstr ""

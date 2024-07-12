@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Nota
+# This file is distributed under the same license as the LaunchX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaunchX \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-12 06:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/error_messages.rst:9
+msgid "Error Messages"
+msgstr ""
+
+#: ../../source/error_messages.rst:12
+msgid "Upload"
+msgstr ""
+
+#: ../../source/error_messages.rst:15
+msgid "FrameworkException"
+msgstr ""
+
+#: ../../source/error_messages.rst:16
+msgid "This occurs when the uploaded model file is not supported by the framework. Please check the scope of support."
+msgstr ""
+
+#: ../../source/error_messages.rst:19
+msgid "InputShapeLengthException"
+msgstr ""
+
+#: ../../source/error_messages.rst:20
+msgid "This occurs when the input shape length is not 4."
+msgstr ""
+
+#: ../../source/error_messages.rst:23
+msgid "InspectFail"
+msgstr ""
+
+#: ../../source/error_messages.rst:24
+#: ../../source/error_messages.rst:40
+msgid "This occurs when there is an issue with the model file."
+msgstr ""
+
+#: ../../source/error_messages.rst:27
+msgid "KerasError"
+msgstr ""
+
+#: ../../source/error_messages.rst:28
+msgid "This occurs when there is an issue with the Keras model file."
+msgstr ""
+
+#: ../../source/error_messages.rst:31
+msgid "MakeInputsError"
+msgstr ""
+
+#: ../../source/error_messages.rst:32
+msgid "This occurs when there is no subgraph in the TensorFlow model file."
+msgstr ""
+
+#: ../../source/error_messages.rst:35
+msgid "ModelFileInspectException"
+msgstr ""
+
+#: ../../source/error_messages.rst:36
+msgid "If there are issues during the process of inspecting the uploaded model file."
+msgstr ""
+
+#: ../../source/error_messages.rst:39
+msgid "ModelTypeError"
+msgstr ""
+
+#: ../../source/error_messages.rst:43
+msgid "MultiLayerException"
+msgstr ""
+
+#: ../../source/error_messages.rst:44
+msgid "This occurs when the input layer is multi-layered."
+msgstr ""
+
+#: ../../source/error_messages.rst:47
+msgid "OpenVINOError"
+msgstr ""
+
+#: ../../source/error_messages.rst:48
+msgid "This occurs when there is an issue with the OpenVINO model file."
+msgstr ""
+
+#: ../../source/error_messages.rst:51
+msgid "TensorRTDeserializerError"
+msgstr ""
+
+#: ../../source/error_messages.rst:52
+msgid "This occurs when there is an issue with the TensorRT model file."
+msgstr ""
+
+#: ../../source/error_messages.rst:55
+msgid "TooLargeBatchModelException"
+msgstr ""
+
+#: ../../source/error_messages.rst:56
+msgid "This occurs when the batch size of the model being uploaded exceeds 4."
+msgstr ""
+
+#: ../../source/error_messages.rst:59
+msgid "TooLargeChannelModelException"
+msgstr ""
+
+#: ../../source/error_messages.rst:60
+msgid "This occurs when the number of channels in the model being uploaded exceeds 3."
+msgstr ""
+
+#: ../../source/error_messages.rst:63
+msgid "Benchmark"
+msgstr ""
+
+#: ../../source/error_messages.rst:66
+msgid "BenchmarkFailedException"
+msgstr ""
+
+#: ../../source/error_messages.rst:67
+msgid "This occurs during benchmark execution. Detailed investigation through log analysis is required to determine the specific cause. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+
+#: ../../source/error_messages.rst:71
+msgid "DynamicBatchModelException"
+msgstr ""
+
+#: ../../source/error_messages.rst:72
+msgid "This occurs when the uploaded model is a dynamic batch model. Currently, only static batch models are supported."
+msgstr ""
+
+#: ../../source/error_messages.rst:75
+msgid "DynamicInputShapeModelException"
+msgstr ""
+
+#: ../../source/error_messages.rst:76
+msgid "This occurs when the uploaded model has dynamic width and height, whereas only static input sizes are currently supported."
+msgstr ""
+
+#: ../../source/error_messages.rst:79
+msgid "StartBenchmarkFail"
+msgstr ""
+
+#: ../../source/error_messages.rst:80
+msgid "This occurs when there is a failure to execute a benchmark in the device farm. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+
+#: ../../source/error_messages.rst:84
+msgid "Convert"
+msgstr ""
+
+#: ../../source/error_messages.rst:87
+msgid "ConvertFailedException"
+msgstr ""
+
+#: ../../source/error_messages.rst:88
+msgid "This occurs during the conversion process. Detailed investigation through log analysis is required to determine the specific cause. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+
+#: ../../source/error_messages.rst:92
+msgid "NeedDeviceException"
+msgstr ""
+
+#: ../../source/error_messages.rst:93
+msgid "This occurs when no device is specified during the conversion process to TensorRT. Since the conversion to TensorRT runs on a device, you need to specify both the device and Jetpack versions."
+msgstr ""
+
+#: ../../source/error_messages.rst:96
+msgid "NeedInputShapeException"
+msgstr ""
+
+#: ../../source/error_messages.rst:97
+msgid "This occurs during the conversion of a model with dynamic shape when the input shape value of the model is missing."
+msgstr ""
+
+#: ../../source/error_messages.rst:101
+msgid "Common cases"
+msgstr ""
+
+#: ../../source/error_messages.rst:104
+msgid "DeviceFarmUploadError"
+msgstr ""
+
+#: ../../source/error_messages.rst:105
+msgid "This occurs during the process of uploading a model to the Device farm. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+
+#: ../../source/error_messages.rst:109
+msgid "DeviceNotMatchedWithFrameworkException"
+msgstr ""
+
+#: ../../source/error_messages.rst:110
+msgid "This occurs when the target framework and target device do not match."
+msgstr ""
+
+#: ../../source/error_messages.rst:113
+msgid "InternalException"
+msgstr ""
+
+#: ../../source/error_messages.rst:114
+msgid "In case of a temporary error. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+
+#: ../../source/error_messages.rst:118
+msgid "LatestJobIsNotFinished"
+msgstr ""
+
+#: ../../source/error_messages.rst:119
+msgid "This occurs when attempting to execute a new task while there are ongoing convert or benchmark operations."
+msgstr ""
+
+#: ../../source/error_messages.rst:122
+msgid "NoAvailableDevice"
+msgstr ""
+
+#: ../../source/error_messages.rst:123
+msgid "This occurs when there are no available devices in the NetsPresso device farm. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+
+#: ../../source/error_messages.rst:127
+msgid "NoCredit"
+msgstr ""
+
+#: ../../source/error_messages.rst:128
+msgid "This occurs when there are not enough credits available to execute the task. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+
+#: ../../source/error_messages.rst:132
+msgid "NoModelUuidException"
+msgstr ""
+
+#: ../../source/error_messages.rst:133
+msgid "This occurs when requesting a model_uuid that does not exist."
+msgstr ""
+
+#: ../../source/error_messages.rst:136
+msgid "NotSupportedDeviceException"
+msgstr ""
+
+#: ../../source/error_messages.rst:137
+msgid "This occurs when the input target device is not supported by the selected framework."
+msgstr ""
+
+#: ../../source/error_messages.rst:140
+msgid "AccountException"
+msgstr ""
+
+#: ../../source/error_messages.rst:141
+msgid "If there's an issue during the server's communication relay process, a related message will be displayed on the service. For undefined exception cases, log investigation is necessary to identify the detailed cause. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+msgstr ""
+
+#: ../../source/error_messages.rst:145
+msgid "Dataset file"
+msgstr ""
+
+#: ../../source/error_messages.rst:146
+msgid ":ref:`Prepare dataset file for INT8 quantization with LaunchX <int8_quantization_with_launchx>`"
+msgstr ""
+
+#: ../../source/error_messages.rst:149
+msgid "DatasetFileBrokenException"
+msgstr ""
+
+#: ../../source/error_messages.rst:150
+msgid "This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file."
+msgstr ""
+
+#: ../../source/error_messages.rst:153
+msgid "DatasetFileSuffixException"
+msgstr ""
+
+#: ../../source/error_messages.rst:154
+msgid "This occurs when the extension of the uploaded file is not .npy for quantization calibration."
+msgstr ""
+
+#: ../../source/error_messages.rst:157
+msgid "InvalidTypeException"
+msgstr ""
+
+#: ../../source/error_messages.rst:158
+msgid "This occurs when the dataset file is not a readable NumPy array."
+msgstr ""
+
+#: ../../source/error_messages.rst:161
+msgid "NumpyArrayHasWrongShapeException"
+msgstr ""
+
+#: ../../source/error_messages.rst:162
+msgid "This occurs when the shape of the npy file for quantization calibration does not match the input shape of the model being converted."
+msgstr ""

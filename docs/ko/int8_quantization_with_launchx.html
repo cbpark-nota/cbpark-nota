@@ -9,6 +9,7 @@
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
   
+    <link rel="shortcut icon" href="_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -22,6 +23,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
     <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="Error Messages" href="error_messages.html" />
     <link rel="prev" title="Benchmark 호환성 범위" href="compatibility_range_of_benchmark.html" /> 
 </head>
 
@@ -46,12 +48,12 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Compatibility range of conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Conversion 호환성 범위</a></li>
 <li class="toctree-l1"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark 호환성 범위</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">INT8 quantization with LaunchX</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-quantization">What is Quantization?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">INT8 quantization with LaunchX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">INT8 quantization with LaunchX</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#preparing-the-calibration-dataset">Preparing the calibration dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#convert-the-dataset-to-numpy-for-calibration">Convert the dataset to NumPy for calibration.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#result">Result</a></li>
@@ -59,6 +61,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#inference-code-for-tflite-int8">Inference Code for TFlite INT8</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="error_messages.html">Error Messages</a></li>
 </ul>
 
         </div>
@@ -86,7 +89,7 @@
            <div itemprop="articleBody">
              
   <section id="int8-quantization-with-launchx">
-<h1>INT8 quantization with LaunchX<a class="headerlink" href="#int8-quantization-with-launchx" title="Link to this heading"></a></h1>
+<span id="id1"></span><h1>INT8 quantization with LaunchX<a class="headerlink" href="#int8-quantization-with-launchx" title="Link to this heading"></a></h1>
 <p>You can use LaunchX converter to automatically convert the AI model’s framework to the target framework.</p>
 <section id="what-is-quantization">
 <h2>What is Quantization?<a class="headerlink" href="#what-is-quantization" title="Link to this heading"></a></h2>
@@ -99,8 +102,8 @@
 <li><p>Inference code for TFlite INT8 model</p></li>
 </ul>
 </section>
-<section id="id1">
-<h2>INT8 quantization with LaunchX<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<section id="id2">
+<h2>INT8 quantization with LaunchX<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>To quantize, upload your target model or select from the free models in Models.</p></li>
 <li><p>On the Convert Setting page, choose Tensorflow Lite, select the target device, and then choose the INT8 option.</p></li>
@@ -385,6 +388,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="compatibility_range_of_benchmark.html" class="btn btn-neutral float-left" title="Benchmark 호환성 범위" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="error_messages.html" class="btn btn-neutral float-right" title="Error Messages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
