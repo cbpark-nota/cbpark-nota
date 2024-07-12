@@ -62,10 +62,10 @@ This occurs when the number of channels in the model being uploaded exceeds 3.
 Benchmark
 ^^^^^^^^^
 
-
-BenchmarkFailedException(TODO)
-""""""""""""""""""""""""""""""
+BenchmarkFailedException
+""""""""""""""""""""""""
 This occurs during benchmark execution. Detailed investigation through log analysis is required to determine the specific cause.
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 DynamicBatchModelException
 """"""""""""""""""""""""""
@@ -78,13 +78,15 @@ This occurs when the uploaded model has dynamic width and height, whereas only s
 StartBenchmarkFail
 """"""""""""""""""
 This occurs when there is a failure to execute a benchmark in the device farm.
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 Convert
 ^^^^^^^
 
-ConvertFailedException(TODO)
-""""""""""""""""""""""""""""
-This occurs during the conversion process. Detailed investigation through log analysis is required to determine the specific cause.
+ConvertFailedException
+""""""""""""""""""""""
+This occurs during the conversion process. Detailed investigation through log analysis is required to determine the specific cause. 
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 NeedDeviceException
 """""""""""""""""""
@@ -98,17 +100,19 @@ This occurs during the conversion of a model with dynamic shape when the input s
 Common cases
 ^^^^^^^^^^^^
 
-DeviceFarmUploadError(TODO)
-"""""""""""""""""""""""""""
+DeviceFarmUploadError
+"""""""""""""""""""""
 This occurs during the process of uploading a model to the Device farm.
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 DeviceNotMatchedWithFrameworkException
 """"""""""""""""""""""""""""""""""""""
 This occurs when the target framework and target device do not match.
 
-InternalException(TODO)
-"""""""""""""""""""""""
+InternalException
+"""""""""""""""""
 In case of a temporary error.
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 LatestJobIsNotFinished
 """"""""""""""""""""""
@@ -117,10 +121,12 @@ This occurs when attempting to execute a new task while there are ongoing conver
 NoAvailableDevice
 """""""""""""""""
 This occurs when there are no available devices in the NetsPresso device farm.
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 NoCredit
 """"""""
 This occurs when there are not enough credits available to execute the task.
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 NoModelUuidException
 """"""""""""""""""""
@@ -133,9 +139,11 @@ This occurs when the input target device is not supported by the selected framew
 AccountException
 """"""""""""""""
 If there's an issue during the server's communication relay process, a related message will be displayed on the service. For undefined exception cases, log investigation is necessary to identify the detailed cause.
+`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 Dataset file
 ^^^^^^^^^^^^
+:ref:`Prepare dataset file for INT8 quantization with LaunchX <int8_quantization_with_launchx>`
 
 DatasetFileBrokenException
 """"""""""""""""""""""""""
