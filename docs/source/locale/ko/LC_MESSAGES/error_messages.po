@@ -282,11 +282,9 @@ msgstr "NoCredit"
 
 #: ../../source/error_messages.rst:128
 msgid ""
-"This occurs when there are not enough credits available to execute the "
-"task. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+"This occurs when there are not enough credits available to execute the task. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
-"작업을 실행하기 위한 충분한 크레딧이 없는 경우입니다."
-"`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+"작업을 실행하기 위한 충분한 크레딧이 없는 경우입니다. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:132
 msgid "NoModelUuidException"
@@ -313,13 +311,9 @@ msgstr "AccountException"
 
 #: ../../source/error_messages.rst:141
 msgid ""
-"If there's an issue during the server's communication relay process, a "
-"related message will be displayed on the service. For undefined exception"
-" cases, log investigation is necessary to identify the detailed cause. "
-"`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+"If there's an issue during the server's communication relay process, a related message will be displayed on the service. For undefined exception cases, log investigation is necessary to identify the detailed cause. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
-"서버가 통신을 중계하는 과정에서 문제가 생기면 관련 메시지가 서비스 상에 표시됩니다. 정의되지 않은 예외 경우는 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다."
-"`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+"서버가 통신을 중계하는 과정에서 문제가 생기면 관련 메시지가 서비스 상에 표시됩니다. 정의되지 않은 예외 경우는 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:145
 msgid "Dataset file"
@@ -354,7 +348,7 @@ msgid ""
 "This occurs when the extension of the uploaded file is not .npy for "
 "quantization calibration."
 msgstr ""
-"양자화 calibration을 위하여 업로드된 파일의 확장자가 .npy가 아닌 경우 발생."
+"양자화 calibration을 위하여 업로드된 파일의 확장자가 .npy가 아닌 경우입니다."
 
 #: ../../source/error_messages.rst:157
 msgid "InvalidTypeException"
