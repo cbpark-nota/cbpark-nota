@@ -36,7 +36,7 @@ msgid ""
 "This occurs when the uploaded model file is not supported by the "
 "framework. Please check the scope of support."
 msgstr ""
-"업로드한 model file이 지원하는 framework가 아닌 경우입니다. 지원범위 문서를 확인해주세요.
+"업로드한 model file이 지원하는 framework가 아닌 경우입니다. 지원범위 문서를 확인해주세요."
 
 #: ../../source/error_messages.rst:19
 msgid "InputShapeLengthException"
@@ -142,7 +142,7 @@ msgid ""
 "log analysis is required to determine the specific cause. `[Contact "
 "support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
-"벤치마크 실행중 발생한 에러입니다. 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. `[Contact "
+"Benchmark 실행중 발생한 에러입니다. 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. `[Contact "
 "support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:71
@@ -229,11 +229,9 @@ msgstr "DeviceFarmUploadError"
 
 #: ../../source/error_messages.rst:105
 msgid ""
-"This occurs during the process of uploading a model to the Device farm. "
-"`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+"This occurs during the process of uploading a model to the Device farm. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
-"Device farm에서 model을 upload하는 과정에서 에러가 발생한 경우입니다."
-"`[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+"Device farm에서 model을 upload하는 과정에서 에러가 발생한 경우입니다. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:109
 msgid "DeviceNotMatchedWithFrameworkException"
