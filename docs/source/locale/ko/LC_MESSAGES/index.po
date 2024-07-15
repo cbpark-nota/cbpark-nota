@@ -84,11 +84,11 @@ msgstr "자동 변환으로 시행착오를 없앱니다."
 
 #: ../../source/index.rst:28
 msgid "Quickly set up the deployment of models on target devices."
-msgstr ""
+msgstr "대상 기기에 모델 배포를 신속하게 설정합니다."
 
 #: ../../source/index.rst:30
 msgid ":ref:`See supported frameworks <compatible_model_scope>`"
-msgstr ""
+msgstr ":ref:`See supported frameworks <compatible_model_scope>`"
 
 #: ../../source/index.rst:33
 msgid "Benchmark"
@@ -109,15 +109,13 @@ msgstr "타겟 장치와 모델 호환성을 확인하세요."
 #: ../../source/index.rst:40
 #, fuzzy
 msgid ""
-"Evaluate real-device performance without acquiring or setting up the "
-"device."
+"Evaluate real-device performance without acquiring or setting up the device."
 msgstr ""
-"`호환가능한 장치를 확인하세요 <https://docs.netspresso.ai/docs/compatible-model-"
-"scope#benchmark/>`_."
+"실제 기기를 구매하거나 설정하지 않고도 실제 기기의 성능을 평가합니다."
 
 #: ../../source/index.rst:42
 msgid ":ref:`View compatible devices <compatibility_benchmark>`"
-msgstr ""
+msgstr ":ref:`호환가능한 장치를 확인하세요 <compatibility_benchmark>`"
 
 #: ../../source/index.rst:45
 msgid "Request your device"
