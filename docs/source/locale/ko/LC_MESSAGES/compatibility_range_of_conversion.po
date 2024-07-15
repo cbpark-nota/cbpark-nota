@@ -89,7 +89,7 @@ msgstr "ONNX to TensorRT"
 
 #: ../../source/compatibility_range_of_conversion.rst:42
 msgid ":ref:`Supported JetPack-ONNX version <supported_jetpack_onnx_version>`"
-msgstr ":ref:`Supported JetPack-ONNX version <supported_jetpack_onnx_version>`"
+msgstr ":ref:`지원되는 JetPack-ONNX version <supported_jetpack_onnx_version>`"
 
 #: ../../source/compatibility_range_of_conversion.rst:48
 msgid "Target Device"

@@ -60,7 +60,7 @@ msgstr "이 문서는 다음과 같은 정보를 제공합니다:"
 #: ../../source/int8_quantization_with_launchx.rst:21
 #: ../../source/int8_quantization_with_launchx.rst:34
 msgid "Preparing the calibration dataset"
-msgstr Calibration dataset 준비하기"
+msgstr "Calibration dataset 준비하기"
 
 #: ../../source/int8_quantization_with_launchx.rst:22
 msgid "Inference code for TFlite INT8 model"
@@ -150,7 +150,7 @@ msgstr "결과"
 
 #: ../../source/int8_quantization_with_launchx.rst:234
 msgid "Dataset that failed to be read"
-msgstr "읽기에 실패한 Dataset"
+msgstr "읽기에 실패한 데이터셋"
 
 #: ../../source/int8_quantization_with_launchx.rst:236
 msgid ""
