@@ -150,7 +150,7 @@ msgstr "결과"
 
 #: ../../source/int8_quantization_with_launchx.rst:234
 msgid "Dataset that failed to be read"
-msgstr "Dataset that failed to be read"
+msgstr "읽기에 실패한 Dataset"
 
 #: ../../source/int8_quantization_with_launchx.rst:236
 msgid ""

@@ -36,7 +36,7 @@ msgid ""
 "This occurs when the uploaded model file is not supported by the "
 "framework. Please check the scope of support."
 msgstr ""
-"업로드한 model file이 지원하는 framework가 아닌 경우입니다. 지원범위 문서를 확인해주세요."
+"업로드한 모델 파일이 지원하는 framework가 아닌 경우입니다. 지원범위 문서를 확인해주세요."
 
 #: ../../source/error_messages.rst:19
 msgid "InputShapeLengthException"
@@ -79,7 +79,7 @@ msgid ""
 "If there are issues during the process of inspecting the uploaded model "
 "file."
 msgstr ""
-"업로드된 model file을 확인하는 과정에서 문제가 발생한 경우입니다."
+"업로드된 모델 파일을 확인하는 과정에서 문제가 발생한 경우입니다."
 
 #: ../../source/error_messages.rst:39
 msgid "ModelTypeError"
@@ -142,7 +142,7 @@ msgid ""
 "log analysis is required to determine the specific cause. `[Contact "
 "support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
-"Benchmark 실행중 발생한 에러입니다. 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. `[Contact "
+"벤치마크 실행중 발생한 에러입니다. 상세한 원인을 파악하기 위하여 로그 조사가 필요합니다. `[Contact "
 "support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:71
@@ -176,7 +176,7 @@ msgid ""
 "This occurs when there is a failure to execute a benchmark in the device "
 "farm. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 msgstr ""
-"Device farm에서 Benchmark를 실행에 실패한 경우입니다. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
+"Device farm에서 벤치마크를 실행에 실패한 경우입니다. `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_"
 
 #: ../../source/error_messages.rst:84
 msgid "Convert"
@@ -262,7 +262,7 @@ msgid ""
 "This occurs when attempting to execute a new task while there are ongoing"
 " convert or benchmark operations."
 msgstr ""
-"진행중인 convert나 benchmark 작업이 있는 상태에서 새로운 task를 실행하려고 한 경우입니다."
+"진행중인 변환이나 벤치마크 작업이 있는 상태에서 새로운 task를 실행하려고 한 경우입니다."
 
 #: ../../source/error_messages.rst:122
 msgid "NoAvailableDevice"
