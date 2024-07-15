@@ -30,8 +30,8 @@ msgid ""
 msgstr "LaunchX를 사용하여 AI 모델의 프레임워크를 목표 프레임워크로 자동 변환할 수 있습니다."
 
 #: ../../source/compatibility_range_of_conversion.rst:14
-msgid "Converting case"
-msgstr "Converting case"
+msgid "Conversion case"
+msgstr "Conversion case"
 
 #: ../../source/compatibility_range_of_conversion.rst:18
 msgid ":ref:`ONNX to TensorRT <onnx_to_tensorrt>`"

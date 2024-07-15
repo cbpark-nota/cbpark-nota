@@ -10,7 +10,7 @@ Compatibility range of conversion
 
 You can use LaunchX converter to automatically convert the AI model's framework to the target framework.
 
-Converting case
+Conversion case
 ---------------
 
 .. image:: _images/converting_case.png
