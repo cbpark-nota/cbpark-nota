@@ -6,7 +6,7 @@
 .. _int8_quantization_with_launchx:
 
 INT8 quantization
-==============================
+=================
 
 You can use LaunchX converter to automatically convert the AI model's framework to the target framework.
 
