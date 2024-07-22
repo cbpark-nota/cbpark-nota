@@ -20,8 +20,8 @@ msgstr ""
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../source/error_messages.rst:9
-msgid "Error Messages"
-msgstr "Error Messages"
+msgid "Common Issues"
+msgstr "Common Issues"
 
 #: ../../source/error_messages.rst:12
 msgid "Upload"

@@ -5,13 +5,13 @@
 
 .. _int8_quantization_with_launchx:
 
-INT8 quantization with LaunchX
+INT8 quantization
 ==============================
 
 You can use LaunchX converter to automatically convert the AI model's framework to the target framework.
 
 What is Quantization?
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 Quantization is a technique that reduces the number of bits used to represent weights and activations in a deep learning model. This makes the model lighter, reducing memory usage and improving inference speed.
 
@@ -19,12 +19,12 @@ LaunchX facilitates the easy application of post-training INT8 quantization to t
 
 This document provides information as follows:
 
-- INT8 quantization with LaunchX
+- INT8 quantization
 - Preparing the calibration dataset
 - Inference code for TFlite INT8 model
 
-INT8 quantization with LaunchX
-------------------------------
+INT8 quantization
+^^^^^^^^^^^^^^^^^
 1. To quantize, upload your target model or select from the free models in Models.
 2. On the Convert Setting page, choose Tensorflow Lite, select the target device, and then choose the INT8 option.
 3. Upload the calibration dataset(<= 500MB) to minimize quantization error.
@@ -33,13 +33,13 @@ INT8 quantization with LaunchX
 .. image:: _images/INT8_setting.png
 
 Preparing the calibration dataset
----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Calibration is the process of aligning a quantized model with a specific data distribution, adjusting quantization parameters such as scaling and zero points.
 
 Generally, the calibration dataset is a subset of the original training data, used to fine-tune quantization parameters. Its purpose is to ensure the quantized model's optimal performance on real-world data while maintaining acceptable accuracy. During calibration, the model runs on this dataset, and activation statistics are collected. These statistics determine quantization parameters for each neural network layer, minimizing the impact of quantization on accuracy by adapting parameters based on observed value distributions.
 
 Convert the dataset to NumPy for calibration.
----------------------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""
 
 - img_file_dir_path : Path where the dataset for calibration is stored.
 - padding : Value for padding preprocessing.
@@ -221,7 +221,7 @@ Convert the dataset to NumPy for calibration.
       data_preprocessor.save_dataset_as_npy(save_file_path)
 
 Result
-------
+""""""
 
 ::
 
@@ -233,7 +233,7 @@ Result
 
 
 Dataset that failed to be read
-------------------------------
+""""""""""""""""""""""""""""""
 
 Image files that do not open normally through opencv-python are listed in the 'error_files.txt' created in the code execution location.
 
