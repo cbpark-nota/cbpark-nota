@@ -52,13 +52,9 @@ If you encounter difficulties or need additional credits, feel free to contact u
 👨‍💻 NetsPresso Support Center: `netspresso@nota.ai <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 
-
-
-User Guides
------------
-
 .. toctree::
     :maxdepth: 3
+    :caption: User Guides
 
     compatibility_range_of_conversion
     supported_jetpack_onnx_version
@@ -66,11 +62,9 @@ User Guides
     int8_quantization_with_launchx
     error_messages
 
-Connection
-----------
-
 .. toctree::
     :maxdepth: 2
+    :caption: Connection
     
     NetsPresso(Linked in, Trainer, Python) <https://netspresso.ai/>
     partnerships
