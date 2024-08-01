@@ -1,52 +1,45 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ko" data-content_root="./">
+
+<html class="writer-html5" data-content_root="./" lang="ko">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INT8 quantization &mdash; LaunchX  문서</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-
-  
-    <link rel="shortcut icon" href="_static/favicon.png"/>
-  <!--[if lt IE 9]>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>INT8 quantization — LaunchX  문서</title>
+<link href="_static/pygments.css?v=80d5e7a1" rel="stylesheet" type="text/css"/>
+<link href="_static/css/theme.css?v=19f00094" rel="stylesheet" type="text/css"/>
+<link href="_static/favicon.png" rel="shortcut icon"/>
+<!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=5929fcd5"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="_static/translations.js?v=b5f768d8"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="색인" href="genindex.html" />
-    <link rel="search" title="검색" href="search.html" />
-    <link rel="next" title="Common Issues" href="error_messages.html" />
-    <link rel="prev" title="Benchmark 호환성 범위" href="compatibility_range_of_benchmark.html" /> 
+<script src="_static/jquery.js?v=5d32c60e"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="_static/documentation_options.js?v=5929fcd5"></script>
+<script src="_static/doctools.js?v=9a2dae69"></script>
+<script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script src="_static/translations.js?v=b5f768d8"></script>
+<script src="_static/js/theme.js"></script>
+<link href="genindex.html" rel="index" title="색인"/>
+<link href="search.html" rel="search" title="검색"/>
+<link href="error_messages.html" rel="next" title="Common Issues"/>
+<link href="compatibility_range_of_benchmark.html" rel="prev" title="Benchmark 호환성 범위"/>
 </head>
-
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="index.html" class="icon icon-home">
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="index.html">
             LaunchX
           </a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<form action="search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+</div><div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Conversion 호환성 범위</a></li>
 <li class="toctree-l1"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
@@ -67,32 +60,28 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="error_messages.html">Common Issues</a></li>
 </ul>
-
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">LaunchX</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">INT8 quantization</li>
-      <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/cbpark-nota/cbpark-nota/blob/sphinx/docs/int8_quantization_with_launchx.rst" class="fa fa-github"> Edit on GitHub</a>
-      </li>
-  </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section id="int8-quantization">
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="index.html">LaunchX</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Home" class="icon icon-home" href="index.html"></a></li>
+<li class="breadcrumb-item active">INT8 quantization</li>
+<li class="wy-breadcrumbs-aside">
+<a class="reference internal" href="int8_quantization_with_launchx.html">English</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="int8-quantization">
 <span id="int8-quantization-with-launchx"></span><h1>INT8 quantization<a class="headerlink" href="#int8-quantization" title="Link to this heading"></a></h1>
 <p>LaunchX Converter를 사용하여 AI 모델의 프레임워크를 목표 프레임워크로 자동 변환할 수 있습니다.</p>
 <section id="what-is-quantization">
@@ -114,7 +103,7 @@
 <li><p>양자화 오차를 최소화하기 위해 calibration dataset(500MB 이하)을 업로드하세요.</p></li>
 <li><p>Convert 버튼을 클릭하세요.</p></li>
 </ol>
-<img alt="_images/INT8_setting.png" src="_images/INT8_setting.png" />
+<img alt="_images/INT8_setting.png" src="_images/INT8_setting.png"/>
 </section>
 <section id="preparing-the-calibration-dataset">
 <h2>Calibration dataset 준비하기<a class="headerlink" href="#preparing-the-calibration-dataset" title="Link to this heading"></a></h2>
@@ -140,24 +129,24 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="n">img_file_types</span> <span class="o">=</span> <span class="p">[</span>
-   <span class="s2">&quot;*.jpeg&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.JPEG&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.jpg&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.JPG&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.png&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.PNG&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.BMP&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.bmp&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.TIF&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.tif&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.TIFF&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.tiff&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.DNG&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.dng&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.WEBP&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.webp&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.mpo&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;*.MPO&quot;</span><span class="p">,</span>
+   <span class="s2">"*.jpeg"</span><span class="p">,</span>
+   <span class="s2">"*.JPEG"</span><span class="p">,</span>
+   <span class="s2">"*.jpg"</span><span class="p">,</span>
+   <span class="s2">"*.JPG"</span><span class="p">,</span>
+   <span class="s2">"*.png"</span><span class="p">,</span>
+   <span class="s2">"*.PNG"</span><span class="p">,</span>
+   <span class="s2">"*.BMP"</span><span class="p">,</span>
+   <span class="s2">"*.bmp"</span><span class="p">,</span>
+   <span class="s2">"*.TIF"</span><span class="p">,</span>
+   <span class="s2">"*.tif"</span><span class="p">,</span>
+   <span class="s2">"*.TIFF"</span><span class="p">,</span>
+   <span class="s2">"*.tiff"</span><span class="p">,</span>
+   <span class="s2">"*.DNG"</span><span class="p">,</span>
+   <span class="s2">"*.dng"</span><span class="p">,</span>
+   <span class="s2">"*.WEBP"</span><span class="p">,</span>
+   <span class="s2">"*.webp"</span><span class="p">,</span>
+   <span class="s2">"*.mpo"</span><span class="p">,</span>
+   <span class="s2">"*.MPO"</span><span class="p">,</span>
 <span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">save_npy_file</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">save_file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
@@ -165,21 +154,21 @@
 
 <span class="k">def</span> <span class="nf">print_saved_npy_file_shape</span><span class="p">(</span><span class="n">save_file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
    <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">save_file_name</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Saved npy array shape is </span><span class="si">{</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Saved npy array shape is </span><span class="si">{</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">save_txt_file</span><span class="p">(</span><span class="n">lines</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
       <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
-            <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
       <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="k">def</span> <span class="nf">print_error_files</span><span class="p">(</span><span class="n">error_files</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Please check files in </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error files:&quot;</span><span class="p">,</span> <span class="n">error_files</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Please check files in </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">"Error files:"</span><span class="p">,</span> <span class="n">error_files</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">save_error_files</span><span class="p">(</span>
       <span class="n">error_files</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-      <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;error_files.txt&quot;</span><span class="p">):</span>
+      <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"error_files.txt"</span><span class="p">):</span>
    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">error_files</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
       <span class="n">save_txt_file</span><span class="p">(</span><span class="n">error_files</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
    <span class="n">print_error_files</span><span class="p">(</span><span class="n">error_files</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
@@ -189,7 +178,7 @@
       <span class="bp">self</span><span class="p">,</span>
       <span class="n">root_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
       <span class="n">input_shape</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
-      <span class="n">color_mode</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;bgr&quot;</span><span class="p">,</span> <span class="s2">&quot;rgb&quot;</span><span class="p">],</span>
+      <span class="n">color_mode</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">"bgr"</span><span class="p">,</span> <span class="s2">"rgb"</span><span class="p">],</span>
       <span class="n">padding</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
       <span class="n">normalize</span><span class="p">:</span> <span class="nb">bool</span>
    <span class="p">):</span>
@@ -210,7 +199,7 @@
 
       <span class="bp">self</span><span class="o">.</span><span class="n">img_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">img_list</span><span class="p">))</span>
       <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">img_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No image in </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">root_dir</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No image in </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">root_dir</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
       <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">img_list</span><span class="p">)</span>
 
@@ -234,7 +223,7 @@
 
    <span class="k">def</span> <span class="nf">_preprocess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">img</span><span class="p">):</span>
       <span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
-      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">color_mode</span> <span class="o">==</span> <span class="s2">&quot;rgb&quot;</span><span class="p">:</span>
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">color_mode</span> <span class="o">==</span> <span class="s2">"rgb"</span><span class="p">:</span>
             <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
       <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">padding</span><span class="p">:</span>
             <span class="n">img</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_img_padding</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
@@ -274,7 +263,7 @@
       <span class="n">count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">img_list</span><span class="p">)</span>
       <span class="n">w</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
       <span class="n">h</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-      <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">x</span><span class="si">{</span><span class="n">w</span><span class="si">}</span><span class="s2">x</span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s2">.npy&quot;</span>
+      <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">x</span><span class="si">{</span><span class="n">w</span><span class="si">}</span><span class="s2">x</span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s2">.npy"</span>
 
    <span class="k">def</span> <span class="nf">save_dataset_as_npy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save_file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
       <span class="n">save_file_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_save_file_name</span><span class="p">()</span>
@@ -284,13 +273,13 @@
       <span class="n">print_saved_npy_file_shape</span><span class="p">(</span><span class="n">save_file_path</span><span class="p">)</span>
       <span class="n">save_error_files</span><span class="p">(</span><span class="n">error_files</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-   <span class="n">img_file_dir_path</span> <span class="o">=</span> <span class="s2">&quot;/image/file/path&quot;</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+   <span class="n">img_file_dir_path</span> <span class="o">=</span> <span class="s2">"/image/file/path"</span>
    <span class="n">padding</span> <span class="o">=</span> <span class="kc">True</span>
-   <span class="n">color_mode</span> <span class="o">=</span> <span class="s2">&quot;bgr&quot;</span>
+   <span class="n">color_mode</span> <span class="o">=</span> <span class="s2">"bgr"</span>
    <span class="n">input_shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">)</span>
    <span class="n">normalize</span> <span class="o">=</span> <span class="kc">True</span>
-   <span class="n">save_file_path</span> <span class="o">=</span> <span class="s2">&quot;/path/to/save/file&quot;</span>
+   <span class="n">save_file_path</span> <span class="o">=</span> <span class="s2">"/path/to/save/file"</span>
    <span class="n">data_preprocessor</span> <span class="o">=</span> <span class="n">DataPreprocessor</span><span class="p">(</span>
       <span class="n">img_file_dir_path</span><span class="p">,</span>
       <span class="n">input_shape</span><span class="p">,</span>
@@ -308,7 +297,7 @@
 <span class="n">Corrupt</span> <span class="n">JPEG</span> <span class="n">data</span><span class="p">:</span> <span class="mi">122</span> <span class="n">extraneous</span> <span class="nb">bytes</span> <span class="n">before</span> <span class="n">marker</span> <span class="mh">0xc4</span>
 <span class="n">Saved</span> <span class="n">npy</span> <span class="n">array</span> <span class="n">shape</span> <span class="ow">is</span> <span class="p">(</span><span class="mi">145</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="n">Please</span> <span class="n">check</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">error_files</span><span class="o">.</span><span class="n">txt</span><span class="o">.</span>
-<span class="n">Error</span> <span class="n">files</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;/app/calib_dataset/images/2007_000039_jpg&#39;</span><span class="p">]</span>
+<span class="n">Error</span> <span class="n">files</span><span class="p">:</span> <span class="p">[</span><span class="s1">'/app/calib_dataset/images/2007_000039_jpg'</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -329,23 +318,23 @@
    <span class="n">outputs</span> <span class="o">=</span> <span class="p">{}</span>
    <span class="k">for</span> <span class="n">input_detail</span> <span class="ow">in</span> <span class="n">interpreter</span><span class="o">.</span><span class="n">get_input_details</span><span class="p">():</span>
       <span class="n">input_data_attribute</span> <span class="o">=</span> <span class="p">{}</span>
-      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span>
-      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
-      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;shape&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;shape&quot;</span><span class="p">))</span>
-      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;dtype&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;dtype&quot;</span><span class="p">)</span>
-      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;quantization&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;quantization&quot;</span><span class="p">)</span>
-      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;format&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;nchw&quot;</span> <span class="k">if</span> <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;shape&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span> <span class="k">else</span> <span class="s2">&quot;nhwc&quot;</span>
-      <span class="n">inputs</span><span class="p">[</span><span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">input_data_attribute</span>
+      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"name"</span><span class="p">)</span>
+      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"location"</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"index"</span><span class="p">)</span>
+      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"shape"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"shape"</span><span class="p">))</span>
+      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"dtype"</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"dtype"</span><span class="p">)</span>
+      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"quantization"</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"quantization"</span><span class="p">)</span>
+      <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"format"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"nchw"</span> <span class="k">if</span> <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"shape"</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span> <span class="k">else</span> <span class="s2">"nhwc"</span>
+      <span class="n">inputs</span><span class="p">[</span><span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"location"</span><span class="p">]</span> <span class="k">if</span> <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"location"</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">input_data_attribute</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]]</span> <span class="o">=</span> <span class="n">input_data_attribute</span>
 
    <span class="k">for</span> <span class="n">output_detail</span> <span class="ow">in</span> <span class="n">interpreter</span><span class="o">.</span><span class="n">get_output_details</span><span class="p">():</span>
       <span class="n">output_data_attribute</span> <span class="o">=</span> <span class="p">{}</span>
-      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span>
-      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
-      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;shape&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;shape&quot;</span><span class="p">))</span>
-      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;dtype&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;dtype&quot;</span><span class="p">)</span>
-      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;quantization&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;quantization&quot;</span><span class="p">)</span>
-      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;format&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;nchw&quot;</span> <span class="k">if</span> <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;shape&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span> <span class="k">else</span> <span class="s2">&quot;nhwc&quot;</span>
-      <span class="n">outputs</span><span class="p">[</span><span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">output_data_attribute</span>
+      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"name"</span><span class="p">)</span>
+      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"location"</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"index"</span><span class="p">)</span>
+      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"shape"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"shape"</span><span class="p">))</span>
+      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"dtype"</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"dtype"</span><span class="p">)</span>
+      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"quantization"</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_detail</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"quantization"</span><span class="p">)</span>
+      <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"format"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"nchw"</span> <span class="k">if</span> <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"shape"</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span> <span class="k">else</span> <span class="s2">"nhwc"</span>
+      <span class="n">outputs</span><span class="p">[</span><span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"location"</span><span class="p">]</span> <span class="k">if</span> <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"location"</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">output_data_attribute</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]]</span> <span class="o">=</span> <span class="n">output_data_attribute</span>
 
    <span class="k">return</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span>
 
@@ -355,17 +344,17 @@
    <span class="k">return</span> <span class="n">input_image</span>
 
 <span class="k">def</span> <span class="nf">inference</span><span class="p">(</span><span class="n">tflite_model_path</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">input_image</span><span class="p">):</span>
-   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tflite_model_path</span><span class="p">),</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tflite_model_path</span><span class="p">),</span> <span class="s2">"rb"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
       <span class="n">interpreter</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">lite</span><span class="o">.</span><span class="n">Interpreter</span><span class="p">(</span><span class="n">model_content</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">num_threads</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
    <span class="n">interpreter</span><span class="o">.</span><span class="n">allocate_tensors</span><span class="p">()</span>
 
    <span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span> <span class="o">=</span> <span class="n">model_input_output_attributes</span><span class="p">(</span><span class="n">interpreter</span><span class="p">)</span>
    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">inputs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-      <span class="k">if</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;dtype&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">]:</span>
-            <span class="n">input_scale</span><span class="p">,</span> <span class="n">input_zero_point</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="s2">&quot;quantization&quot;</span><span class="p">]</span>
+      <span class="k">if</span> <span class="n">v</span><span class="p">[</span><span class="s1">'dtype'</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">]:</span>
+            <span class="n">input_scale</span><span class="p">,</span> <span class="n">input_zero_point</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="s2">"quantization"</span><span class="p">]</span>
             <span class="n">input_image</span> <span class="o">=</span> <span class="n">input_image</span> <span class="o">/</span> <span class="n">input_scale</span> <span class="o">+</span> <span class="n">input_zero_point</span>
-            <span class="n">input_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">input_image</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="s2">&quot;dtype&quot;</span><span class="p">])</span>
-      <span class="n">interpreter</span><span class="o">.</span><span class="n">set_tensor</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">],</span> <span class="n">input_image</span><span class="p">)</span>
+            <span class="n">input_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">input_image</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="s2">"dtype"</span><span class="p">])</span>
+      <span class="n">interpreter</span><span class="o">.</span><span class="n">set_tensor</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="s2">"location"</span><span class="p">],</span> <span class="n">input_image</span><span class="p">)</span>
    <span class="n">interpreter</span><span class="o">.</span><span class="n">invoke</span><span class="p">()</span>
 
    <span class="n">output_dict</span> <span class="o">=</span> <span class="p">{}</span>
@@ -377,8 +366,8 @@
 <span class="k">def</span> <span class="nf">postprocess</span><span class="p">(</span><span class="n">inference_results</span><span class="p">):</span>
    <span class="k">return</span> <span class="n">inference_results</span>
 
-<span class="n">input_image</span><span class="o">=</span><span class="n">preprocess</span><span class="p">(</span><span class="s2">&quot;your_image_file.jpg&quot;</span><span class="p">)</span>
-<span class="n">inference_result</span><span class="o">=</span><span class="n">inference</span><span class="p">(</span><span class="s2">&quot;your_model.tflite&quot;</span><span class="p">,</span> <span class="n">input_image</span><span class="p">)</span>
+<span class="n">input_image</span><span class="o">=</span><span class="n">preprocess</span><span class="p">(</span><span class="s2">"your_image_file.jpg"</span><span class="p">)</span>
+<span class="n">inference_result</span><span class="o">=</span><span class="n">inference</span><span class="p">(</span><span class="s2">"your_model.tflite"</span><span class="p">,</span> <span class="n">input_image</span><span class="p">)</span>
 <span class="n">postprocess</span><span class="p">(</span><span class="n">inference_result</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -386,20 +375,16 @@
 </section>
 </section>
 </section>
-
-
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="compatibility_range_of_benchmark.html" class="btn btn-neutral float-left" title="Benchmark 호환성 범위" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="error_messages.html" class="btn btn-neutral float-right" title="Common Issues" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2024, Nota.</p>
-  </div>
+</div>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="compatibility_range_of_benchmark.html" rel="prev" title="Benchmark 호환성 범위"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="error_messages.html" rel="next" title="Common Issues">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2024, Nota.</p>
+</div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
@@ -407,15 +392,14 @@
    
 
 </footer>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script>
+</div>
+</div>
+</section>
+</div>
+<script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
-
+  </script>
 </body>
 </html>
