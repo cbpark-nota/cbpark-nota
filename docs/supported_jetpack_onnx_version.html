@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html class="writer-html5" data-content_root="./" lang="en">
+<html class="writer-html5" data-content_root="./" lang="ko">
 <head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Supported JetPack-ONNX version — LaunchX  documentation</title>
+<title>Supported JetPack-ONNX version — LaunchX  문서</title>
 <link href="_static/pygments.css?v=80d5e7a1" rel="stylesheet" type="text/css"/>
 <link href="_static/css/theme.css?v=19f00094" rel="stylesheet" type="text/css"/>
 <link href="_static/favicon.png" rel="shortcut icon"/>
@@ -16,11 +16,12 @@
 <script src="_static/documentation_options.js?v=5929fcd5"></script>
 <script src="_static/doctools.js?v=9a2dae69"></script>
 <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script src="_static/translations.js?v=b5f768d8"></script>
 <script src="_static/js/theme.js"></script>
-<link href="genindex.html" rel="index" title="Index"/>
-<link href="search.html" rel="search" title="Search"/>
-<link href="compatibility_range_of_benchmark.html" rel="next" title="Benchmark"/>
-<link href="compatibility_range_of_conversion.html" rel="prev" title="Convert"/>
+<link href="genindex.html" rel="index" title="색인"/>
+<link href="search.html" rel="search" title="검색"/>
+<link href="compatibility_range_of_benchmark.html" rel="next" title="Benchmark 호환성 범위"/>
+<link href="compatibility_range_of_conversion.html" rel="prev" title="Conversion 호환성 범위"/>
 </head>
 <body class="wy-body-for-nav">
 <div class="wy-grid-for-nav">
@@ -38,29 +39,13 @@
 </form>
 </div>
 </div><div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
-<p class="caption" role="heading"><span class="caption-text">User Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="compatibility_range_of_conversion.html">Convert</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#conversion-case">Conversion case</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model">Compatible model</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="compatibility_range_of_conversion.html#onnx-to-tensorrt">ONNX to TensorRT</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Supported JetPack-ONNX version</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#onnx-to-tflite">ONNX to TFlite</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#onnx-to-openvino">ONNX to OpenVino</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#tensorflow-to-tensorflowlite">TensorFlow to TensorFlowLite</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Conversion 호환성 범위</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Supported JetPack-ONNX version</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark 호환성 범위</a></li>
 <li class="toctree-l1"><a class="reference internal" href="int8_quantization_with_launchx.html">INT8 quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="error_messages.html">Common Issues</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Connection</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://netspresso.ai/">NetsPresso(Linked in, Trainer, Python)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partnerships.html">Partnerships</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact us</a></li>
 </ul>
 </div>
 </div>
@@ -74,10 +59,9 @@
 <div aria-label="Page navigation" role="navigation">
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Home" class="icon icon-home" href="index.html"></a></li>
-<li class="breadcrumb-item"><a href="compatibility_range_of_conversion.html">Convert</a></li>
 <li class="breadcrumb-item active">Supported JetPack-ONNX version</li>
 <li class="wy-breadcrumbs-aside">
-<a class="reference internal" href="ko/supported_jetpack_onnx_version.html">한국어</a>
+<a class="reference internal" href="supported_jetpack_onnx_version.html">English</a>
 </li>
 </ul>
 <hr/>
@@ -86,7 +70,6 @@
 <div itemprop="articleBody">
 <section id="supported-jetpack-onnx-version">
 <span id="id1"></span><h1>Supported JetPack-ONNX version<a class="headerlink" href="#supported-jetpack-onnx-version" title="Link to this heading"></a></h1>
-<p>When converting for NVIDIA Jetson devices, the JetPack SDK is used. The supported ONNX version varies depending on the JetPack version, which may lead to compatibility errors when converting ONNX to TensorRT. The table below follows the official support range of NVIDIA JetPack.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 16.7%"/>
@@ -301,8 +284,8 @@
 </div>
 </div>
 <footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
-<a accesskey="p" class="btn btn-neutral float-left" href="compatibility_range_of_conversion.html" rel="prev" title="Convert"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
-<a accesskey="n" class="btn btn-neutral float-right" href="compatibility_range_of_benchmark.html" rel="next" title="Benchmark">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+<a accesskey="p" class="btn btn-neutral float-left" href="compatibility_range_of_conversion.html" rel="prev" title="Conversion 호환성 범위"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="compatibility_range_of_benchmark.html" rel="next" title="Benchmark 호환성 범위">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">

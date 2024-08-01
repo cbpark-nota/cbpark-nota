@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html class="writer-html5" data-content_root="./" lang="en">
+<html class="writer-html5" data-content_root="./" lang="ko">
 <head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Benchmark — LaunchX  documentation</title>
+<title>Benchmark 호환성 범위 — LaunchX  문서</title>
 <link href="_static/pygments.css?v=80d5e7a1" rel="stylesheet" type="text/css"/>
 <link href="_static/css/theme.css?v=19f00094" rel="stylesheet" type="text/css"/>
 <link href="_static/favicon.png" rel="shortcut icon"/>
@@ -16,9 +16,10 @@
 <script src="_static/documentation_options.js?v=5929fcd5"></script>
 <script src="_static/doctools.js?v=9a2dae69"></script>
 <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script src="_static/translations.js?v=b5f768d8"></script>
 <script src="_static/js/theme.js"></script>
-<link href="genindex.html" rel="index" title="Index"/>
-<link href="search.html" rel="search" title="Search"/>
+<link href="genindex.html" rel="index" title="색인"/>
+<link href="search.html" rel="search" title="검색"/>
 <link href="int8_quantization_with_launchx.html" rel="next" title="INT8 quantization"/>
 <link href="supported_jetpack_onnx_version.html" rel="prev" title="Supported JetPack-ONNX version"/>
 </head>
@@ -38,11 +39,12 @@
 </form>
 </div>
 </div><div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
-<p class="caption" role="heading"><span class="caption-text">User Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Convert</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Benchmark</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#supported-hardware">Supported Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Conversion 호환성 범위</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Benchmark 호환성 범위</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#supported-hardware">지원되는 Hardware</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#arm-mcu-npu">Arm MCU/NPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nvidia">NVIDIA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#raspberry-pi">Raspberry Pi</a></li>
@@ -51,12 +53,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="int8_quantization_with_launchx.html">INT8 quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="error_messages.html">Common Issues</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Connection</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://netspresso.ai/">NetsPresso(Linked in, Trainer, Python)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partnerships.html">Partnerships</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact us</a></li>
 </ul>
 </div>
 </div>
@@ -70,20 +66,20 @@
 <div aria-label="Page navigation" role="navigation">
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Home" class="icon icon-home" href="index.html"></a></li>
-<li class="breadcrumb-item active">Benchmark</li>
+<li class="breadcrumb-item active">Benchmark 호환성 범위</li>
 <li class="wy-breadcrumbs-aside">
-<a class="reference internal" href="ko/compatibility_range_of_benchmark.html">한국어</a>
+<a class="reference internal" href="compatibility_range_of_benchmark.html">English</a>
 </li>
 </ul>
 <hr/>
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
-<section id="benchmark">
-<span id="compatibility-benchmark"></span><h1>Benchmark<a class="headerlink" href="#benchmark" title="Link to this heading"></a></h1>
-<p>You can easily measure the hardware performance of your model using the benchmarking feature in LaunchX. The benchmarking results can serve as a criterion for choosing the base model before training your AI model and help you select the best device optimized for your model.</p>
+<section id="compatibility-range-of-benchmark">
+<span id="compatibility-benchmark"></span><h1>Benchmark 호환성 범위<a class="headerlink" href="#compatibility-range-of-benchmark" title="Link to this heading"></a></h1>
+<p>장치를 구매하거나 설치할 필요 없이 아래에 나열된 장치에서 실제 성능을 측정할 수 있습니다.</p>
 <section id="supported-hardware">
-<h2>Supported Hardware<a class="headerlink" href="#supported-hardware" title="Link to this heading"></a></h2>
+<h2>지원되는 Hardware<a class="headerlink" href="#supported-hardware" title="Link to this heading"></a></h2>
 <img alt="_images/supported_hardware.png" src="_images/supported_hardware.png"/>
 </section>
 <section id="arm-mcu-npu">
@@ -125,7 +121,7 @@
 </section>
 <section id="nvidia">
 <h2>NVIDIA<a class="headerlink" href="#nvidia" title="Link to this heading"></a></h2>
-<p>When benchmarking on Jetson, it is essential for the model file and target device to match the Jetpack version.</p>
+<p>Jetson에서 벤치마크를 실행할 때는 모델 파일과 타겟 장치가 Jetpack 버전에 맞는 것이 필수적입니다.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33.3%"/>

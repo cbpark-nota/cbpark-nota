@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html class="writer-html5" data-content_root="./" lang="en">
+<html class="writer-html5" data-content_root="./" lang="ko">
 <head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Convert — LaunchX  documentation</title>
+<title>Conversion 호환성 범위 — LaunchX  문서</title>
 <link href="_static/pygments.css?v=80d5e7a1" rel="stylesheet" type="text/css"/>
 <link href="_static/css/theme.css?v=19f00094" rel="stylesheet" type="text/css"/>
 <link href="_static/favicon.png" rel="shortcut icon"/>
@@ -16,9 +16,10 @@
 <script src="_static/documentation_options.js?v=5929fcd5"></script>
 <script src="_static/doctools.js?v=9a2dae69"></script>
 <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script src="_static/translations.js?v=b5f768d8"></script>
 <script src="_static/js/theme.js"></script>
-<link href="genindex.html" rel="index" title="Index"/>
-<link href="search.html" rel="search" title="Search"/>
+<link href="genindex.html" rel="index" title="색인"/>
+<link href="search.html" rel="search" title="검색"/>
 <link href="supported_jetpack_onnx_version.html" rel="next" title="Supported JetPack-ONNX version"/>
 <link href="index.html" rel="prev" title="LaunchX"/>
 </head>
@@ -38,29 +39,21 @@
 </form>
 </div>
 </div><div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
-<p class="caption" role="heading"><span class="caption-text">User Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Convert</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conversion 호환성 범위</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#conversion-case">Conversion case</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#compatible-model">Compatible model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#onnx-to-tensorrt">ONNX to TensorRT</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#compatible-model">호환 가능한 모델</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#onnx-to-tensorrt">ONNX to TensorRT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#onnx-to-tflite">ONNX to TFlite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#onnx-to-openvino">ONNX to OpenVino</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tensorflow-to-tensorflowlite">TensorFlow to TensorFlowLite</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark 호환성 범위</a></li>
 <li class="toctree-l1"><a class="reference internal" href="int8_quantization_with_launchx.html">INT8 quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="error_messages.html">Common Issues</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Connection</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://netspresso.ai/">NetsPresso(Linked in, Trainer, Python)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partnerships.html">Partnerships</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact us</a></li>
 </ul>
 </div>
 </div>
@@ -74,18 +67,18 @@
 <div aria-label="Page navigation" role="navigation">
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Home" class="icon icon-home" href="index.html"></a></li>
-<li class="breadcrumb-item active">Convert</li>
+<li class="breadcrumb-item active">Conversion 호환성 범위</li>
 <li class="wy-breadcrumbs-aside">
-<a class="reference internal" href="ko/compatibility_range_of_conversion.html">한국어</a>
+<a class="reference internal" href="compatibility_range_of_conversion.html">English</a>
 </li>
 </ul>
 <hr/>
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
-<section id="convert">
-<span id="compatible-model-scope"></span><h1>Convert<a class="headerlink" href="#convert" title="Link to this heading"></a></h1>
-<p>You can use LaunchX converter to automatically convert the AI model’s framework to the target framework.</p>
+<section id="compatibility-range-of-conversion">
+<span id="compatible-model-scope"></span><h1>Conversion 호환성 범위<a class="headerlink" href="#compatibility-range-of-conversion" title="Link to this heading"></a></h1>
+<p>LaunchX를 사용하여 AI 모델의 프레임워크를 목표 프레임워크로 자동 변환할 수 있습니다.</p>
 <section id="conversion-case">
 <h2>Conversion case<a class="headerlink" href="#conversion-case" title="Link to this heading"></a></h2>
 <img alt="_images/converting_case.png" src="_images/converting_case.png"/>
@@ -97,26 +90,22 @@
 </ol>
 </section>
 <section id="compatible-model">
-<h2>Compatible model<a class="headerlink" href="#compatible-model" title="Link to this heading"></a></h2>
-<p>The input layer of the uploaded model should be as follows.</p>
+<h2>호환 가능한 모델<a class="headerlink" href="#compatible-model" title="Link to this heading"></a></h2>
+<p>업로드된 모델의 입력 레이어는 다음과 같아야 합니다.</p>
 <img alt="_images/compatible_model.png" src="_images/compatible_model.png"/>
 <ul class="simple">
-<li><p>Only single-input models are supported.</p></li>
-<li><p>The four-dimensional array structure of images should be organized Batch, Number of Channels, Height, and Width.</p></li>
+<li><p>단일 입력 모델만 지원됩니다.</p></li>
+<li><p>이미지의 4차원 배열 구조는 배치, 채널 수, 높이, 너비 순으로 구성되어야 합니다.</p></li>
 </ul>
 <ol class="arabic simple">
-<li><p>Batch size: The number of combined input datasets that the model processes simultaneously.</p></li>
-<li><p>Channel: 3 for RGB or BGR and 1 for Grayscale.</p></li>
-<li><p>Input size: In computer vision tasks, input size refers to the size of the input images.</p></li>
+<li><p>Batch size: 모델이 동시에 처리하는 결합된 입력 데이터셋의 수입니다.</p></li>
+<li><p>Channel: RGB 또는 BGR의 경우 3, 그레이스케일의 경우 1입니다.</p></li>
+<li><p>Input size: 컴퓨터 비전 작업에서 입력 크기는 입력 이미지의 크기를 의미합니다.</p></li>
 </ol>
 </section>
 <section id="onnx-to-tensorrt">
 <span id="id1"></span><h2>ONNX to TensorRT<a class="headerlink" href="#onnx-to-tensorrt" title="Link to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
-</ul>
-</div>
+<p><a class="reference internal" href="supported_jetpack_onnx_version.html#supported-jetpack-onnx-version"><span class="std std-ref">지원되는 JetPack-ONNX version</span></a></p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 20.0%"/>

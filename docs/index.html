@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html class="writer-html5" data-content_root="./" lang="en">
+<html class="writer-html5" data-content_root="./" lang="ko">
 <head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>LaunchX — LaunchX  documentation</title>
+<title>LaunchX — LaunchX  문서</title>
 <link href="_static/pygments.css?v=80d5e7a1" rel="stylesheet" type="text/css"/>
 <link href="_static/css/theme.css?v=19f00094" rel="stylesheet" type="text/css"/>
 <link href="_static/favicon.png" rel="shortcut icon"/>
@@ -16,10 +16,11 @@
 <script src="_static/documentation_options.js?v=5929fcd5"></script>
 <script src="_static/doctools.js?v=9a2dae69"></script>
 <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script src="_static/translations.js?v=b5f768d8"></script>
 <script src="_static/js/theme.js"></script>
-<link href="genindex.html" rel="index" title="Index"/>
-<link href="search.html" rel="search" title="Search"/>
-<link href="compatibility_range_of_conversion.html" rel="next" title="Convert"/>
+<link href="genindex.html" rel="index" title="색인"/>
+<link href="search.html" rel="search" title="검색"/>
+<link href="compatibility_range_of_conversion.html" rel="next" title="Conversion 호환성 범위"/>
 </head>
 <body class="wy-body-for-nav">
 <div class="wy-grid-for-nav">
@@ -37,18 +38,13 @@
 </form>
 </div>
 </div><div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
-<p class="caption" role="heading"><span class="caption-text">User Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Convert</a></li>
-<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Conversion 호환성 범위</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark 호환성 범위</a></li>
 <li class="toctree-l1"><a class="reference internal" href="int8_quantization_with_launchx.html">INT8 quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="error_messages.html">Common Issues</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Connection</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://netspresso.ai/">NetsPresso(Linked in, Trainer, Python)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partnerships.html">Partnerships</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact us</a></li>
 </ul>
 </div>
 </div>
@@ -64,7 +60,7 @@
 <li><a aria-label="Home" class="icon icon-home" href="#"></a></li>
 <li class="breadcrumb-item active">LaunchX</li>
 <li class="wy-breadcrumbs-aside">
-<a class="reference internal" href="ko/index.html">한국어</a>
+<a class="reference internal" href="index.html">English</a>
 </li>
 </ul>
 <hr/>
@@ -73,59 +69,61 @@
 <div itemprop="articleBody">
 <section id="launchx">
 <h1>LaunchX<a class="headerlink" href="#launchx" title="Link to this heading"></a></h1>
-<p>LaunchX is a web application that facilitates the essential tasks of framework conversion and benchmarking for deploying AI models on devices quickly and easily. It allows AI developers, researchers, and even non-coders to intuitively use the ultimate converter and benchmarker. If you are a Python user, you can access the same functionality as a Python package through <a class="reference external" href="https://github.com/Nota-NetsPresso/PyNetsPresso/">NetsPresso</a>.</p>
-<p>With LaunchX, you can:</p>
-<ul class="simple">
-<li><p>Free to download and test AI models optimized by NetsPresso.</p></li>
-<li><p>Easily convert AI models in ONNX or TensorFlow to other frameworks.</p></li>
-<li><p>Measure the performance of AI models across various devices.</p></li>
-</ul>
-<img alt="_images/home_1.png" src="_images/home_1.png"/>
+<p>LaunchX는 장치에 AI 모델을 배포하기 위한 프레임워크 변환 및 벤치마킹 핵심 작업을 빠르고 쉽게 수행할 수 있는 웹 애플리케이션입니다.이 애플리케이션을 통해 AI 개발자, 연구자, 심지어 비전문가도 직관적으로 최고의 변환 도구와 벤치마킹 기능을 사용할 수 있습니다.만약 Python 사용자라면, Python 패키지로도 동일한 기능에 접근할 수 있습니다.</p>
 <section id="models">
 <h2>Models<a class="headerlink" href="#models" title="Link to this heading"></a></h2>
-<p>We provide optimized models through NetsPresso. You can immediately utilize these AI models after converting them.</p>
+<p>NetsPresso를 통해 최적화된 모델을 제공합니다. 변환 후 바로 이 AI 모델들을 활용할 수 있습니다.</p>
 <ul class="simple">
-<li><p>Utilize a variety of computer vision task models for free.</p></li>
-<li><p>You can download converted models.</p></li>
-<li><p>You can request customization for a fine-tuned model that is tailored to your project environment.</p></li>
+<li><p>다양한 컴퓨터 비전 작업 모델을 무료로 활용하세요.</p></li>
+<li><p>변환된 모델을 다운로드할 수 있습니다.</p></li>
+<li><p>당신의 프로젝트 환경에 맞춘 세밀하게 조정된 모델을 맞춤형으로 요청할 수 있습니다.</p></li>
 </ul>
 </section>
 <section id="convert">
 <h2>Convert<a class="headerlink" href="#convert" title="Link to this heading"></a></h2>
-<p>Simplify the process of framework conversion.</p>
+<p>프레임워크 변환 과정을 간단하게 만듭니다.</p>
+<img alt="_images/launchx_convert.png" src="_images/launchx_convert.png"/>
 <ul class="simple">
-<li><p>Easy and efficient model conversion.</p></li>
-<li><p>Eliminate trial and error with automated conversion.</p></li>
-<li><p>Quickly set up the deployment of models on target devices.</p></li>
+<li><p>쉽고 효율적인 모델 변환입니다.</p></li>
+<li><p>자동 변환으로 시행착오를 없앱니다.</p></li>
+<li><p>대상 기기에 모델 배포를 신속하게 설정합니다.</p></li>
 </ul>
-<p><a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model-scope"><span class="std std-ref">Check convert compatibility range</span></a></p>
+<p><a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model-scope"><span class="std std-ref">지원하는 프레임워크를 확인해보세요</span></a></p>
 </section>
 <section id="benchmark">
 <h2>Benchmark<a class="headerlink" href="#benchmark" title="Link to this heading"></a></h2>
-<p>Easily find the right device for your AI model.</p>
+<p>AI 모델에 적합한 장치를 쉽게 찾으세요.</p>
+<img alt="_images/launchx_benchmark.png" src="_images/launchx_benchmark.png"/>
 <ul class="simple">
-<li><p>Identify the best-fit device through benchmarking.</p></li>
-<li><p>Check model compatibility with target devices.</p></li>
+<li><p>벤치마킹을 통해 최적의 장치를 식별하세요.</p></li>
+<li><p>타겟 장치와 모델 호환성을 확인하세요.</p></li>
 <li><p>Evaluate real-device performance without acquiring or setting up the device.</p></li>
 </ul>
-<p><a class="reference internal" href="compatibility_range_of_benchmark.html#compatibility-benchmark"><span class="std std-ref">View the list of devices available for benchmarking</span></a></p>
+<p><a class="reference internal" href="compatibility_range_of_benchmark.html#compatibility-benchmark"><span class="std std-ref">호환가능한 장치를 확인해보세요</span></a></p>
+</section>
+<section id="request-your-device">
+<h2>원하시는 장치를 선택하세요<a class="headerlink" href="#request-your-device" title="Link to this heading"></a></h2>
+<p>새로운 장치가 출시될 때마다 장치 제조사와의 협력을 통해 AI 모델을 최적화하기 위해 지속적으로 연구 및 개발을 진행하고 있습니다.특정 장치의 벤치마킹을 원하시면 <a class="reference external" href="https://notaai.typeform.com/to/n6yVxFov?typeform-source=launchx.netspresso.ai/">요청해주세요.</a></p>
+</section>
+<section id="we-hear-from-you">
+<h2>여러분의 의견을 듣고 있습니다.<a class="headerlink" href="#we-hear-from-you" title="Link to this heading"></a></h2>
+<p>어려움이나 추가 크레딧이 필요하시면 언제든지 저희에게 연락 주세요!</p>
+<p>👨‍💻 NetsPresso Support Center: <a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">netspresso@nota.ai</a></p>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">User Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Convert</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_conversion.html">Conversion 호환성 범위</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#conversion-case">Conversion case</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model">Compatible model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#onnx-to-tensorrt">ONNX to TensorRT</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model">호환 가능한 모델</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#onnx-to-tensorrt">ONNX to TensorRT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#onnx-to-tflite">ONNX to TFlite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#onnx-to-openvino">ONNX to OpenVino</a></li>
 <li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_conversion.html#tensorflow-to-tensorflowlite">TensorFlow to TensorFlowLite</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_benchmark.html#supported-hardware">Supported Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_jetpack_onnx_version.html">Supported JetPack-ONNX version</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility_range_of_benchmark.html">Benchmark 호환성 범위</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_benchmark.html#supported-hardware">지원되는 Hardware</a></li>
 <li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_benchmark.html#arm-mcu-npu">Arm MCU/NPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_benchmark.html#nvidia">NVIDIA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="compatibility_range_of_benchmark.html#raspberry-pi">Raspberry Pi</a></li>
@@ -133,80 +131,17 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="int8_quantization_with_launchx.html">INT8 quantization</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="int8_quantization_with_launchx.html#what-is-quantization">What is Quantization?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="int8_quantization_with_launchx.html#what-is-quantization">양자화가 무엇인가요?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="int8_quantization_with_launchx.html#id1">INT8 quantization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="int8_quantization_with_launchx.html#preparing-the-calibration-dataset">Preparing the calibration dataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="int8_quantization_with_launchx.html#convert-the-dataset-to-numpy-for-calibration">Convert the dataset to NumPy for calibration.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="int8_quantization_with_launchx.html#result">Result</a></li>
-<li class="toctree-l3"><a class="reference internal" href="int8_quantization_with_launchx.html#dataset-that-failed-to-be-read">Dataset that failed to be read</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="int8_quantization_with_launchx.html#preparing-the-calibration-dataset">Calibration dataset 준비하기</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="error_messages.html">Common Issues</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="error_messages.html#upload">Upload</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#frameworkexception">FrameworkException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#inputshapelengthexception">InputShapeLengthException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#inspectfail">InspectFail</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#keraserror">KerasError</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#makeinputserror">MakeInputsError</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#modelfileinspectexception">ModelFileInspectException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#modeltypeerror">ModelTypeError</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#multilayerexception">MultiLayerException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#openvinoerror">OpenVINOError</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#tensorrtdeserializererror">TensorRTDeserializerError</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#toolargebatchmodelexception">TooLargeBatchModelException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#toolargechannelmodelexception">TooLargeChannelModelException</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="error_messages.html#benchmark">Benchmark</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#benchmarkfailedexception">BenchmarkFailedException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#dynamicbatchmodelexception">DynamicBatchModelException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#dynamicinputshapemodelexception">DynamicInputShapeModelException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#startbenchmarkfail">StartBenchmarkFail</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="error_messages.html#convert">Convert</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#convertfailedexception">ConvertFailedException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#needdeviceexception">NeedDeviceException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#needinputshapeexception">NeedInputShapeException</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="error_messages.html#common-cases">Common cases</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#devicefarmuploaderror">DeviceFarmUploadError</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#devicenotmatchedwithframeworkexception">DeviceNotMatchedWithFrameworkException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#internalexception">InternalException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#latestjobisnotfinished">LatestJobIsNotFinished</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#noavailabledevice">NoAvailableDevice</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#nocredit">NoCredit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#nomodeluuidexception">NoModelUuidException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#notsupporteddeviceexception">NotSupportedDeviceException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#accountexception">AccountException</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="error_messages.html#dataset-file">Dataset file</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#datasetfilebrokenexception">DatasetFileBrokenException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#datasetfilesuffixexception">DatasetFileSuffixException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#invalidtypeexception">InvalidTypeException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="error_messages.html#numpyarrayhaswrongshapeexception">NumpyArrayHasWrongShapeException</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Connection</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://netspresso.ai/">NetsPresso(Linked in, Trainer, Python)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="partnerships.html">Partnerships</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="partnerships.html#showcase-the-outstanding-performance-of-your-device">Showcase the Outstanding Performance of Your Device</a></li>
-<li class="toctree-l2"><a class="reference internal" href="partnerships.html#benefits-for-launchx-partners">Benefits for LaunchX Partners</a></li>
-<li class="toctree-l2"><a class="reference internal" href="partnerships.html#we-look-forward-to-partnering-with-you">We Look Forward to Partnering with You</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact us</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="contact_us.html#we-hear-from-you">We hear from you</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_messages.html#upload">Upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_messages.html#benchmark">Benchmark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_messages.html#convert">Convert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_messages.html#common-cases">Common cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_messages.html#dataset-file">Dataset file</a></li>
 </ul>
 </li>
 </ul>
@@ -216,7 +151,7 @@
 </div>
 </div>
 <footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
-<a accesskey="n" class="btn btn-neutral float-right" href="compatibility_range_of_conversion.html" rel="next" title="Convert">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+<a accesskey="n" class="btn btn-neutral float-right" href="compatibility_range_of_conversion.html" rel="next" title="Conversion 호환성 범위">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">
