@@ -39,7 +39,11 @@ The input layer of the uploaded model should be as follows.
 ONNX to TensorRT
 ----------------
 
-:ref:`Supported JetPack-ONNX version <supported_jetpack_onnx_version>`
+.. toctree::
+    :maxdepth: 2
+    :caption: Supported Jetpack Onnx version
+    
+    supported_jetpack_onnx_version
 
 .. list-table::
    :header-rows: 1
