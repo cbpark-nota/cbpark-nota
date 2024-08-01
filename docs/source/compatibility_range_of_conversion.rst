@@ -41,7 +41,6 @@ ONNX to TensorRT
 
 .. toctree::
     :maxdepth: 2
-    :caption: Supported Jetpack Onnx version
     
     supported_jetpack_onnx_version
 
