@@ -8,6 +8,14 @@ LaunchX
 
 LaunchX is a web application that facilitates the essential tasks of framework conversion and benchmarking for deploying AI models on devices quickly and easily. It allows AI developers, researchers, and even non-coders to intuitively use the ultimate converter and benchmarker. If you are a Python user, you can access the same functionality as a Python package through `NetsPresso <https://github.com/Nota-NetsPresso/PyNetsPresso/>`_.
 
+With LaunchX, you can:
+
+- Free to download and test AI models optimized by NetsPresso.
+- Easily convert AI models in ONNX or TensorFlow to other frameworks.
+- Measure the performance of AI models across various devices.
+
+.. image:: _images/home_1.png
+
 Models
 ------
 
@@ -21,35 +29,21 @@ Convert
 -------
 Simplify the process of framework conversion.
 
-.. image:: _images/launchx_convert.png
-
 - Easy and efficient model conversion.
 - Eliminate trial and error with automated conversion.
 - Quickly set up the deployment of models on target devices.
   
-:ref:`See supported frameworks <compatible_model_scope>`
+:ref:`Check convert compatibility range <compatible_model_scope>`
 
 Benchmark
 ---------
 Easily find the right device for your AI model.
 
-.. image:: _images/launchx_benchmark.png
-
 - Identify the best-fit device through benchmarking.
 - Check model compatibility with target devices.
 - Evaluate real-device performance without acquiring or setting up the device.
   
-:ref:`View compatible devices <compatibility_benchmark>`
-  
-Request your device
--------------------
-We continuously research and develop to optimize AI models whenever new devices are released through partnerships with device manufacturers. If you have a specific device you'd like to benchmark, please make a `request <https://notaai.typeform.com/to/n6yVxFov?typeform-source=launchx.netspresso.ai/>`_ to us.
-
-We hear from you
-----------------
-If you encounter difficulties or need additional credits, feel free to contact us anytime!
-
-👨‍💻 NetsPresso Support Center: `netspresso@nota.ai <https://notaai.typeform.com/to/ZGhpfiwd/>`_
+:ref:`View the list of devices available for benchmarking <compatibility_benchmark>`
 
 
 .. toctree::
@@ -68,4 +62,4 @@ If you encounter difficulties or need additional credits, feel free to contact u
     
     NetsPresso(Linked in, Trainer, Python) <https://netspresso.ai/>
     partnerships
-    Contact us <https://notaai.typeform.com/to/ZGhpfiwd/>
+    contact_us
