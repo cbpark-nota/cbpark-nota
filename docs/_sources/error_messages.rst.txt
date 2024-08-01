@@ -21,6 +21,7 @@ FrameworkException
 
 This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
+
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
 
 InputShapeLengthException
@@ -29,6 +30,7 @@ InputShapeLengthException
 
 This occurs when the input shape length is not 4.
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
+
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
 
 InspectFail
@@ -67,6 +69,7 @@ MultiLayerException
 
 This occurs when the input layer is multi-layered.
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
+
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
 
 OpenVINOError
@@ -87,6 +90,7 @@ TooLargeBatchModelException
 
 This occurs when the batch size of the model being uploaded exceeds 4.
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
+
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
 
 TooLargeChannelModelException
@@ -185,6 +189,7 @@ NotSupportedDeviceException
 *{target_device} is not available device for this model.*
 This occurs when the input target device is not supported by the selected framework.
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
+
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
 
 AccountException
