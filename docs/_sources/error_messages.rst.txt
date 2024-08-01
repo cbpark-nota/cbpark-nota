@@ -156,6 +156,7 @@ Common cases
 DeviceFarmUploadError
 """""""""""""""""""""
 *There was a temporary issue during the file upload process. Please try again later. If the problem persists, please contact us.*
+
 This occurs during the process of uploading a model to the Device farm.
 `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
@@ -166,12 +167,14 @@ This occurs when the target framework and target device do not match.
 InternalException
 """""""""""""""""
 *Undefined error. An unexpected error has occurred. If you need technical support, please contact us.*
+
 In case of a temporary error.
 `[Contact support] <https://notaai.typeform.com/to/ZGhpfiwd/>`_
 
 LatestJobIsNotFinished
 """"""""""""""""""""""
 *Latest job is not finished.*
+
 This occurs when attempting to execute a new task while there are ongoing convert or benchmark operations.
 
 NoAvailableDevice
@@ -191,6 +194,7 @@ This occurs when requesting a model_uuid that does not exist.
 NotSupportedDeviceException
 """""""""""""""""""""""""""
 *{target_device} is not available device for this model.*
+
 This occurs when the input target device is not supported by the selected framework.
 
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
@@ -212,16 +216,19 @@ Dataset file
 DatasetFileBrokenException
 """"""""""""""""""""""""""
 *The NumPy file failed to load properly. Please try again.*
+
 This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.
 
 DatasetFileSuffixException
 """"""""""""""""""""""""""
 *The file is not being recognized correctly. Please check the file extension.*
+
 This occurs when the extension of the uploaded file is not .npy for quantization calibration.
 
 InvalidTypeException
 """"""""""""""""""""
 *The dataset file has an invalid type numpy array.*
+
 This occurs when the dataset file is not a readable NumPy array.
 
 :ref:`Preparing the calibration dataset <preparing_the_calibration_dataset>`
@@ -229,4 +236,5 @@ This occurs when the dataset file is not a readable NumPy array.
 NumpyArrayHasWrongShapeException
 """"""""""""""""""""""""""""""""
 *The NumPy file has a different input shape than the model's.*
+
 This occurs when the shape of the npy file for quantization calibration does not match the input shape of the model being converted.
