@@ -7,7 +7,7 @@
 
 Common Issues
 =============
-Below is a list of common issues encountered while using LaunchX.
+The list below outlines common issues that may arise while using LaunchX. Please feel free to contact us at any time if you encounter any undefined exception cases or require technical support.
 
 Upload
 ^^^^^^
@@ -17,6 +17,8 @@ Upload
 
 FrameworkException
 """"""""""""""""""
+*This doesn't seem to be a supported framework model.*
+
 This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.
 
 InputShapeLengthException

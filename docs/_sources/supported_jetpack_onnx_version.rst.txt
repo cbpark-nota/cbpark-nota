@@ -6,7 +6,9 @@
 .. _supported_jetpack_onnx_version:
 
 Supported JetPack-ONNX version
-=================================
+==============================
+
+When converting for NVIDIA Jetson devices, the JetPack SDK is used. The supported ONNX version varies depending on the JetPack version, which may lead to compatibility errors when converting ONNX to TensorRT. The table below follows the official support range of NVIDIA JetPack.
 
 .. list-table::
    :header-rows: 1

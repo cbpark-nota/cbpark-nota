@@ -8,7 +8,7 @@
 Benchmark
 =========
 
-You can measure the actual performance on the devices listed below without the need to purchase or install the device.
+You can easily measure the hardware performance of your model using the benchmarking feature in LaunchX. The benchmarking results can serve as a criterion for choosing the base model before training your AI model and help you select the best device optimized for your model.
 
 Supported Hardware
 ------------------
