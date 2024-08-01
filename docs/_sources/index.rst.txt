@@ -53,9 +53,14 @@ If you encounter difficulties or need additional credits, feel free to contact u
 
 
 .. toctree::
-    :maxdepth: 2
-    
-    overview
+    :maxdepth: 1
+    :caption: Home(LaunchX):
+    index
+
+.. toctree::
+    :maxdepth: 3
+    :caption: User Guides:
+
     compatibility_range_of_conversion
     supported_jetpack_onnx_version
     compatibility_range_of_benchmark
