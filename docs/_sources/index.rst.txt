@@ -72,8 +72,8 @@ Connection
 
 .. toctree::
     :maxdepth: 2
-    :caption: Connection:
+    :caption: Connection
     
-    https://netspresso.ai/ <NetsPresso(Linked in, Trainer, Python)>
+    https://netspresso.ai/ `<NetsPresso(Linked in, Trainer, Python)>`
     partnerships
-    https://notaai.typeform.com/to/ZGhpfiwd/ <Contact us>
+    https://notaai.typeform.com/to/ZGhpfiwd/ `<Contact us>`
