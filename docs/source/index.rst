@@ -59,7 +59,6 @@ User Guides
 
 .. toctree::
     :maxdepth: 3
-    :caption: User Guides
 
     compatibility_range_of_conversion
     supported_jetpack_onnx_version
@@ -72,7 +71,6 @@ Connection
 
 .. toctree::
     :maxdepth: 2
-    :caption: Connection
     
     NetsPresso(Linked in, Trainer, Python) <https://netspresso.ai/>
     partnerships
