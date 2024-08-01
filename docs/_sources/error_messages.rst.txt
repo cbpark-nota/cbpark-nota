@@ -20,6 +20,7 @@ FrameworkException
 *This doesn't seem to be a supported framework model.*
 
 This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.
+
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
 
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
@@ -29,6 +30,7 @@ InputShapeLengthException
 *It seems that the input shape of the model is not compatible.* 
 
 This occurs when the input shape length is not 4.
+
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
 
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
@@ -68,6 +70,7 @@ MultiLayerException
 *Multi-input layer model is not supported.* 
 
 This occurs when the input layer is multi-layered.
+
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
 
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
@@ -89,6 +92,7 @@ TooLargeBatchModelException
 *The maximum batch size is 4.*
 
 This occurs when the batch size of the model being uploaded exceeds 4.
+
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
 
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
@@ -188,6 +192,7 @@ NotSupportedDeviceException
 """""""""""""""""""""""""""
 *{target_device} is not available device for this model.*
 This occurs when the input target device is not supported by the selected framework.
+
 :ref:`Compatibility range of Conversion <compatible_model_scope>`
 
 :ref:`Compatibility range of Benchmark <compatibility_benchmark>`
@@ -218,6 +223,7 @@ InvalidTypeException
 """"""""""""""""""""
 *The dataset file has an invalid type numpy array.*
 This occurs when the dataset file is not a readable NumPy array.
+
 :ref:`Preparing the calibration dataset <preparing_the_calibration_dataset>`
 
 NumpyArrayHasWrongShapeException
