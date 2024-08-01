@@ -53,8 +53,9 @@ If you encounter difficulties or need additional credits, feel free to contact u
 
 
 .. toctree::
-    :maxdepth: 1
-    :caption: Home(LaunchX):
+    :maxdepth: 2
+    :caption: Home:
+    
     index
 
 .. toctree::
