@@ -5,8 +5,8 @@
 
 .. _compatibility_benchmark:
 
-Compatibility range of benchmark
-================================
+Benchmark
+=========
 
 You can measure the actual performance on the devices listed below without the need to purchase or install the device.
 

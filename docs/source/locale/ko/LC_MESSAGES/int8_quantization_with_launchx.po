@@ -22,8 +22,8 @@ msgstr ""
 #: ../../source/int8_quantization_with_launchx.rst:7
 #: ../../source/int8_quantization_with_launchx.rst:20
 #: ../../source/int8_quantization_with_launchx.rst:25
-msgid "INT8 quantization with LaunchX"
-msgstr "INT8 quantization with LaunchX"
+msgid "INT8 quantization"
+msgstr "INT8 quantization"
 
 #: ../../source/int8_quantization_with_launchx.rst:9
 msgid ""
