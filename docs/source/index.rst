@@ -74,6 +74,6 @@ Connection
     :maxdepth: 2
     :caption: Connection
     
-    https://netspresso.ai/ `<NetsPresso(Linked in, Trainer, Python)>`
+    NetsPresso(Linked in, Trainer, Python) <https://netspresso.ai/>
     partnerships
-    https://notaai.typeform.com/to/ZGhpfiwd/ `<Contact us>`
+    Contact us <https://notaai.typeform.com/to/ZGhpfiwd/>
