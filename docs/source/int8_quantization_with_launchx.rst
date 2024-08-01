@@ -32,6 +32,8 @@ INT8 quantization
 
 .. image:: _images/INT8_setting.png
 
+.. _preparing_the_calibration_dataset:
+
 Preparing the calibration dataset
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Calibration is the process of aligning a quantized model with a specific data distribution, adjusting quantization parameters such as scaling and zero points.

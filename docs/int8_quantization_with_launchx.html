@@ -122,7 +122,7 @@
 <img alt="_images/INT8_setting.png" src="_images/INT8_setting.png" />
 </section>
 <section id="preparing-the-calibration-dataset">
-<h2>Preparing the calibration dataset<a class="headerlink" href="#preparing-the-calibration-dataset" title="Link to this heading"></a></h2>
+<span id="id2"></span><h2>Preparing the calibration dataset<a class="headerlink" href="#preparing-the-calibration-dataset" title="Link to this heading"></a></h2>
 <p>Calibration is the process of aligning a quantized model with a specific data distribution, adjusting quantization parameters such as scaling and zero points.</p>
 <p>Generally, the calibration dataset is a subset of the original training data, used to fine-tune quantization parameters. Its purpose is to ensure the quantized model’s optimal performance on real-world data while maintaining acceptable accuracy. During calibration, the model runs on this dataset, and activation statistics are collected. These statistics determine quantization parameters for each neural network layer, minimizing the impact of quantization on accuracy by adapting parameters based on observed value distributions.</p>
 <section id="convert-the-dataset-to-numpy-for-calibration">

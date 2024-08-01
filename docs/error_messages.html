@@ -141,50 +141,69 @@
 <section id="frameworkexception">
 <h3>FrameworkException<a class="headerlink" href="#frameworkexception" title="Link to this heading"></a></h3>
 <p><em>This doesn’t seem to be a supported framework model.</em></p>
-<p>This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.</p>
+<p>This occurs when the uploaded model file is not supported by the framework. Please check the scope of support.
+<a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model-scope"><span class="std std-ref">Compatibility range of Conversion</span></a>
+<a class="reference internal" href="compatibility_range_of_benchmark.html#compatibility-benchmark"><span class="std std-ref">Compatibility range of Benchmark</span></a></p>
 </section>
 <section id="inputshapelengthexception">
 <h3>InputShapeLengthException<a class="headerlink" href="#inputshapelengthexception" title="Link to this heading"></a></h3>
-<p>This occurs when the input shape length is not 4.</p>
+<p><em>It seems that the input shape of the model is not compatible.</em></p>
+<p>This occurs when the input shape length is not 4.
+<a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model-scope"><span class="std std-ref">Compatibility range of Conversion</span></a>
+<a class="reference internal" href="compatibility_range_of_benchmark.html#compatibility-benchmark"><span class="std std-ref">Compatibility range of Benchmark</span></a></p>
 </section>
 <section id="inspectfail">
 <h3>InspectFail<a class="headerlink" href="#inspectfail" title="Link to this heading"></a></h3>
+<p><em>It seems to be an incompatible file.</em></p>
 <p>This occurs when there is an issue with the model file.</p>
 </section>
 <section id="keraserror">
 <h3>KerasError<a class="headerlink" href="#keraserror" title="Link to this heading"></a></h3>
+<p><em>It seems to be an incompatible file.</em></p>
 <p>This occurs when there is an issue with the Keras model file.</p>
 </section>
 <section id="makeinputserror">
 <h3>MakeInputsError<a class="headerlink" href="#makeinputserror" title="Link to this heading"></a></h3>
+<p><em>Please check if the model file contains a subgraph.</em></p>
 <p>This occurs when there is no subgraph in the TensorFlow model file.</p>
 </section>
 <section id="modelfileinspectexception">
 <h3>ModelFileInspectException<a class="headerlink" href="#modelfileinspectexception" title="Link to this heading"></a></h3>
+<p><em>It may not be a model file, or it may be a model file from an unsupported.</em></p>
 <p>If there are issues during the process of inspecting the uploaded model file.</p>
 </section>
 <section id="modeltypeerror">
 <h3>ModelTypeError<a class="headerlink" href="#modeltypeerror" title="Link to this heading"></a></h3>
+<p><em>It seems to be an incompatible file.</em></p>
 <p>This occurs when there is an issue with the model file.</p>
 </section>
 <section id="multilayerexception">
 <h3>MultiLayerException<a class="headerlink" href="#multilayerexception" title="Link to this heading"></a></h3>
-<p>This occurs when the input layer is multi-layered.</p>
+<p><em>Multi-input layer model is not supported.</em></p>
+<p>This occurs when the input layer is multi-layered.
+<a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model-scope"><span class="std std-ref">Compatibility range of Conversion</span></a>
+<a class="reference internal" href="compatibility_range_of_benchmark.html#compatibility-benchmark"><span class="std std-ref">Compatibility range of Benchmark</span></a></p>
 </section>
 <section id="openvinoerror">
 <h3>OpenVINOError<a class="headerlink" href="#openvinoerror" title="Link to this heading"></a></h3>
+<p><em>Please check if the first layer of the OpenVINO XML file contains ‘element_type’ and ‘shape’ information.</em></p>
 <p>This occurs when there is an issue with the OpenVINO model file.</p>
 </section>
 <section id="tensorrtdeserializererror">
 <h3>TensorRTDeserializerError<a class="headerlink" href="#tensorrtdeserializererror" title="Link to this heading"></a></h3>
+<p><em>The model file cannot be deserialized. Please check the model file.</em></p>
 <p>This occurs when there is an issue with the TensorRT model file.</p>
 </section>
 <section id="toolargebatchmodelexception">
 <h3>TooLargeBatchModelException<a class="headerlink" href="#toolargebatchmodelexception" title="Link to this heading"></a></h3>
-<p>This occurs when the batch size of the model being uploaded exceeds 4.</p>
+<p><em>The maximum batch size is 4.</em></p>
+<p>This occurs when the batch size of the model being uploaded exceeds 4.
+<a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model-scope"><span class="std std-ref">Compatibility range of Conversion</span></a>
+<a class="reference internal" href="compatibility_range_of_benchmark.html#compatibility-benchmark"><span class="std std-ref">Compatibility range of Benchmark</span></a></p>
 </section>
 <section id="toolargechannelmodelexception">
 <h3>TooLargeChannelModelException<a class="headerlink" href="#toolargechannelmodelexception" title="Link to this heading"></a></h3>
+<p><em>Too large channel model, we support only 3 and 1 channel model.</em></p>
 <p>This occurs when the number of channels in the model being uploaded exceeds 3.</p>
 </section>
 </section>
@@ -229,7 +248,8 @@
 <h2>Common cases<a class="headerlink" href="#common-cases" title="Link to this heading"></a></h2>
 <section id="devicefarmuploaderror">
 <h3>DeviceFarmUploadError<a class="headerlink" href="#devicefarmuploaderror" title="Link to this heading"></a></h3>
-<p>This occurs during the process of uploading a model to the Device farm.
+<p><em>There was a temporary issue during the file upload process. Please try again later. If the problem persists, please contact us.</em>
+This occurs during the process of uploading a model to the Device farm.
 <a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
 </section>
 <section id="devicenotmatchedwithframeworkexception">
@@ -238,12 +258,14 @@
 </section>
 <section id="internalexception">
 <h3>InternalException<a class="headerlink" href="#internalexception" title="Link to this heading"></a></h3>
-<p>In case of a temporary error.
+<p><em>Undefined error. An unexpected error has occurred. If you need technical support, please contact us.</em>
+In case of a temporary error.
 <a class="reference external" href="https://notaai.typeform.com/to/ZGhpfiwd/">[Contact support]</a></p>
 </section>
 <section id="latestjobisnotfinished">
 <h3>LatestJobIsNotFinished<a class="headerlink" href="#latestjobisnotfinished" title="Link to this heading"></a></h3>
-<p>This occurs when attempting to execute a new task while there are ongoing convert or benchmark operations.</p>
+<p><em>Latest job is not finished.</em>
+This occurs when attempting to execute a new task while there are ongoing convert or benchmark operations.</p>
 </section>
 <section id="noavailabledevice">
 <h3>NoAvailableDevice<a class="headerlink" href="#noavailabledevice" title="Link to this heading"></a></h3>
@@ -261,7 +283,10 @@
 </section>
 <section id="notsupporteddeviceexception">
 <h3>NotSupportedDeviceException<a class="headerlink" href="#notsupporteddeviceexception" title="Link to this heading"></a></h3>
-<p>This occurs when the input target device is not supported by the selected framework.</p>
+<p><em>{target_device} is not available device for this model.</em>
+This occurs when the input target device is not supported by the selected framework.
+<a class="reference internal" href="compatibility_range_of_conversion.html#compatible-model-scope"><span class="std std-ref">Compatibility range of Conversion</span></a>
+<a class="reference internal" href="compatibility_range_of_benchmark.html#compatibility-benchmark"><span class="std std-ref">Compatibility range of Benchmark</span></a></p>
 </section>
 <section id="accountexception">
 <h3>AccountException<a class="headerlink" href="#accountexception" title="Link to this heading"></a></h3>
@@ -274,19 +299,24 @@
 <p><a class="reference internal" href="int8_quantization_with_launchx.html#int8-quantization-with-launchx"><span class="std std-ref">Prepare dataset file for INT8 quantization with LaunchX</span></a></p>
 <section id="datasetfilebrokenexception">
 <h3>DatasetFileBrokenException<a class="headerlink" href="#datasetfilebrokenexception" title="Link to this heading"></a></h3>
-<p>This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.</p>
+<p><em>The NumPy file failed to load properly. Please try again.</em>
+This occurs when there is a failure to load the uploaded NumPy file for quantization calibration. There is a high possibility that there is an error in the NumPy file.</p>
 </section>
 <section id="datasetfilesuffixexception">
 <h3>DatasetFileSuffixException<a class="headerlink" href="#datasetfilesuffixexception" title="Link to this heading"></a></h3>
-<p>This occurs when the extension of the uploaded file is not .npy for quantization calibration.</p>
+<p><em>The file is not being recognized correctly. Please check the file extension.</em>
+This occurs when the extension of the uploaded file is not .npy for quantization calibration.</p>
 </section>
 <section id="invalidtypeexception">
 <h3>InvalidTypeException<a class="headerlink" href="#invalidtypeexception" title="Link to this heading"></a></h3>
-<p>This occurs when the dataset file is not a readable NumPy array.</p>
+<p><em>The dataset file has an invalid type numpy array.</em>
+This occurs when the dataset file is not a readable NumPy array.
+<a class="reference internal" href="int8_quantization_with_launchx.html#preparing-the-calibration-dataset"><span class="std std-ref">Preparing the calibration dataset</span></a></p>
 </section>
 <section id="numpyarrayhaswrongshapeexception">
 <h3>NumpyArrayHasWrongShapeException<a class="headerlink" href="#numpyarrayhaswrongshapeexception" title="Link to this heading"></a></h3>
-<p>This occurs when the shape of the npy file for quantization calibration does not match the input shape of the model being converted.</p>
+<p><em>The NumPy file has a different input shape than the model’s.</em>
+This occurs when the shape of the npy file for quantization calibration does not match the input shape of the model being converted.</p>
 </section>
 </section>
 </section>
