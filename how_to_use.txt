@@ -1,0 +1,12 @@
+1. 번역 템플릿 생성
+sphinx-build -b gettext source _build/gettext 
+sphinx-intl update -p _build/gettext -l ko
+
+docs/source/locale/ko/LC_MESSAGES/ 디렉토리 내의 .po 파일을 편집하여 한국어 번역을 추가하거나 수정합니다.
+
+2. html 랜더링
+docs 디렉토리 안에서 아래 코드 실행
+sphinx-build -b html -D language=ko source _build/html/ko
+sphinx-build -b html source _build/html
+
+docs/_build/html 밑에 있는 파일을 docs 위치로 옮김
